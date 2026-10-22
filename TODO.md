@@ -21,7 +21,7 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 ## Not shown on the site (decisions still open)
 
 - [ ] **Custom domain** — not chosen. Site runs on a free temporary subdomain. See README-FOR-DAVE.md, "Connect a domain".
-- [ ] **Form service** — pick one (Netlify Forms, Formspree, Web3Forms, Getform...) and paste its URL in Settings.
+- [ ] **Form service** — pick one (Formspree, Web3Forms, Getform...) and paste its URL in Settings.
 - [ ] **Licensed home photo** — replace the current one.
 - [ ] **Higher-resolution `about-soldiers.jpg`** — current file is 1026×744 and looks soft on large screens.
 - [ ] **Six memorial cards** — names, photos, text, families' approval.
