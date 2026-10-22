@@ -1,0 +1,13 @@
+---
+import BandHero from '../BandHero.astro';
+import Section from '../Section.astro';
+import TextBlock from '../TextBlock.astro';
+import { getPage, type Lang } from '../../lib/site';
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const p = getPage(slug, lang);
+---
+<BandHero title={p.title} />
+<Section tone="white" narrow>
+  <TextBlock text={p.text} lang={lang} />
+</Section>

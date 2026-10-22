@@ -1,0 +1,60 @@
+---
+import { getUi, pagePath, settings, todoMark, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const f = getUi(lang).form;
+const action = settings.formAction || '';
+---
+<form class="form" novalidate data-form data-action={action} data-demo={settings.showTodo ? '1' : ''}
+  data-msg-success={f.success} data-msg-failure={f.failure} data-msg-demo={getUi(lang).todo.formDemo}
+  data-err-name={f.errName} data-err-contact={f.errContact} data-err-email={f.errEmail} data-err-phone={f.errPhone} data-err-consent={f.errConsent}>
+  <div class="form-error-summary" role="alert" tabindex="-1" hidden data-summary>
+    <strong>{f.errorSummary}</strong>
+    <ul data-summary-list></ul>
+  </div>
+
+  <div class="field">
+    <label for="f-name">{f.name} <span class="req" aria-hidden="true">*</span><span class="sr-only"> ({f.required})</span></label>
+    <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name" />
+    <p class="err" id="e-name" data-err="name" hidden></p>
+  </div>
+
+  <fieldset class="field-group">
+    <legend>{f.contactHint}</legend>
+    <div class="field">
+      <label for="f-phone">{f.phone}</label>
+      <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" aria-describedby="e-phone e-contact" />
+      <p class="err" id="e-phone" data-err="phone" hidden></p>
+    </div>
+    <div class="field">
+      <label for="f-email">{f.email}</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" dir="ltr" aria-describedby="e-email e-contact" />
+      <p class="err" id="e-email" data-err="email" hidden></p>
+    </div>
+    <p class="err" id="e-contact" data-err="contact" hidden></p>
+  </fieldset>
+
+  <div class="field">
+    <label for="f-type">{f.type}</label>
+    <select id="f-type" name="type">
+      <option value="join">{f.typeJoin}</option>
+      <option value="partner">{f.typePartner}</option>
+      <option value="general">{f.typeGeneral}</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="f-message">{f.message}</label>
+    <textarea id="f-message" name="message" rows="5"></textarea>
+  </div>
+
+  <div class="field field--check">
+    <input id="f-consent" name="consent" type="checkbox" required aria-describedby="e-consent" />
+    <label for="f-consent">{f.consent} <a href={pagePath('privacy', lang)} target="_blank" rel="noopener">{f.consentLink}</a> <span class="req" aria-hidden="true">*</span><span class="sr-only"> ({f.required})</span></label>
+    <p class="err" id="e-consent" data-err="consent" hidden></p>
+  </div>
+
+  <button class="btn btn--solid" type="submit">{f.submit}</button>
+  <p class="form-todo" set:html={todoMark('form', lang)} />
+  <p class="form-status" role="status" aria-live="polite" tabindex="-1" data-status hidden></p>
+</form>

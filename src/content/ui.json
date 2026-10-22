@@ -1,0 +1,212 @@
+{
+  "he": {
+    "siteName": "חלוצי נוף",
+    "siteNameLatin": "Halutzei Nof",
+    "logoAlt": "חלוצי נוף — כוכב דוד מעל הרים",
+    "skip": "דלג לתוכן הראשי",
+    "nav": {
+      "home": "בית",
+      "about": "אודות",
+      "vision": "החזון",
+      "community": "הקהילה",
+      "partners": "שותפים לדרך",
+      "contact": "צור קשר"
+    },
+    "menuOpen": "פתח תפריט",
+    "menuClose": "סגור תפריט",
+    "menuLabel": "תפריט ראשי",
+    "langLabel": "החלפת שפה",
+    "langSwitchTo": "English",
+    "langSwitchAria": "Switch to English",
+    "btnJoin": "אני רוצה להצטרף",
+    "btnPartners": "שותפים לדרך",
+    "btnContactPartners": "צרו איתנו קשר",
+    "btnJoinCommunity": "אני רוצה להצטרף",
+    "scrollDown": "גללו למטה",
+    "footer": {
+      "contactTitle": "יצירת קשר",
+      "phone": "טלפון",
+      "whatsapp": "וואטסאפ",
+      "email": "דוא״ל",
+      "instagram": "אינסטגרם",
+      "facebook": "פייסבוק",
+      "accessibility": "הצהרת נגישות",
+      "privacy": "מדיניות פרטיות",
+      "copyright": "© {year} חלוצי נוף. כל הזכויות שמורות."
+    },
+    "placeholders": {
+      "phone": "[מספר טלפון]",
+      "whatsapp": "[מספר וואטסאפ]",
+      "email": "[כתובת דוא״ל]",
+      "instagram": "[קישור לאינסטגרם]",
+      "facebook": "[קישור לפייסבוק]",
+      "legalName": "[שם הגוף המשפטי]"
+    },
+    "todo": {
+      "photo": "תמונה זו אינה מורשית ותוחלף בתמונה מורשית.",
+      "family": "מספר המשפחות טרם אומת ואושר",
+      "memorial": "ממתין לאישור המשפחות",
+      "phone": "יש להזין מספר טלפון / וואטסאפ",
+      "email": "יש להזין כתובת דוא״ל",
+      "instagram": "יש להזין קישור לאינסטגרם",
+      "facebook": "יש להזין קישור לפייסבוק",
+      "form": "יעד שליחת הטופס טרם הוגדר (יחובר בהמשך באמצעות תוסף)",
+      "formDemo": "הטופס אינו מחובר עדיין — פנייה זו לא נשלחה לאף גורם",
+      "legal": "שם הגוף המשפטי / מעמד משפטי טרם נקבעו",
+      "generic": "יש להשלים"
+    },
+    "form": {
+      "title": "השאירו פרטים",
+      "name": "שם מלא",
+      "phone": "טלפון",
+      "email": "דוא״ל",
+      "contactHint": "יש למלא טלפון או דוא״ל (לפחות אחד מהם)",
+      "type": "סוג הפנייה",
+      "typeJoin": "הצטרפות לקהילה",
+      "typePartner": "שותפות / שיתוף פעולה",
+      "typeGeneral": "פנייה כללית",
+      "message": "ספרו לנו בקצרה על עצמכם / על הפנייה",
+      "consent": "אני מסכים/ה שיחזרו אליי. קראתי את",
+      "consentLink": "מדיניות הפרטיות",
+      "required": "שדה חובה",
+      "submit": "שליחה",
+      "errName": "נא להזין שם מלא.",
+      "errContact": "נא להזין טלפון או דוא״ל.",
+      "errEmail": "כתובת הדוא״ל אינה תקינה.",
+      "errPhone": "מספר הטלפון אינו תקין.",
+      "errConsent": "יש לאשר את ההסכמה כדי להמשיך.",
+      "errorSummary": "יש לתקן את השדות המסומנים:",
+      "success": "תודה! פנייתכם התקבלה ונחזור אליכם בהקדם.",
+      "failure": "אירעה שגיאה בשליחה. נסו שוב מאוחר יותר או פנו אלינו ישירות."
+    },
+    "events": {
+      "date": "תאריך",
+      "place": "מקום"
+    },
+    "a11y": {
+      "button": "תפריט נגישות",
+      "title": "נגישות",
+      "close": "סגור",
+      "bigger": "הגדל טקסט",
+      "smaller": "הקטן טקסט",
+      "contrast": "ניגודיות גבוהה",
+      "underline": "הדגשת קישורים",
+      "reset": "איפוס"
+    },
+    "notFound": {
+      "title": "העמוד לא נמצא",
+      "text": "מצטערים, העמוד שחיפשתם אינו קיים.",
+      "back": "חזרה לדף הבית"
+    },
+    "langOffer": {
+      "text": "Your browser is set to English. This site is also available in English.",
+      "go": "View in English",
+      "dismiss": "Not now"
+    }
+  },
+  "en": {
+    "siteName": "Halutzei Nof",
+    "siteNameLatin": "Halutzei Nof",
+    "logoAlt": "Halutzei Nof — Star of David above mountains (Hebrew logo)",
+    "skip": "Skip to main content",
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "vision": "Vision",
+      "community": "Community",
+      "partners": "Partners",
+      "contact": "Contact Us"
+    },
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "menuLabel": "Main menu",
+    "langLabel": "Change language",
+    "langSwitchTo": "עברית",
+    "langSwitchAria": "החלפה לעברית",
+    "btnJoin": "I Want to Join",
+    "btnPartners": "Partners on the Journey",
+    "btnContactPartners": "Get in touch",
+    "btnJoinCommunity": "I Want to Join",
+    "scrollDown": "Scroll down",
+    "footer": {
+      "contactTitle": "Contact",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "accessibility": "Accessibility Statement",
+      "privacy": "Privacy Policy",
+      "copyright": "© {year} Halutzei Nof. All rights reserved."
+    },
+    "placeholders": {
+      "phone": "[Phone number]",
+      "whatsapp": "[WhatsApp number]",
+      "email": "[Email address]",
+      "instagram": "[Instagram link]",
+      "facebook": "[Facebook link]",
+      "legalName": "[Legal entity name]"
+    },
+    "todo": {
+      "photo": "This is not a licensed photo. It will be replaced with a licensed photo.",
+      "family": "family count not yet verified or approved",
+      "memorial": "awaiting approval from the families",
+      "phone": "phone / WhatsApp number to be added",
+      "email": "email address to be added",
+      "instagram": "Instagram link to be added",
+      "facebook": "Facebook link to be added",
+      "form": "form destination not set (a plug-in will be added later)",
+      "formDemo": "the form is not connected yet — this submission was not sent to anyone",
+      "legal": "legal entity name / legal status not yet determined",
+      "generic": "to be completed"
+    },
+    "form": {
+      "title": "Leave your details",
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "contactHint": "Please provide a phone number or an email (at least one)",
+      "type": "Inquiry type",
+      "typeJoin": "Joining the community",
+      "typePartner": "Partnership / collaboration",
+      "typeGeneral": "General inquiry",
+      "message": "Tell us briefly about yourself / your inquiry",
+      "consent": "I agree to be contacted back. I have read the",
+      "consentLink": "Privacy Policy",
+      "required": "Required",
+      "submit": "Send",
+      "errName": "Please enter your full name.",
+      "errContact": "Please enter a phone number or an email.",
+      "errEmail": "The email address is not valid.",
+      "errPhone": "The phone number is not valid.",
+      "errConsent": "Please confirm your consent to continue.",
+      "errorSummary": "Please fix the highlighted fields:",
+      "success": "Thank you! Your message was received and we will get back to you soon.",
+      "failure": "Something went wrong while sending. Please try again later or contact us directly."
+    },
+    "events": {
+      "date": "Date",
+      "place": "Place"
+    },
+    "a11y": {
+      "button": "Accessibility menu",
+      "title": "Accessibility",
+      "close": "Close",
+      "bigger": "Larger text",
+      "smaller": "Smaller text",
+      "contrast": "High contrast",
+      "underline": "Underline links",
+      "reset": "Reset"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "text": "Sorry, the page you were looking for does not exist.",
+      "back": "Back to home"
+    },
+    "langOffer": {
+      "text": "",
+      "go": "",
+      "dismiss": ""
+    }
+  }
+}

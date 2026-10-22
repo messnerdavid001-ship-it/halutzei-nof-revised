@@ -1,0 +1,52 @@
+{
+  "he": {
+    "seoTitle": "שותפים לדרך — חלוצי נוף",
+    "seoDescription": "חלוצי נוף פונה למועצות אזוריות, לאגף ההתיישבות, לגופים ציבוריים ולאנשי מקצוע ובוחנת דרכי שיתוף פעולה.",
+    "title": "שותפים לדרך",
+    "intro": "הקמת קהילה ויישוב אינה משימה של קבוצה אחת. אנחנו פונים לגופים, לארגונים ולאנשי מקצוע שיכולים ללוות, להדריך ולשתף פעולה, ובוחנים יחד איתם את הדרך.",
+    "whoTitle": "אל מי אנחנו פונים",
+    "who": [
+      "מועצות אזוריות",
+      "אגף ההתיישבות",
+      "גופים ציבוריים",
+      "אנשי מקצוע ויועצים",
+      "ארגונים בעלי ניסיון בהקמת קהילות ויישובים",
+      "שותפים אסטרטגיים"
+    ],
+    "kindsTitle": "איזה שיתוף פעולה אנחנו מחפשים",
+    "kinds": [
+      "הדרכה ויעוץ בנושאי מסלולים משפטיים ותכנוניים",
+      "ליווי מקצועי: תכנון, משפט, כלכלה וארגון קהילתי",
+      "שיתוף בניסיון של קהילות ויישובים שהוקמו",
+      "קשר עם מועצות אזוריות לבחינת אפשרויות מיקום",
+      "חיבור לאנשים ולארגונים שיכולים לסייע בבניית הגרעין"
+    ],
+    "disclaimer": "נכון להיום אנחנו פונים ובוחנים אפשרויות בלבד. אין לנו הסכם, שותפות רשמית או אישור מאף גוף, ואיננו מציגים זאת כך.",
+    "ctaText": "אם אתם יכולים לסייע או סקרנים לשמוע עוד, נשמח ליצור קשר."
+  },
+  "en": {
+    "seoTitle": "Partners on the Journey — Halutzei Nof",
+    "seoDescription": "Halutzei Nof is reaching out to regional councils, the Settlement Division, public bodies and professionals, and exploring ways to collaborate.",
+    "title": "Partners on the Journey",
+    "intro": "Establishing a community and a settlement is not a task for one group alone. We are reaching out to bodies, organizations and professionals who can accompany, guide and collaborate, and we are exploring the path together with them.",
+    "whoTitle": "Who We Are Reaching Out To",
+    "who": [
+      "Regional councils",
+      "The Settlement Division",
+      "Public bodies",
+      "Professionals and consultants",
+      "Organizations experienced in establishing communities and settlements",
+      "Strategic partners"
+    ],
+    "kindsTitle": "The Collaboration We Are Looking For",
+    "kinds": [
+      "Guidance and advice on legal and planning pathways",
+      "Professional support: planning, legal, economic and community organization",
+      "Sharing the experience of communities and settlements already established",
+      "Contact with regional councils to explore location options",
+      "Connections to people and organizations who can help build the core group"
+    ],
+    "disclaimer": "At this stage we are only reaching out and exploring options. We have no agreement, formal partnership or endorsement from any body, and we do not present it as such.",
+    "ctaText": "If you can help, or are curious to hear more, we would be glad to be in touch."
+  }
+}

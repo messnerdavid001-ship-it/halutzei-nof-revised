@@ -1,0 +1,25 @@
+---
+import ContactDetails from './ContactDetails.astro';
+import { getUi, pagePath, settings, todoMark, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = getUi(lang);
+const year = new Date().getFullYear();
+const legal = settings.legalName[lang];
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <h2 class="footer-title">{t.footer.contactTitle}</h2>
+    <ContactDetails lang={lang} />
+    <p class="footer-links">
+      <a href={pagePath('accessibility', lang)}>{t.footer.accessibility}</a>
+      <span aria-hidden="true">·</span>
+      <a href={pagePath('privacy', lang)}>{t.footer.privacy}</a>
+    </p>
+    <p class="copyright">
+      {t.footer.copyright.replace('{year}', String(year))}
+      {legal ? ` ${legal}` : ''}
+      <Fragment set:html={legal ? '' : todoMark('legal', lang)} />
+    </p>
+  </div>
+</footer>

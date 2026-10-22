@@ -1,0 +1,19 @@
+{
+  "showTodo": true,
+  "donateEnabled": false,
+  "familyCountVerified": false,
+  "memorialApproved": false,
+  "homePhotoLicensed": false,
+  "siteUrl": "",
+  "phone": "",
+  "whatsapp": "",
+  "email": "",
+  "instagram": "",
+  "facebook": "",
+  "formAction": "",
+  "legalName": { "he": "", "en": "" },
+  "homeBackground": "/photos/home-village.jpg",
+  "aboutBackground": "/photos/about-soldiers.jpg",
+  "visionBackground": "/photos/vision-sunset.jpg",
+  "communityBackground": "/photos/community-group.jpg"
+}

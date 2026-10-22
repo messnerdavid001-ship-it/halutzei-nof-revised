@@ -1,0 +1,27 @@
+---
+import Pic from './Pic.astro';
+import { getUi, pagePath, NAV, NAV_KEYS, type Lang } from '../lib/site';
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const t = getUi(lang);
+const other: Lang = lang === 'he' ? 'en' : 'he';
+---
+<header class="site-header" data-header>
+  <div class="header-inner">
+    <a class="brand" href={pagePath('index', lang)} aria-label={t.siteName}>
+      <Pic src="/photos/logo.png" alt={t.logoAlt} sizes="120px" loading="eager" />
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-btn
+      data-open={t.menuOpen} data-close={t.menuClose} aria-label={t.menuOpen}>
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label={t.menuLabel} data-nav>
+      <ul>
+        {NAV.map((s) => (
+          <li><a href={pagePath(s, lang)} aria-current={s === slug ? 'page' : undefined}>{(t.nav as any)[NAV_KEYS[s]]}</a></li>
+        ))}
+      </ul>
+      <a class="lang-toggle" href={pagePath(slug === '404' ? 'index' : slug, other)} hreflang={other} lang={other} data-lang-toggle={other} aria-label={t.langSwitchAria}>{t.langSwitchTo}</a>
+    </nav>
+  </div>
+</header>

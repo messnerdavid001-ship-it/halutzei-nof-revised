@@ -1,0 +1,37 @@
+---
+import { getUi, settings, contactValue, todoMark, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = getUi(lang);
+const kinds = ['phone', 'whatsapp', 'email', 'instagram', 'facebook'] as const;
+const items = kinds
+  .map((k) => {
+    const v = contactValue(k);
+    const digits = (v || '').replace(/[^\d]/g, '');
+    const href =
+      k === 'phone' ? `tel:${v}` :
+      k === 'whatsapp' ? `https://wa.me/${digits}` :
+      k === 'email' ? `mailto:${v}` : v;
+    return { k, v, href, label: (t.footer as any)[k], placeholder: (t.placeholders as any)[k], mark: todoMark(k === 'whatsapp' ? 'phone' : k, lang) };
+  })
+  .filter((i) => i.v || settings.showTodo);
+const icon = {
+  instagram: 'M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm5.2-2.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z',
+  facebook: 'M13.5 21v-8h2.7l.4-3.2h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.5c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.7V13h2.7v8h3.1z',
+} as Record<string, string>;
+---
+<ul class="cd">
+  {items.map((i) => (
+    <li>
+      {i.v ? (
+        <a href={i.href} {...(i.k === 'instagram' || i.k === 'facebook' || i.k === 'whatsapp' ? { target: '_blank', rel: 'noopener' } : {})}>
+          {icon[i.k] && <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor" fill-rule="evenodd"><path d={icon[i.k]} /></svg>}
+          <span>{i.label}{i.k === 'instagram' || i.k === 'facebook' ? '' : ': '}{i.k === 'instagram' || i.k === 'facebook' ? '' : <bdi dir="ltr">{i.v}</bdi>}</span>
+        </a>
+      ) : (
+        <span class="cd-ph">{i.label}: <bdi>{i.placeholder}</bdi></span>
+      )}
+      <Fragment set:html={i.v ? '' : i.mark} />
+    </li>
+  ))}
+</ul>

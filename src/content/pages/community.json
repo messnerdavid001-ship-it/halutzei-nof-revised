@@ -1,0 +1,52 @@
+{
+  "he": {
+    "seoTitle": "הקהילה — חלוצי נוף",
+    "seoDescription": "מי מתאים לקהילת חלוצי נוף, איך מתנהלת ההיכרות, ומה פירושה של מחויבות לחיי קהילה.",
+    "title": "הקהילה",
+    "backgroundAlt": "תצלום לילה קבוצתי של צעירים וצעירות, ומבני העיר ברקע",
+    "fitTitle": "מי מתאים לנו",
+    "fit": "הקהילה פונה בראש ובראשונה למשפחות ולזוגות נשואים. גם רווקים ורווקות החולקים את הערכים שלנו מוזמנים להצטרף.\n\nמה שחשוב לנו הוא התאמה לערכים, מחויבות אישית, השתתפות פעילה ורצון אמיתי לבנות יחד.\n\nאנחנו מקבלים בברכה אנשים מרקעים שונים וברמות שונות של שמירת מצוות, מתוך כבוד הדדי וללא כפייה דתית.",
+    "audienceTitle": "אנחנו פונים אל",
+    "audience": [
+      "זוגות צעירים",
+      "משפחות בתחילת דרכן",
+      "משוחררי צה״ל",
+      "חיילים בודדים",
+      "עולים חדשים",
+      "כל מי שרוצה לסייע בבניית קהילה ויישוב לטווח ארוך"
+    ],
+    "processTitle": "היכרות הדדית",
+    "process": "התהליך מתחיל בשיחת היכרות, ממשיך בפגישות, ומתוך היכרות הדדית נבחן אם ההצטרפות מתאימה לשני הצדדים. זהו תיאור כללי של הדרך; אין כאן שלבים או לוחות זמנים קבועים.",
+    "commitmentTitle": "מה פירושה של מחויבות לחיי קהילה",
+    "commitment": "חיי קהילה הם יותר ממגורים בסמיכות. הם כוללים נכונות לתרום מהזמן ומהיכולות, לשתף פעולה, לשאת באחריות הדדית, ליטול חלק בקבלת החלטות ולהשקיע בבניית הקהילה לאורך זמן, גם כשהדרך מאתגרת.",
+    "eventsTitle": "אירועים",
+    "eventsEmpty": "כרגע אין אירועים מתוכננים. צרו קשר ונעדכן אתכם כשיהיו.",
+    "ctaTitle": "מעוניינים להכיר?",
+    "ctaText": "נשמח לשיחת היכרות עם משפחות ויחידים שהדרך שלנו מדברת אליהם."
+  },
+  "en": {
+    "seoTitle": "Community — Halutzei Nof",
+    "seoDescription": "Who is a good fit for the Halutzei Nof community, how getting to know each other works, and what commitment to community life means.",
+    "title": "Our Community",
+    "backgroundAlt": "A night group photo of young men and women with city buildings behind them",
+    "fitTitle": "Who Is a Good Fit",
+    "fit": "The community is aimed first and foremost at families and married couples. Singles who share our values are also welcome to join.\n\nWhat matters to us is alignment with our values, personal commitment, active participation and a genuine desire to build together.\n\nWe welcome people from diverse backgrounds and levels of observance, with mutual respect and no religious coercion.",
+    "audienceTitle": "We are reaching out to",
+    "audience": [
+      "Young couples",
+      "Families in the early stages",
+      "Discharged soldiers",
+      "Lone soldiers",
+      "Olim",
+      "Anyone who wants to help build a community and a long-term settlement"
+    ],
+    "processTitle": "Getting to Know Each Other",
+    "process": "The process begins with an introductory conversation, continues with meetings, and through mutual acquaintance we consider whether joining is right for both sides. This is a general description of the path; there are no fixed steps or timelines here.",
+    "commitmentTitle": "What Commitment to Community Life Means",
+    "commitment": "Community life is more than living nearby. It means a willingness to contribute time and abilities, to cooperate, to take mutual responsibility, to take part in decisions, and to invest in building the community over the long term, even when the road is challenging.",
+    "eventsTitle": "Events",
+    "eventsEmpty": "There are no events scheduled right now. Get in touch and we will let you know when there are.",
+    "ctaTitle": "Interested in getting to know us?",
+    "ctaText": "We would be glad to have an introductory conversation with families and individuals whose path is similar to ours."
+  }
+}

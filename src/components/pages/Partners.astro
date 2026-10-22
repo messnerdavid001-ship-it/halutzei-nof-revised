@@ -1,0 +1,25 @@
+---
+import BandHero from '../BandHero.astro';
+import Section from '../Section.astro';
+import TextBlock from '../TextBlock.astro';
+import ListBlock from '../ListBlock.astro';
+import Button from '../Button.astro';
+import { getPage, getUi, pagePath, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('partners', lang);
+const t = getUi(lang);
+---
+<BandHero title={p.title} />
+<Section tone="white">
+  <TextBlock text={p.intro} lang={lang} />
+</Section>
+<Section tone="white" title={p.whoTitle}>
+  <ListBlock items={p.who} lang={lang} cols />
+</Section>
+<Section tone="white" title={p.kindsTitle}>
+  <ListBlock items={p.kinds} lang={lang} />
+  <p class="note">{p.disclaimer}</p>
+  <TextBlock text={p.ctaText} lang={lang} />
+  <div class="btn-row"><Button href={`${pagePath('contact', lang)}?type=partner`}>{t.btnContactPartners}</Button></div>
+</Section>

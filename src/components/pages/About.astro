@@ -1,0 +1,35 @@
+---
+import PhotoHero from '../PhotoHero.astro';
+import Section from '../Section.astro';
+import TextBlock from '../TextBlock.astro';
+import ListBlock from '../ListBlock.astro';
+import Pic from '../Pic.astro';
+import { getPage, settings, todoMark, inline, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('about', lang);
+---
+<PhotoHero src={settings.aboutBackground} alt={p.backgroundAlt} variant="about" lang={lang}>
+  <h1 class="hero-title">{p.title}</h1>
+</PhotoHero>
+<Section tone="navy" title={p.storyTitle}>
+  <TextBlock text={p.story} lang={lang} />
+</Section>
+<Section tone="white" title={p.principlesTitle}>
+  <ListBlock items={p.principles} lang={lang} />
+</Section>
+<Section tone="navy" title={p.memorialTitle} id="memorial">
+  <TextBlock text={p.memorialIntro} lang={lang} />
+  <p class="memorial-todo" set:html={todoMark('memorial', lang)} />
+  <ul class="memorials">
+    {p.memorials.map((m: any) => (
+      <li class="memorial">
+        <div class="memorial-photo">
+          {m.photo ? <Pic src={m.photo} alt={m.photoAlt || m.name} sizes="220px" /> : <span aria-hidden="true"></span>}
+        </div>
+        <h3 set:html={inline(m.name, lang)} />
+        <p set:html={inline(m.text, lang)} />
+      </li>
+    ))}
+  </ul>
+</Section>

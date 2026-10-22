@@ -1,0 +1,21 @@
+---
+import Pic from './Pic.astro';
+import { getUi, type Lang } from '../lib/site';
+interface Props { src: string; alt: string; variant: 'home' | 'about' | 'vision' | 'community'; lang: Lang }
+const { src, alt, variant, lang } = Astro.props;
+const t = getUi(lang);
+---
+<div class="bg" data-bg data-variant={variant}>
+  <Pic src={src} alt={alt} sizes="100vw" loading="eager" fetchpriority="high" />
+  <div class="bg-dim"></div>
+</div>
+<section class="hero" data-variant={variant}>
+  <div class="hero-inner">
+    <slot />
+  </div>
+  <div class="hero-foot">
+    <slot name="marker" />
+    <a class="scroll-hint" href="#content" aria-label={t.scrollDown}><span aria-hidden="true"></span></a>
+  </div>
+</section>
+<div id="content" class="content-fade" aria-hidden="true"></div>

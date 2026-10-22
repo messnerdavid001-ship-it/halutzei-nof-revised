@@ -1,0 +1,6 @@
+---
+import { richText, type Lang } from '../lib/site';
+interface Props { text: string; lang: Lang }
+const { text, lang } = Astro.props;
+---
+<div class="prose" set:html={richText(text, lang)} />

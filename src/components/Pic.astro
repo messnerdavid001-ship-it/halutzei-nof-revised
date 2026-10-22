@@ -1,0 +1,36 @@
+---
+import { imgInfo } from '../lib/site';
+interface Props {
+  src: string;
+  alt?: string;
+  sizes?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  class?: string;
+  style?: string;
+}
+const { src, alt = '', sizes = '100vw', loading = 'lazy', fetchpriority, class: cls, style } = Astro.props;
+const info = imgInfo(src);
+const set = (ext: string) => info!.widths.map((w) => `/photos/opt/${info!.name}-${w}.${ext} ${w}w`).join(', ');
+const biggest = info ? info.widths[info.widths.length - 1] : 0;
+---
+{info ? (
+  <picture>
+    <source type="image/webp" srcset={set('webp')} sizes={sizes} />
+    <img
+      src={`/photos/opt/${info.name}-${biggest}.${info.fallback}`}
+      srcset={set(info.fallback)}
+      sizes={sizes}
+      width={info.width}
+      height={info.height}
+      alt={alt}
+      loading={loading}
+      decoding="async"
+      fetchpriority={fetchpriority}
+      class={cls}
+      style={style}
+    />
+  </picture>
+) : (
+  <img src={src} alt={alt} loading={loading} decoding="async" class={cls} style={style} />
+)}

@@ -1,0 +1,8 @@
+---
+import { inline, type Lang } from '../lib/site';
+interface Props { items: string[]; lang: Lang; cols?: boolean }
+const { items, lang, cols = false } = Astro.props;
+---
+<ul class:list={['list', { 'list--cols': cols }]}>
+  {items.map((i) => <li set:html={inline(i, lang)} />)}
+</ul>

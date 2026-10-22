@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import BandHero from '../components/BandHero.astro';
+import Section from '../components/Section.astro';
+import Button from '../components/Button.astro';
+import { getUi } from '../lib/site';
+const t = getUi('he');
+const e = getUi('en');
+---
+<BaseLayout lang="he" slug="404" title={t.notFound.title} noindex>
+  <BandHero title={t.notFound.title} />
+  <Section tone="white">
+    <p class="empty">{t.notFound.text}</p>
+    <div class="btn-row"><Button href="/">{t.notFound.back}</Button></div>
+    <p class="empty" lang="en" dir="ltr">{e.notFound.text} <a href="/en/">{e.notFound.back}</a></p>
+  </Section>
+</BaseLayout>

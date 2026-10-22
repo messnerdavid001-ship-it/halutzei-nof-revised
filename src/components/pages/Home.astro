@@ -1,0 +1,38 @@
+---
+import PhotoHero from '../PhotoHero.astro';
+import Section from '../Section.astro';
+import TextBlock from '../TextBlock.astro';
+import Button from '../Button.astro';
+import Pic from '../Pic.astro';
+import { getPage, getUi, pagePath, settings, todoMark, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('index', lang);
+const t = getUi(lang);
+const photos = (p.photos || []).filter((x: any) => x.image);
+const slots = 2;
+---
+<PhotoHero src={settings.homeBackground} alt={p.backgroundAlt} variant="home" lang={lang}>
+  <Pic class="hero-logo" src="/photos/logo.png" alt={t.logoAlt} sizes="(min-width: 768px) 400px, 62vw" loading="eager" fetchpriority="high" />
+  <h1 class="tagline">{p.tagline}</h1>
+  <div class="btn-row">
+    <Button href={`${pagePath('contact', lang)}?type=join`}>{t.btnJoin}</Button>
+    <Button href={`${pagePath('contact', lang)}?type=partner`} variant="light">{t.btnPartners}</Button>
+  </div>
+  <p slot="marker" class="hero-marker" set:html={todoMark('photo', lang)} />
+</PhotoHero>
+<Section tone="navy" title={p.introTitle}>
+  <TextBlock text={p.intro} lang={lang} />
+</Section>
+<Section tone="white">
+  <div class="photo-slots">
+    {Array.from({ length: slots }).map((_, i) => {
+      const ph = photos[i];
+      return ph ? (
+        <figure class="slot"><Pic src={ph.image} alt={ph.alt} sizes="(min-width: 768px) 460px, 90vw" /></figure>
+      ) : (
+        <div class="slot slot--empty" aria-hidden="true"></div>
+      );
+    })}
+  </div>
+</Section>

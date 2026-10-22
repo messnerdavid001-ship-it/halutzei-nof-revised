@@ -1,0 +1,30 @@
+---
+import PhotoHero from '../PhotoHero.astro';
+import Section from '../Section.astro';
+import TextBlock from '../TextBlock.astro';
+import ListBlock from '../ListBlock.astro';
+import { getPage, settings, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('vision', lang);
+---
+<PhotoHero src={settings.visionBackground} alt={p.backgroundAlt} variant="vision" lang={lang}>
+  <h1 class="hero-title">{p.title}</h1>
+</PhotoHero>
+<Section tone="navy">
+  <TextBlock text={p.intro} lang={lang} />
+</Section>
+<Section tone="white" title={p.valuesTitle}>
+  <ul class="cards">
+    {p.values.map((v: any) => (
+      <li class="card"><h3>{v.title}</h3><p>{v.text}</p></li>
+    ))}
+  </ul>
+</Section>
+<Section tone="navy" title={p.futureTitle}>
+  <TextBlock text={p.goal} lang={lang} />
+  <h3 class="subhead">{p.elementsTitle}</h3>
+  <ListBlock items={p.elements} lang={lang} cols />
+  <p class="note">{p.disclaimer}</p>
+  <TextBlock text={p.economy} lang={lang} />
+</Section>

@@ -1,0 +1,72 @@
+---
+import '@fontsource-variable/heebo';
+import '../styles/site.css';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import A11yMenu from './A11yMenu.astro';
+import { getUi, pagePath, pageUrl, isRtl, siteRoot, SLUGS, type Lang } from '../lib/site';
+
+interface Props { lang: Lang; slug: string; title: string; description?: string; noindex?: boolean; ogImage?: string }
+const { lang, slug, title, description = '', noindex = false, ogImage = '/photos/opt/home-village-1276.jpg' } = Astro.props;
+const t = getUi(lang);
+const other: Lang = lang === 'he' ? 'en' : 'he';
+const hasAlt = SLUGS.includes(slug as any);
+const root = siteRoot();
+const abs = (p: string) => (root ? root + p : p);
+---
+<!doctype html>
+<html lang={lang} dir={isRtl(lang) ? 'rtl' : 'ltr'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="theme-color" content="#00173a" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    {root && <link rel="canonical" href={pageUrl(slug, lang)} />}
+    {hasAlt && !noindex && (
+      <>
+        <link rel="alternate" hreflang="he" href={abs(pagePath(slug, 'he'))} />
+        <link rel="alternate" hreflang="en" href={abs(pagePath(slug, 'en'))} />
+        <link rel="alternate" hreflang="x-default" href={abs(pagePath(slug, 'he'))} />
+      </>
+    )}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={t.siteNameLatin} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:locale" content={lang === 'he' ? 'he_IL' : 'en_US'} />
+    <meta property="og:locale:alternate" content={other === 'he' ? 'he_IL' : 'en_US'} />
+    <meta property="og:image" content={abs(ogImage)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline>
+      try {
+        var d = document.documentElement, p = JSON.parse(localStorage.getItem('a11y') || '{}');
+        if (p.fs) d.style.fontSize = p.fs + '%';
+        if (p.hc) d.classList.add('hc');
+        if (p.ul) d.classList.add('ul');
+      } catch (e) {}
+    </script>
+  </head>
+  <body data-lang={lang}>
+    <a class="skip" href="#main">{t.skip}</a>
+    <Header lang={lang} slug={slug} />
+    {lang === 'he' && (
+      <div class="lang-offer" data-lang-offer hidden lang="en" dir="ltr">
+        <span>{t.langOffer.text}</span>
+        <a href={pagePath(slug, 'en')} data-lang-toggle="en">{t.langOffer.go}</a>
+        <button type="button" data-lang-offer-close>{t.langOffer.dismiss}</button>
+      </div>
+    )}
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <A11yMenu lang={lang} />
+    <script>
+      import '../scripts/site.ts';
+    </script>
+  </body>
+</html>
