@@ -21,8 +21,8 @@
       {
         "name": "סרן גל שבת ז״ל",
         "text": "סרן, מפקד היחידה שלנו.",
-        "photo": "",
-        "photoAlt": ""
+        "photo": "/photos/gal-shabat.jpg",
+        "photoAlt": "תצלום של סרן גל שבת ז״ל"
       },
       {
         "name": "רועי בית יעקב ז״ל",
@@ -39,8 +39,8 @@
       {
         "name": "אילן כהן ז״ל",
         "text": "רימונאי ביחידה שלנו.",
-        "photo": "",
-        "photoAlt": ""
+        "photo": "/photos/ilan-cohen.webp",
+        "photoAlt": "תצלום של אילן כהן ז״ל"
       },
       {
         "name": "בצלאל שעשוע ז״ל",
@@ -78,8 +78,8 @@
       {
         "name": "Captain Gal Shabat, of blessed memory",
         "text": "Captain, the commander of our unit.",
-        "photo": "",
-        "photoAlt": ""
+        "photo": "/photos/gal-shabat.jpg",
+        "photoAlt": "Photo of Captain Gal Shabat, of blessed memory"
       },
       {
         "name": "Roi Bet Yaakov, of blessed memory",
@@ -96,8 +96,8 @@
       {
         "name": "Ilan Cohen, of blessed memory",
         "text": "A grenadier in our unit.",
-        "photo": "",
-        "photoAlt": ""
+        "photo": "/photos/ilan-cohen.webp",
+        "photoAlt": "Photo of Ilan Cohen, of blessed memory"
       },
       {
         "name": "Betzalel Sha'ashua, of blessed memory",

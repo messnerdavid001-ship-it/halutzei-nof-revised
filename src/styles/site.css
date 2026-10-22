@@ -135,10 +135,12 @@ h3 { font-size: 1.3rem; }
 .card h3 { margin-bottom: .4em; }
 .card p { margin: 0; }
 
-.memorials { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+.memorials { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: 1fr; gap: 22px; }
+@media (min-width: 560px) { .memorials { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .memorials { grid-template-columns: repeat(3, 1fr); } }
 .memorial { border: 1px solid rgba(255,255,255,.5); border-radius: 14px; padding: 22px 18px; }
 .memorial-photo { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 14px; overflow: hidden; border: 2px solid #fff; background: rgba(255,255,255,.12); display: grid; place-items: center; }
-.memorial-photo img { width: 100%; height: 100%; object-fit: cover; }
+.memorial-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 28%; }
 .memorial h3 { margin: 0 0 .3em; font-size: 1.2rem; }
 .memorial p { margin: 0; font-size: .98rem; }
 .memorial-todo { margin: 0; }
