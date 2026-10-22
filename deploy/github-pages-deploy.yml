@@ -1,3 +1,5 @@
+# NOT ACTIVE yet. To turn on automatic publishing, move this file to .github/workflows/deploy.yml
+# (needs a GitHub token with the "workflow" scope, and GitHub Pages enabled for the repo).
 # Every push to `main` (including each "Publish" in the /admin panel) rebuilds
 # the site and publishes it to GitHub Pages.
 name: Deploy to GitHub Pages
