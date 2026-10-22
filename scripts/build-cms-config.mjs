@@ -1,5 +1,16 @@
 // Generates public/admin/config.yml (Decap CMS) so Hebrew/English fields stay in sync.
 import fs from 'node:fs';
+import { execSync } from 'node:child_process';
+
+// GitHub repo the CMS commits to: set by GitHub Actions, else read from the local git remote.
+const repo = (() => {
+  if (process.env.GITHUB_REPOSITORY) return process.env.GITHUB_REPOSITORY;
+  try {
+    const m = execSync('git remote get-url origin', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().match(/github\.com[:/](.+?)(\.git)?\s*$/);
+    if (m) return m[1];
+  } catch { /* no remote yet */ }
+  return 'OWNER/REPO';
+})();
 
 const y = (o, ind = 0) => {
   const pad = '  '.repeat(ind);
@@ -104,7 +115,7 @@ const settingsFields = [
 ];
 
 const config = {
-  backend: { name: 'git-gateway', branch: 'main' },
+  backend: { name: 'github', repo, branch: 'main', commit_messages: { create: 'Edit: create {{collection}} "{{slug}}"', update: 'Edit: update {{collection}} "{{slug}}"', delete: 'Edit: delete {{collection}} "{{slug}}"', uploadMedia: 'Edit: upload photo "{{path}}"', deleteMedia: 'Edit: delete photo "{{path}}"' } },
   local_backend: true,
   site_url: '/',
   locale: 'he',

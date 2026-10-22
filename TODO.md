@@ -28,4 +28,5 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 - [ ] **Legal review** of the Accessibility Statement and Privacy Policy templates (Israeli law; IS 5568).
 - [ ] **Donate page** — keep OFF until the legal framework and donation mechanism exist.
 - [ ] **Open Graph image** — currently the Home photo; consider a dedicated 1200×630 image.
-- [ ] **Netlify Identity / Git Gateway** — confirm it is still available on the free plan when setting up (see README-FOR-DAVE.md).
+- [ ] **GitHub Pages needs a public repository on a free GitHub account** — decide: make the repo public (then the unlicensed photo and drafts are public too), upgrade GitHub, or use another host.
+- [ ] **Admin sign-in** uses a GitHub personal access token (works for one editor). For several editors, set up the free GitHub OAuth proxy later.

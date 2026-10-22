@@ -19,14 +19,18 @@ export function getPage(key: string, lang: Lang) {
 
 export const isRtl = (lang: Lang) => lang === 'he';
 
+/** Prefix a root-relative path ("/photos/x.jpg") with the site's base path (GitHub project Pages). */
+export const BASE = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+export const withBase = (p: string) => (p.startsWith('/') && !p.startsWith(BASE + '/') ? BASE + p : p);
+
 export function pagePath(slug: string, lang: Lang) {
-  const base = lang === 'en' ? '/en' : '';
-  return slug === 'index' ? `${base}/` : `${base}/${slug}/`;
+  const lp = lang === 'en' ? '/en' : '';
+  return BASE + (slug === 'index' ? `${lp}/` : `${lp}/${slug}/`);
 }
 
-/** Absolute site address: CMS setting, else the address the host (Netlify) provides at build time. */
+/** Absolute site origin: CMS setting, else SITE_URL from the deploy build (origin only, no base path). */
 export const siteRoot = () =>
-  (settings.siteUrl || (typeof process !== 'undefined' ? process.env.URL : '') || '').replace(/\/$/, '');
+  (settings.siteUrl || (typeof process !== 'undefined' ? process.env.SITE_URL : '') || '').replace(/\/$/, '');
 
 export function pageUrl(slug: string, lang: Lang) {
   const root = siteRoot();

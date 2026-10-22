@@ -1,25 +1,22 @@
 # Halutzei Nof website — guide for Dave
 
-You do not need to code. Everything you will want to change is in the **admin panel** at:
+You do not need to code. Everything you will want to change is in the **admin panel**:
 
-**`https://YOUR-SITE-ADDRESS/admin`**
+**`https://YOUR-SITE-ADDRESS/admin/`**
 
-(Replace `YOUR-SITE-ADDRESS` with the temporary address you were given, for example `halutzei-nof.netlify.app`.)
-
-After you press **Publish** in the admin panel, the site updates by itself in about **1–2 minutes**. Nothing you do there can break the site: every change is saved with a history and can be undone by the person who helps you (see the last section).
+How it works, in one line: when you press **Publish** in the admin panel, your edit is saved as a **commit on GitHub**, and GitHub then rebuilds and publishes the site by itself in about **1–2 minutes**. There is no other hosting company involved. Every edit is in the GitHub history, so anything can be undone.
 
 ---
 
 ## 1. Log in and edit text
 
-1. Go to `/admin` and click **Login**.
-2. Enter your email and password. (The first time, use the invitation email — see "First-time setup" below.)
+1. Go to `/admin/` and click **Sign in with token** (see "First-time setup" below for how to make the token once; the browser remembers it).
 3. On the left you will see:
    - **עמודים / Pages** — Home, About, Vision, Community, Partners, Contact, Accessibility, Privacy.
    - **אירועים / Events** — the events list on the Community page.
    - **הגדרות / Settings** — contact details, background photos, on/off switches, and the fixed texts (menu, buttons, form, footer).
 4. Click a page. You will see two boxes: **עברית (Hebrew)** and **English**. Every sentence on the page is in one of these fields.
-5. Change the text, then press **Save** and **Publish → Publish now** (top right).
+5. Change the text, then press **Save** (top right). Saving = publishing: the edit is committed to GitHub and the site rebuilds.
 
 Tips
 - A **blank line** inside a long text starts a new paragraph.
@@ -76,10 +73,10 @@ The Donate page exists but is **off**. It is not in the menu and not shown to Go
 
 ## 6. Connect your own domain later
 
-1. Buy a domain from any registrar (for example `halutzeinof.org.il` or `.co.il`).
-2. In **Netlify** (where the site lives): **Domain management → Add a domain** and follow the steps. Netlify tells you exactly which records to add at the registrar. This usually takes from a few minutes to a day.
-3. Netlify gives you a free HTTPS certificate automatically.
-4. Then: Admin → Settings → "Site address" → type the new address (for example `https://halutzeinof.org.il`) → Publish. (This helps Google understand the Hebrew and English versions.)
+1. Buy a domain from any registrar (for example `halutzeinof.org.il`).
+2. On GitHub: repository → **Settings → Pages → Custom domain** → type the domain → Save. GitHub shows the DNS records to add at the registrar (and gives a free HTTPS certificate).
+3. Add a file named `CNAME` in the `public` folder of the repository containing just the domain (your helper can do this in 2 minutes). From then on the site is built for the root of the domain automatically.
+4. Admin → Settings → "Site address" → type `https://your-domain` → Save.
 
 ## 7. The contact form
 
@@ -87,32 +84,34 @@ At the moment the form is **not connected**: visitors can fill it in but nothing
 
 | Service | Notes |
 |---|---|
-| **Netlify Forms** | Already included with Netlify's free plan — ask your helper to enable it (about 10 minutes of work). Limit: 100 submissions a month on the free plan. |
 | **Formspree** | Free plan. Create a form, copy the address it gives you (looks like `https://formspree.io/f/abcd1234`). |
 | **Web3Forms / Getform** | Similar to Formspree. |
 
-Once you have an address, paste it in Admin → Settings → "Form service URL" → Publish. The red note disappears and messages arrive by email.
+Once you have an address, paste it in Admin → Settings → "Form service URL" → Save. The red note disappears and messages arrive by email.
 
 Remember to fill in the Privacy Policy details (who receives the messages, how long they are kept) before launch.
 
-## 8. First-time setup (only once, done by your helper)
+## 8. First-time setup (only once)
 
-The admin panel needs a login system. We use **Netlify Identity** with **Git Gateway** (free plan). Your helper does this once:
+Hosting and editing both run on **GitHub** (free). Already done by Claude when the repository was created. You only need to:
 
-1. Put the project on GitHub and connect it to Netlify ("Import from Git").
-2. In Netlify: **Site configuration → Identity → Enable Identity**; then **Services → Git Gateway → Enable**.
-3. Identity → **Invite users** → type your email. You will receive an invitation email; click it, choose a password, and you land in `/admin`.
-4. Identity → Registration → set to **Invite only**.
+1. **Create your editing token** (this replaces a password):
+   - GitHub → your profile picture → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
+   - Name: `halutzei-nof admin`. Expiration: the longest allowed. **Repository access: only select repositories → halutzei-nof.**
+   - Permissions → Repository permissions → **Contents: Read and write** (and Metadata: Read).
+   - Generate, **copy the token** and keep it somewhere safe (a password manager).
+2. Open `https://YOUR-SITE-ADDRESS/admin/` → **Sign in with token** → paste it. Done. Do not share the token; if it leaks, delete it on the same GitHub page and make a new one.
+3. When the token expires (GitHub emails you), repeat step 1.
 
-> Netlify has changed its Identity plans in the past. If Identity or Git Gateway is not available on the free plan when this is set up, the alternative is the GitHub login for Decap CMS with Netlify's free GitHub OAuth. Tell your helper this note.
+Later, if other people should edit, ask your helper to set up the free GitHub login button for the admin panel (a small one-time job) so nobody needs tokens.
 
 ## 9. Who to ask for help, and what to tell them
 
-Ask any web developer who knows **Astro** and **Netlify** (a few hours of work for anything in this guide).
+Ask any web developer who knows **Astro** and **GitHub Actions** (a few hours of work for anything in this guide).
 
 Send them:
-- This folder / the GitHub repository for the site (`halutzei-nof`).
-- The text **"Astro static site, Decap CMS at /admin with Netlify Identity + Git Gateway, content is JSON files in `src/content`, config generated by `scripts/build-cms-config.mjs`, hosted on Netlify."**
+- The GitHub repository link.
+- This text: **"Astro static site on GitHub Pages, deployed by `.github/workflows/deploy.yml` on every push to main. Admin at /admin is Sveltia CMS (Decap-compatible) with the GitHub backend; content is JSON files in `src/content`; the CMS config is generated by `scripts/build-cms-config.mjs`."**
 - What you want to change, and a link to the page.
 
-If something looks wrong after you publish, tell them the time you published and what you changed — every change is saved in the history and can be rolled back in one step.
+If something looks wrong after you publish, tell them the time and what you changed — every edit is a commit in the repository history and can be reverted in one step. You can also see build status in the repository's **Actions** tab (a red ✗ means the last edit did not publish; the site keeps showing the previous version).

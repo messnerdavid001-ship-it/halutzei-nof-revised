@@ -4,7 +4,7 @@ import '../styles/site.css';
 import Header from './Header.astro';
 import Footer from './Footer.astro';
 import A11yMenu from './A11yMenu.astro';
-import { getUi, pagePath, pageUrl, isRtl, siteRoot, SLUGS, type Lang } from '../lib/site';
+import { getUi, pagePath, pageUrl, isRtl, siteRoot, withBase, SLUGS, type Lang } from '../lib/site';
 
 interface Props { lang: Lang; slug: string; title: string; description?: string; noindex?: boolean; ogImage?: string }
 const { lang, slug, title, description = '', noindex = false, ogImage = '/photos/opt/home-village-1276.jpg' } = Astro.props;
@@ -13,6 +13,7 @@ const other: Lang = lang === 'he' ? 'en' : 'he';
 const hasAlt = SLUGS.includes(slug as any);
 const root = siteRoot();
 const abs = (p: string) => (root ? root + p : p);
+const asset = (p: string) => withBase(p);
 ---
 <!doctype html>
 <html lang={lang} dir={isRtl(lang) ? 'rtl' : 'ltr'}>
@@ -23,8 +24,8 @@ const abs = (p: string) => (root ? root + p : p);
     {description && <meta name="description" content={description} />}
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#00173a" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href={asset('/favicon-32.png')} />
+    <link rel="apple-touch-icon" href={asset('/apple-touch-icon.png')} />
     {root && <link rel="canonical" href={pageUrl(slug, lang)} />}
     {hasAlt && !noindex && (
       <>
@@ -39,7 +40,7 @@ const abs = (p: string) => (root ? root + p : p);
     {description && <meta property="og:description" content={description} />}
     <meta property="og:locale" content={lang === 'he' ? 'he_IL' : 'en_US'} />
     <meta property="og:locale:alternate" content={other === 'he' ? 'he_IL' : 'en_US'} />
-    <meta property="og:image" content={abs(ogImage)} />
+    <meta property="og:image" content={abs(asset(ogImage))} />
     <meta name="twitter:card" content="summary_large_image" />
     <script is:inline>
       try {
