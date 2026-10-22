@@ -18,12 +18,42 @@
     "memorialTitle": "לזכרם",
     "memorialIntro": "הקהילה נקראת על שמם ולזכרם של שישה חיילים שנפלו. כאן יופיעו פרטיהם, בכפוף לאישור משפחותיהם.",
     "memorials": [
-      { "name": "[שם]", "text": "[טקסט קצר לזכרו]", "photo": "", "photoAlt": "" },
-      { "name": "[שם]", "text": "[טקסט קצר לזכרו]", "photo": "", "photoAlt": "" },
-      { "name": "[שם]", "text": "[טקסט קצר לזכרו]", "photo": "", "photoAlt": "" },
-      { "name": "[שם]", "text": "[טקסט קצר לזכרו]", "photo": "", "photoAlt": "" },
-      { "name": "[שם]", "text": "[טקסט קצר לזכרו]", "photo": "", "photoAlt": "" },
-      { "name": "[שם]", "text": "[טקסט קצר לזכרו]", "photo": "", "photoAlt": "" }
+      {
+        "name": "סרן גל שבת ז״ל",
+        "text": "סרן, מפקד היחידה שלנו.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "רועי בית יעקב ז״ל",
+        "text": "קצין ביחידה שלנו.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "דניאל חמו ז״ל",
+        "text": "רימונאי ביחידה שלנו.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "אילן כהן ז״ל",
+        "text": "רימונאי ביחידה שלנו.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "בצלאל שעשוע ז״ל",
+        "text": "איש הצוות הרפואי של המחלקה.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "גלעד בוים ז״ל",
+        "text": "חובש המחלקה.",
+        "photo": "",
+        "photoAlt": ""
+      }
     ]
   },
   "en": {
@@ -45,12 +75,42 @@
     "memorialTitle": "In Their Memory",
     "memorialIntro": "The community is named in honor and in memory of six fallen soldiers. Their details will appear here, subject to the approval of their families.",
     "memorials": [
-      { "name": "[Name]", "text": "[Short text in memory]", "photo": "", "photoAlt": "" },
-      { "name": "[Name]", "text": "[Short text in memory]", "photo": "", "photoAlt": "" },
-      { "name": "[Name]", "text": "[Short text in memory]", "photo": "", "photoAlt": "" },
-      { "name": "[Name]", "text": "[Short text in memory]", "photo": "", "photoAlt": "" },
-      { "name": "[Name]", "text": "[Short text in memory]", "photo": "", "photoAlt": "" },
-      { "name": "[Name]", "text": "[Short text in memory]", "photo": "", "photoAlt": "" }
+      {
+        "name": "Captain Gal Shabat, of blessed memory",
+        "text": "Captain, the commander of our unit.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "Roi Bet Yaakov, of blessed memory",
+        "text": "An officer in our unit.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "Daniel Chemo, of blessed memory",
+        "text": "A grenadier in our unit.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "Ilan Cohen, of blessed memory",
+        "text": "A grenadier in our unit.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "Betzalel Sha'ashua, of blessed memory",
+        "text": "A member of the platoon's medical team.",
+        "photo": "",
+        "photoAlt": ""
+      },
+      {
+        "name": "Gilad Boim, of blessed memory",
+        "text": "The platoon medic.",
+        "photo": "",
+        "photoAlt": ""
+      }
     ]
   }
 }
