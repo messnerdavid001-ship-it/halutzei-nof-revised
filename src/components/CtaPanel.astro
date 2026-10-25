@@ -1,0 +1,14 @@
+---
+import Panel from './Panel.astro';
+import Button from './Button.astro';
+import TextBlock from './TextBlock.astro';
+import { getUi, pagePath, type Lang } from '../lib/site';
+interface Props { lang: Lang; title: string; text: string }
+const { lang, title, text } = Astro.props;
+const t = getUi(lang);
+---
+<Panel tone="light" class="cta">
+  <h2>{title}</h2>
+  <TextBlock text={text} lang={lang} />
+  <div class="btn-row"><Button href={pagePath('join', lang)}>{t.btnJoin}</Button></div>
+</Panel>

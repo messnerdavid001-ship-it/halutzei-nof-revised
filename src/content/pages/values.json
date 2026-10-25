@@ -1,0 +1,114 @@
+{
+  "he": {
+    "seoTitle": "הערכים שלנו — חלוצי נוף",
+    "seoDescription": "תשעת הערכים שמנחים את חלוצי נוף: ציונות, משפחה, חינוך, אחריות, ערבות הדדית, יוזמה ועוד.",
+    "title": "הערכים שלנו",
+    "backgroundAlt": "שקיעה מעל האופק",
+    "intro": "אלה הערכים שמנחים אותנו, ושעליהם אנחנו מבקשים לבנות את הקהילה. [[DRAFT]]",
+    "values": [
+      {
+        "icon": "zion",
+        "title": "ציונות והתיישבות",
+        "text": "אהבת הארץ והרצון לבנות בה בית הם הבסיס לדרכנו. אנחנו רואים בהתיישבות המשך טבעי של השירות ושל התרומה למדינה."
+      },
+      {
+        "icon": "family",
+        "title": "משפחה וקהילה",
+        "text": "המשפחה היא יסוד הקהילה, והקהילה היא בית רחב שבו שותפים לשמחות ולקשיים."
+      },
+      {
+        "icon": "education",
+        "title": "חינוך וערכים",
+        "text": "אנחנו מבקשים לגדל ילדים על ערכים, על סקרנות ועל שורשים יהודיים וישראליים."
+      },
+      {
+        "icon": "national",
+        "title": "אחריות לאומית",
+        "text": "כל אחד מאיתנו נושא חלק באחריות למדינה ולחברה, בבית, בעבודה ובקהילה."
+      },
+      {
+        "icon": "service",
+        "title": "שירות ותרומה למדינה",
+        "text": "שירות בצה״ל הוא ערך חשוב בעינינו, ורוח התרומה והנתינה מלווה אותנו גם בחיים האזרחיים. השירות אינו תנאי להצטרפות."
+      },
+      {
+        "icon": "mutual",
+        "title": "ערבות הדדית",
+        "text": "קהילה שבה אף אחד לא נשאר לבד: עוזרים זה לזה בימים רגילים ובימים קשים."
+      },
+      {
+        "icon": "work",
+        "title": "עבודה ויוזמה",
+        "text": "אנחנו מאמינים בעבודה, ביוזמה ובפרנסה מכבדת, ומעודדים אנשים להקים ולפתח."
+      },
+      {
+        "icon": "independence",
+        "title": "עצמאות אישית",
+        "text": "לכל אדם ולכל משפחה הזכות לבחור את דרכם. קהילה חזקה בנויה מאנשים עצמאיים."
+      },
+      {
+        "icon": "unity",
+        "title": "אחדות וכבוד הדדי",
+        "text": "אנחנו שונים זה מזה ומאוחדים בכוונה משותפת. מחלוקת מכבדת היא חלק מהדרך."
+      }
+    ],
+    "ctaTitle": "הערכים האלה מדברים אליכם?",
+    "ctaText": "נשמח להכיר ולשמוע מה חשוב לכם. [[DRAFT]]"
+  },
+  "en": {
+    "seoTitle": "Our Values — Halutzei Nof",
+    "seoDescription": "The nine values that guide Halutzei Nof: Zionism, family, education, responsibility, mutual responsibility, initiative and more.",
+    "title": "Our Values",
+    "backgroundAlt": "Sunset over the horizon",
+    "intro": "These are the values that guide us, and on which we hope to build the community. [[DRAFT]]",
+    "values": [
+      {
+        "icon": "zion",
+        "title": "Zionism and Building the Land",
+        "text": "Love of the Land and the wish to build a home in it are the foundation of our path. We see building new communities here as a natural continuation of service and of contributing to the country."
+      },
+      {
+        "icon": "family",
+        "title": "Family and Community",
+        "text": "The family is the foundation of the community, and the community is a wide home where people share both joys and hardships."
+      },
+      {
+        "icon": "education",
+        "title": "Education and Values",
+        "text": "We hope to raise children on values, curiosity and Jewish and Israeli roots."
+      },
+      {
+        "icon": "national",
+        "title": "National Responsibility",
+        "text": "Each of us carries a share of responsibility for the country and for society: at home, at work and in the community."
+      },
+      {
+        "icon": "service",
+        "title": "Service and Contribution",
+        "text": "IDF service is an important value to us, and the spirit of giving stays with us in civilian life. Service is not a condition for joining."
+      },
+      {
+        "icon": "mutual",
+        "title": "Mutual Responsibility",
+        "text": "A community where no one is left alone: we help one another in ordinary days and in hard ones."
+      },
+      {
+        "icon": "work",
+        "title": "Work and Initiative",
+        "text": "We believe in work, initiative and honest livelihood, and we encourage people to start and build."
+      },
+      {
+        "icon": "independence",
+        "title": "Personal Independence",
+        "text": "Every person and every family has the right to choose their own path. A strong community is made of independent people."
+      },
+      {
+        "icon": "unity",
+        "title": "Unity and Mutual Respect",
+        "text": "We are different from one another and united in a shared purpose. Respectful disagreement is part of the way."
+      }
+    ],
+    "ctaTitle": "Do These Values Speak to You?",
+    "ctaText": "We would love to meet you and hear what matters to you. [[DRAFT]]"
+  }
+}

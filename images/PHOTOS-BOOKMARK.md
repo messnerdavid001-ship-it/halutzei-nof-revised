@@ -11,6 +11,5 @@
 ## Slots reserved for future photos
 - Home: 1-2 empty photo slots below the hero (CMS-editable)
 - In Their Memory: 6 portrait photos (pending the families' approval)
-- Events: optional photo per event
 
 Drop any new photo here and tell Claude which slot it is for.

@@ -1,100 +1,64 @@
 {
   "he": {
-    "seoTitle": "החזון — חלוצי נוף",
-    "seoDescription": "הערכים והעתיד שחלוצי נוף מבקשת לבנות: תורה וחיים, משפחה וקהילה, שירות וציונות, עבודה ויזמות, ערבות הדדית.",
-    "title": "החזון",
+    "seoTitle": "החזון שלנו — חלוצי נוף",
+    "seoDescription": "החזון של חלוצי נוף: קהילה חדשה בארץ ישראל, מבוססת משפחה, חינוך, ערבות הדדית ועתיד משותף.",
+    "title": "החזון שלנו",
     "backgroundAlt": "שקיעה מעל האופק, ומשטח אבן בקדמת התמונה",
-    "intro": "אנחנו מבקשים לבנות קהילה שבה ערכים הם לא סיסמה אלא דרך חיים יומיומית, ובהמשך, יישוב שיצמח מתוך הקהילה הזו.",
-    "valuesTitle": "הערכים שלנו",
-    "values": [
+    "intro": "אנחנו רואים בחזון שלנו קהילה חדשה בארץ ישראל: בית שנבנה בידי משפחות, סביב ערכים שאנחנו מאמינים בהם.",
+    "sections": [
       {
-        "title": "תורה וחיים",
-        "text": "בחזון שלנו תורה וחיים הולכות יד ביד. אנו מאמינים בעיקר ש״דרך ארץ קדמה לתורה״."
+        "title": "קהילה חדשה בארץ ישראל",
+        "text": "אנחנו שואפים להקים קהילה חדשה בארץ ישראל — מקום שנבנה בידי משפחות שבחרו לבנות בית יחד, מתוך אהבת הארץ ורצון לתרום לה. [[DRAFT]]"
       },
       {
-        "title": "משפחה וקהילה",
-        "text": "המשפחה היא יסוד הקהילה, והקהילה היא בית רחב שבו אנשים נושאים יחד בשמחות ובקשיים."
+        "title": "קהילה מבוססת משפחה",
+        "text": "המשפחה היא הליבה. אנחנו רואים קהילה שבה זוגות צעירים ומשפחות מוצאים בית, שכנים וחברים לדרך. [[DRAFT]]"
       },
       {
-        "title": "שירות וציונות",
-        "text": "מתוך השירות בצה״ל ומתוך אהבת הארץ, אנחנו רואים בבניית הקהילה והיישוב המשך של התרומה למדינת ישראל."
-      },
-      {
-        "title": "עבודה ויזמות",
-        "text": "אנחנו מאמינים בעבודה, ביוזמה ובעצמאות כלכלית, ובבניית מקורות פרנסה מקומיים לצד תעסוקה בסביבה."
+        "title": "חינוך",
+        "text": "אנחנו מבקשים לגדל דור על ערכים, על קשר למורשת ועל אהבת הארץ. [[DRAFT]]"
       },
       {
         "title": "ערבות הדדית",
-        "text": "כל אחד נושא באחריות לחברו: קהילה שבה אף אחד לא נשאר לבד, ובהם גם חיילים בודדים ועולים חדשים."
+        "text": "קהילה חזקה היא קהילה שבה נושאים בעול יחד. אנחנו מבקשים לבנות תרבות של עזרה הדדית, נדיבות ואחריות. [[DRAFT]]"
+      },
+      {
+        "title": "עתיד משותף",
+        "text": "מה שאנחנו בונים הוא לא רק לנו. הוא לילדינו ולדורות שאחריהם — בית שיוכלו לקרוא לו שלהם. [[DRAFT]]"
       }
     ],
-    "futureTitle": "העתיד שאנחנו מבקשים לבנות",
-    "goal": "היעד ארוך הטווח שלנו הוא יישוב של כ-85 משפחות. יעד זה מותנה בצמיחת הקהילה, באישורים רשמיים ובמשאבים, ואין בו התחייבות או הבטחה.",
-    "elementsTitle": "רעיונות לטווח ארוך",
-    "elements": [
-      "בתי מגורים",
-      "בית כנסת",
-      "בית מדרש",
-      "מוסדות חינוך",
-      "גני ילדים",
-      "מכולת",
-      "מרפאה",
-      "מבני ציבור",
-      "אזורי משחק וספורט לילדים",
-      "עסקים מקומיים ותעסוקה",
-      "מרחבים לאירועים",
-      "דיור מתאים לחיילים בודדים"
-    ],
-    "disclaimer": "אלה רעיונות לטווח ארוך בלבד. אין מדובר במוסדות או בשירותים קיימים או מאושרים.",
-    "economy": "אנחנו שואפים לבסס יישוב בעל בסיס כלכלי איתן, שאינו תלוי בתרומות בטווח הארוך, באמצעות תעסוקה, יזמות ועסקים מקומיים."
+    "ctaTitle": "רוצים להיות חלק מהחזון?",
+    "ctaText": "נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]"
   },
   "en": {
-    "seoTitle": "Vision — Halutzei Nof",
-    "seoDescription": "The values and the future Halutzei Nof wishes to build: Torah and life, family and community, service and Zionism, work and entrepreneurship, mutual responsibility.",
+    "seoTitle": "Our Vision — Halutzei Nof",
+    "seoDescription": "The vision of Halutzei Nof: a new community in the Land of Israel, built on family, education, mutual responsibility and a shared future.",
     "title": "Our Vision",
     "backgroundAlt": "Sunset over the horizon with a stone surface in the foreground",
-    "intro": "We wish to build a community where values are not slogans but a daily way of life and, over time, a settlement that grows out of that community.",
-    "valuesTitle": "Our Values",
-    "values": [
+    "intro": "Our vision is a new community in the Land of Israel: a home built by families, around values we believe in.",
+    "sections": [
       {
-        "title": "Torah and Life",
-        "text": "In our vision, Torah and life go hand in hand. We mainly believe that דרך ארץ קדמה לתורה."
+        "title": "A New Community in the Land of Israel",
+        "text": "We aim to build a new community in the Land of Israel, a place built by families who chose to make a home together, out of love for the Land and a wish to contribute to it. [[DRAFT]]"
       },
       {
-        "title": "Family and Community",
-        "text": "The family is the foundation of the community, and the community is a wider home where people share both joys and hardships."
+        "title": "A Family-Based Community",
+        "text": "The family is the core. Our vision is a community where young couples and families find a home, neighbors and companions for the road. [[DRAFT]]"
       },
       {
-        "title": "Service and Zionism",
-        "text": "Out of our IDF service and our love of the land, we see building a community and a settlement as a continuation of contributing to the State of Israel."
-      },
-      {
-        "title": "Work and Entrepreneurship",
-        "text": "We believe in work, initiative and economic independence, and in building local sources of livelihood alongside employment in the surrounding area."
+        "title": "Education",
+        "text": "We hope to raise a generation grounded in values, connected to its heritage and in love with the Land. [[DRAFT]]"
       },
       {
         "title": "Mutual Responsibility",
-        "text": "Each person is responsible for the other: a community where no one is left alone, including lone soldiers and new olim."
+        "text": "A strong community is one where people carry the load together. We want to build a culture of mutual help, generosity and responsibility. [[DRAFT]]"
+      },
+      {
+        "title": "A Shared Future",
+        "text": "What we are building is not only for us. It is for our children and the generations after them: a home they can call their own. [[DRAFT]]"
       }
     ],
-    "futureTitle": "The Future We Wish to Build",
-    "goal": "Our long-term goal is a settlement of approximately 85 families. This goal depends on the community's growth, official approvals and resources, and is neither a commitment nor a promise.",
-    "elementsTitle": "Long-term ideas",
-    "elements": [
-      "Homes",
-      "A synagogue",
-      "A beit midrash",
-      "Education facilities",
-      "Kindergartens",
-      "A grocery store",
-      "A medical clinic",
-      "Public buildings",
-      "Children's play and sports areas",
-      "Local businesses and employment",
-      "Event spaces",
-      "Housing suitable for lone soldiers"
-    ],
-    "disclaimer": "These are long-term ideas only. They are not existing or approved facilities or services.",
-    "economy": "We aim to build a settlement with a sound economic foundation that does not depend on donations in the long run, through employment, entrepreneurship and local businesses."
+    "ctaTitle": "Want to Be Part of the Vision?",
+    "ctaText": "We would love to meet you. Leave your details and we will get back to you personally. [[DRAFT]]"
   }
 }

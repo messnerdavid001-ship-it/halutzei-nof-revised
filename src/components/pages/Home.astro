@@ -1,33 +1,67 @@
 ---
-import PhotoHero from '../PhotoHero.astro';
-import Section from '../Section.astro';
-import TextBlock from '../TextBlock.astro';
+import Panel from '../Panel.astro';
 import Button from '../Button.astro';
 import Pic from '../Pic.astro';
-import { getPage, getUi, pagePath, settings, todoMark, type Lang } from '../../lib/site';
+import Icon from '../Icon.astro';
+import TextBlock from '../TextBlock.astro';
+import CtaPanel from '../CtaPanel.astro';
+import { getPage, getUi, pagePath, todoMark, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('index', lang);
+const v = getPage('values', lang);
 const t = getUi(lang);
 const photos = (p.photos || []).filter((x: any) => x.image);
 ---
-<PhotoHero src={settings.homeBackground} alt={p.backgroundAlt} variant="home" lang={lang}>
-  <Pic class="hero-logo" src="/photos/logo.png" alt={t.logoAlt} sizes="(min-width: 768px) 400px, 62vw" loading="eager" fetchpriority="high" />
-  <h1 class="tagline">{p.tagline}</h1>
-  <div class="btn-row">
-    <Button href={`${pagePath('contact', lang)}?type=join`}>{t.btnJoin}</Button>
+<section class="hero">
+  <div class="hero-inner">
+    <Pic class="hero-logo" src="/photos/logo.png" alt={t.logoAlt} sizes="(min-width: 768px) 400px, 62vw" loading="eager" fetchpriority="high" />
+    <div class="hero-copy">
+      <h1 class="headline">{p.headline}</h1>
+      <p class="slogan">{p.tagline}</p>
+      <div class="btn-row"><Button href={pagePath('join', lang)}>{t.btnJoin}</Button></div>
+    </div>
   </div>
-  <p slot="marker" class="hero-marker" set:html={todoMark('photo', lang)} />
-</PhotoHero>
-<Section tone="navy" title={p.introTitle}>
+  <div class="hero-foot">
+    <p class="hero-marker" set:html={todoMark('photo', lang)} />
+    <a class="scroll-hint" href="#content" aria-label={t.scrollDown}><span aria-hidden="true"></span></a>
+  </div>
+</section>
+
+<Panel tone="navy" title={p.introTitle} id="content">
   <TextBlock text={p.intro} lang={lang} />
-</Section>
+</Panel>
+
+<Panel tone="light" title={p.teasersTitle} id="teasers">
+  <ul class="teasers">
+    {p.teasers.map((x: any) => (
+      <li class="teaser">
+        <Icon name={x.icon} size={40} class="teaser-icon" />
+        <h3>{x.title}</h3>
+        <p>{x.text}</p>
+        <a class="more" href={pagePath(x.link, lang)}>{t.btnMore}<span class="sr-only">: {x.title}</span></a>
+      </li>
+    ))}
+  </ul>
+</Panel>
+
+<Panel tone="navy" title={p.valuesTitle} id="values-teaser">
+  <TextBlock text={p.valuesText} lang={lang} />
+  <ul class="icon-strip">
+    {v.values.map((x: any) => (
+      <li><a href={pagePath('values', lang)}><Icon name={x.icon} size={34} /><span>{x.title}</span></a></li>
+    ))}
+  </ul>
+</Panel>
+
 {photos.length > 0 && (
-  <Section tone="white">
+  <Panel tone="light" class="panel--photos">
     <div class="photo-slots">
       {photos.slice(0, 2).map((ph: any) => (
         <figure class="slot"><Pic src={ph.image} alt={ph.alt} sizes="(min-width: 768px) 460px, 90vw" /></figure>
       ))}
     </div>
-  </Section>
+  </Panel>
 )}
+
+<CtaPanel lang={lang} title={p.ctaTitle} text={p.ctaText} />

@@ -1,0 +1,16 @@
+---
+// Vision, Community and Education share one layout: header panel, a panel per section, closing call to action.
+import Panel from '../Panel.astro';
+import PageHead from '../PageHead.astro';
+import TextBlock from '../TextBlock.astro';
+import CtaPanel from '../CtaPanel.astro';
+import { getPage, type Lang } from '../../lib/site';
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const p = getPage(slug, lang);
+---
+<PageHead title={p.title} intro={p.intro} lang={lang} />
+{p.sections.map((s: any, i: number) => (
+  <Panel tone={i % 2 ? 'navy' : 'light'} title={s.title}><TextBlock text={s.text} lang={lang} /></Panel>
+))}
+<CtaPanel lang={lang} title={p.ctaTitle} text={p.ctaText} />

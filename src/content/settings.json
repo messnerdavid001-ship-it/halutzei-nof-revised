@@ -17,5 +17,11 @@
   "homeBackground": "/photos/home-village.jpg",
   "aboutBackground": "/photos/about-soldiers.jpg",
   "visionBackground": "/photos/vision-sunset.jpg",
-  "communityBackground": "/photos/community-group.jpg"
+  "communityBackground": "/photos/community-group.jpg",
+  "valuesBackground": "/photos/vision-sunset.jpg",
+  "educationBackground": "/photos/community-group.jpg",
+  "joinBackground": "/photos/community-group.jpg",
+  "faqBackground": "/photos/vision-sunset.jpg",
+  "contactBackground": "/photos/community-group.jpg",
+  "legalBackground": "/photos/vision-sunset.jpg"
 }

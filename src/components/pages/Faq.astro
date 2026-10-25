@@ -1,0 +1,22 @@
+---
+import Panel from '../Panel.astro';
+import PageHead from '../PageHead.astro';
+import CtaPanel from '../CtaPanel.astro';
+import { getPage, inline, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('faq', lang);
+const home = getPage('index', lang);
+---
+<PageHead title={p.title} intro={p.intro} lang={lang} />
+<Panel tone="light" class="panel--faq">
+  <div class="faq">
+    {p.items.map((it: any) => (
+      <details class="faq-item">
+        <summary><span>{it.q}</span></summary>
+        <div class="faq-a"><p set:html={inline(it.a, lang)} /></div>
+      </details>
+    ))}
+  </div>
+</Panel>
+<CtaPanel lang={lang} title={home.ctaTitle} text={home.ctaText} />

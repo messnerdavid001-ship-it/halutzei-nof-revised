@@ -1,17 +1,17 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro';
-import BandHero from '../components/BandHero.astro';
-import Section from '../components/Section.astro';
+import Panel from '../components/Panel.astro';
+import PageHead from '../components/PageHead.astro';
 import Button from '../components/Button.astro';
-import { getUi, pagePath } from '../lib/site';
+import { getUi, pagePath, bgFor } from '../lib/site';
 const t = getUi('he');
 const e = getUi('en');
 ---
-<BaseLayout lang="he" slug="404" title={t.notFound.title} noindex>
-  <BandHero title={t.notFound.title} />
-  <Section tone="white">
+<BaseLayout lang="he" slug="404" title={t.notFound.title} noindex bg={{ ...bgFor('404'), alt: '' }}>
+  <PageHead title={t.notFound.title} lang="he" />
+  <Panel tone="light">
     <p class="empty">{t.notFound.text}</p>
     <div class="btn-row"><Button href={pagePath('index', 'he')}>{t.notFound.back}</Button></div>
     <p class="empty" lang="en" dir="ltr">{e.notFound.text} <a href={pagePath('index', 'en')}>{e.notFound.back}</a></p>
-  </Section>
+  </Panel>
 </BaseLayout>

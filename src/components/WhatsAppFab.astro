@@ -1,0 +1,11 @@
+---
+import Icon from './Icon.astro';
+import { getUi, waLink, type Lang } from '../lib/site';
+const t = getUi(Astro.props.lang as Lang).whatsapp;
+const href = waLink();
+---
+{href && (
+  <a class="wa-fab" href={href} target="_blank" rel="noopener" aria-label={t.fab} title={t.fab} data-fab>
+    <Icon name="whatsapp" size={30} />
+  </a>
+)}

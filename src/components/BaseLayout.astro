@@ -1,13 +1,20 @@
 ---
 import '@fontsource-variable/heebo';
 import '../styles/site.css';
+import fontHebrew from '@fontsource-variable/heebo/files/heebo-hebrew-wght-normal.woff2?url';
+import fontLatin from '@fontsource-variable/heebo/files/heebo-latin-wght-normal.woff2?url';
 import Header from './Header.astro';
 import Footer from './Footer.astro';
 import A11yMenu from './A11yMenu.astro';
-import { getUi, pagePath, pageUrl, isRtl, siteRoot, withBase, SLUGS, type Lang } from '../lib/site';
+import Bg from './Bg.astro';
+import WhatsAppFab from './WhatsAppFab.astro';
+import { getUi, pagePath, pageUrl, isRtl, siteRoot, withBase, imgInfo, SLUGS, type Lang } from '../lib/site';
 
-interface Props { lang: Lang; slug: string; title: string; description?: string; noindex?: boolean; ogImage?: string }
-const { lang, slug, title, description = '', noindex = false, ogImage = '/photos/opt/home-village-1276.jpg' } = Astro.props;
+interface Props { lang: Lang; slug: string; title: string; description?: string; noindex?: boolean; ogImage?: string; bg: { src: string; alt: string; variant: string } }
+const { lang, slug, title, description = '', noindex = false, ogImage = '/photos/opt/home-village-1276.jpg', bg } = Astro.props;
+// Preload the background photo (the largest thing on the first screen).
+const bgInfo = imgInfo(bg.src);
+const bgSet = bgInfo ? bgInfo.widths.map((w) => `${withBase('/photos/opt/' + bgInfo.name + '-' + w + '.webp')} ${w}w`).join(', ') : '';
 const t = getUi(lang);
 const other: Lang = lang === 'he' ? 'en' : 'he';
 const hasAlt = SLUGS.includes(slug as any);
@@ -42,7 +49,10 @@ const asset = (p: string) => withBase(p);
     <meta property="og:locale:alternate" content={other === 'he' ? 'he_IL' : 'en_US'} />
     <meta property="og:image" content={abs(asset(ogImage))} />
     <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" as="font" type="font/woff2" href={lang === 'he' ? fontHebrew : fontLatin} crossorigin />
+    {bgInfo && <link rel="preload" as="image" type="image/webp" imagesrcset={bgSet} imagesizes="100vw" fetchpriority="high" />}
     <script is:inline>
+      document.documentElement.classList.add('js');
       try {
         var d = document.documentElement, p = JSON.parse(localStorage.getItem('a11y') || '{}');
         if (p.fs) d.style.fontSize = p.fs + '%';
@@ -61,10 +71,12 @@ const asset = (p: string) => withBase(p);
         <button type="button" data-lang-offer-close>{t.langOffer.dismiss}</button>
       </div>
     )}
-    <main id="main" tabindex="-1">
+    <Bg src={bg.src} alt={bg.alt} variant={bg.variant} />
+    <main id="main" tabindex="-1" data-page={slug}>
       <slot />
     </main>
     <Footer lang={lang} />
+    <WhatsAppFab lang={lang} />
     <A11yMenu lang={lang} />
     <script>
       import '../scripts/site.ts';

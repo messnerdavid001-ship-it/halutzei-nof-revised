@@ -14,9 +14,12 @@ if (menuBtn && nav) {
     menuBtn.setAttribute('aria-expanded', String(open));
     menuBtn.setAttribute('aria-label', menuBtn.dataset[open ? 'close' : 'open'] || '');
     nav.classList.toggle('open', open);
+    document.documentElement.classList.toggle('menu-open', open);
   };
   menuBtn.addEventListener('click', () => set(menuBtn.getAttribute('aria-expanded') !== 'true'));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && nav.classList.contains('open')) { set(false); menuBtn.focus(); } });
+  // back to the desktop layout: make sure the page can scroll again
+  matchMedia('(min-width: 961px)').addEventListener('change', (e) => { if (e.matches) set(false); });
 }
 
 /* ---------- language preference ---------- */
@@ -28,20 +31,41 @@ if (offer && !store.get('lang') && /^en/i.test(navigator.language || '')) {
 }
 if (!store.get('lang')) store.set('lang', document.documentElement.lang);
 
-/* ---------- scroll blur / darken of the fixed background photo ---------- */
+/* ---------- background photo darkens gently as you scroll ---------- */
 const bg = $('[data-bg]');
 if (bg && !reduced) {
   let ticking = false;
   const update = () => {
     ticking = false;
     const h = window.innerHeight || 800;
-    const p = Math.min(1, Math.max(0, window.scrollY / (h * 0.85)));
-    bg.style.setProperty('--p', p.toFixed(3));
+    bg.style.setProperty('--p', Math.min(1, Math.max(0, window.scrollY / (h * 0.85))).toFixed(3));
   };
   const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } };
   addEventListener('scroll', onScroll, { passive: true });
   addEventListener('resize', onScroll);
   update();
+}
+
+/* ---------- fade-up on scroll ---------- */
+const reveals = $$('[data-reveal]');
+if (reveals.length) {
+  if (reduced || !('IntersectionObserver' in window)) reveals.forEach((el) => el.classList.add('in'));
+  else {
+    const io = new IntersectionObserver((entries) => entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+    reveals.forEach((el) => io.observe(el));
+  }
+}
+
+/* ---------- floating WhatsApp button steps aside while a form's buttons are on screen ---------- */
+const fab = $('[data-fab]');
+const submits = $$('[data-submit]');
+if (fab && submits.length && 'IntersectionObserver' in window) {
+  const seen = new Set<Element>();
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => (en.isIntersecting ? seen.add(en.target) : seen.delete(en.target)));
+    fab.classList.toggle('is-hidden', seen.size > 0);
+  }, { rootMargin: '0px 0px 80px 0px' });
+  submits.forEach((el) => io.observe(el));
 }
 
 /* ---------- accessibility menu ---------- */
@@ -78,28 +102,44 @@ if (a11y) {
   apply();
 }
 
-/* ---------- contact form ---------- */
-const form = $<HTMLFormElement>('[data-form]');
-if (form) {
+/* ---------- forms (join + contact) ---------- */
+const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE = /^\+?[\d\s\-().]{7,}$/;
+$$<HTMLFormElement>('[data-form]').forEach((form) => {
+  const kind = form.dataset.form as 'join' | 'contact';
   const d = form.dataset;
-  const q = new URLSearchParams(location.search).get('type');
-  const typeSel = form.elements.namedItem('type') as HTMLSelectElement;
-  if (q && ['join', 'partner', 'general'].includes(q)) typeSel.value = q;
-
   const status = $('[data-status]', form)!;
   const summary = $('[data-summary]', form)!;
   const summaryList = $('[data-summary-list]', form)!;
-  const val = (n: string) => ((form.elements.namedItem(n) as HTMLInputElement).value || '').trim();
-  const fieldFor = (k: string) => ({ name: 'f-name', phone: 'f-phone', email: 'f-email', contact: 'f-phone', consent: 'f-consent' } as Record<string, string>)[k];
+  const thanks = $('[data-thanks]', form)!;
+  const submit = $<HTMLButtonElement>('[data-submit]', form)!;
+  const val = (n: string) => ((form.elements.namedItem(n) as HTMLInputElement | null)?.value || '').trim();
+  const msg: Record<string, string> = {
+    name: d.errName!, contact: d.errContact!, email: d.errEmail!, phone: d.errPhone!, emailorphone: d.errEmailorphone!,
+    family: d.errFamily!, message: d.errMessage!, consent: d.errConsent!,
+  };
+  const target = (k: string) => $<HTMLElement>(`[data-field="${k}"]`, form) || $<HTMLElement>('[data-field="phone"]', form);
+
+  const next = $<HTMLInputElement>('[data-next]', form);
+  if (next) next.value = location.origin + location.pathname + '?sent=1';
+  const done = () => { form.classList.add('is-done'); thanks.hidden = false; thanks.focus(); };
+  if (new URLSearchParams(location.search).get('sent') === '1') done();
 
   const validate = () => {
     const errs: Record<string, string> = {};
-    if (!val('name')) errs.name = d.errName!;
-    const phone = val('phone'), email = val('email');
-    if (!phone && !email) errs.contact = d.errContact!;
-    if (phone && !/^\+?[\d\s\-().]{7,}$/.test(phone)) errs.phone = d.errPhone!;
-    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errs.email = d.errEmail!;
-    if (!(form.elements.namedItem('consent') as HTMLInputElement).checked) errs.consent = d.errConsent!;
+    if (!val('name')) errs.name = msg.name;
+    if (kind === 'join') {
+      const phone = val('phone'), email = val('email'), fam = val('family_members');
+      if (!phone && !email) errs.contact = msg.contact;
+      if (phone && !PHONE.test(phone)) errs.phone = msg.phone;
+      if (email && !EMAIL.test(email)) errs.email = msg.email;
+      if (fam && !(Number(fam) >= 1 && Number(fam) <= 30)) errs.family = msg.family;
+    } else {
+      const c = val('email_or_phone');
+      if (!c || !(EMAIL.test(c) || PHONE.test(c))) errs.contact = msg.emailorphone;
+      if (!val('message')) errs.message = msg.message;
+    }
+    if (!(form.elements.namedItem('consent') as HTMLInputElement).checked) errs.consent = msg.consent;
     return errs;
   };
   const show = (errs: Record<string, string>) => {
@@ -109,18 +149,17 @@ if (form) {
     Object.entries(errs).forEach(([k, m]) => {
       const p = $(`[data-err="${k}"]`, form)!;
       p.textContent = m; p.hidden = false;
-      document.getElementById(fieldFor(k))?.setAttribute('aria-invalid', 'true');
+      const el = target(k);
+      el?.setAttribute('aria-invalid', 'true');
       const li = document.createElement('li');
       const a = document.createElement('a');
-      a.href = '#' + fieldFor(k); a.textContent = m;
-      a.addEventListener('click', (e) => { e.preventDefault(); document.getElementById(fieldFor(k))?.focus(); });
+      a.href = '#' + (el?.id || ''); a.textContent = m;
+      a.addEventListener('click', (e) => { e.preventDefault(); el?.focus(); });
       li.appendChild(a); summaryList.appendChild(li);
     });
     summary.hidden = Object.keys(errs).length === 0;
   };
-  const say = (msg: string, ok: boolean) => {
-    status.textContent = msg; status.hidden = false; status.dataset.ok = String(ok); status.focus();
-  };
+  const say = (text: string, ok: boolean) => { status.textContent = text; status.hidden = false; status.dataset.ok = String(ok); status.focus(); };
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -129,15 +168,16 @@ if (form) {
     show(errs);
     if (Object.keys(errs).length) { summary.focus(); return; }
     if (!d.action) {
-      // No form service connected yet.
-      if (d.demo) { say(`${d.msgSuccess} [${d.msgDemo}]`, true); form.reset(); }
-      else say(d.msgFailure!, false);
+      if (d.demo) { done(); form.reset(); } else say(d.msgFailure!, false);
       return;
     }
+    const label = submit.textContent;
+    submit.disabled = true; submit.textContent = d.sending || label;
     try {
       const res = await fetch(d.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
       if (!res.ok) throw new Error(String(res.status));
-      say(d.msgSuccess!, true); form.reset();
+      form.reset(); done();
     } catch { say(d.msgFailure!, false); }
+    finally { submit.disabled = false; submit.textContent = label; }
   });
-}
+});

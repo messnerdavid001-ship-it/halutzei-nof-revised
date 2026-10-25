@@ -1,0 +1,10 @@
+---
+// A readable content box that scrolls over the fixed background photo.
+interface Props { tone?: 'navy' | 'light'; title?: string; id?: string; class?: string; labelledby?: string }
+const { tone = 'navy', title, id, class: cls } = Astro.props;
+const hid = id && title ? `${id}-title` : undefined;
+---
+<section class:list={['panel', `panel--${tone}`, cls]} id={id} aria-labelledby={hid} data-reveal>
+  {title && <h2 id={hid}>{title}</h2>}
+  <slot />
+</section>

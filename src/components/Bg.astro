@@ -1,0 +1,11 @@
+---
+// Full-screen photo behind the page. A position:fixed layer (not background-attachment:fixed),
+// so it also works on iPhone Safari. The dim overlay keeps white text readable (WCAG AA).
+import Pic from './Pic.astro';
+interface Props { src: string; alt: string; variant: string }
+const { src, alt, variant } = Astro.props;
+---
+<div class="bg" data-bg data-variant={variant}>
+  <Pic src={src} alt={alt} sizes="100vw" loading="eager" fetchpriority="high" />
+  <div class="bg-dim"></div>
+</div>

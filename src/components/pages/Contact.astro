@@ -1,17 +1,22 @@
 ---
-import BandHero from '../BandHero.astro';
-import Section from '../Section.astro';
-import TextBlock from '../TextBlock.astro';
-import ContactForm from '../ContactForm.astro';
-import { getPage, getUi, type Lang } from '../../lib/site';
+import Panel from '../Panel.astro';
+import PageHead from '../PageHead.astro';
+import Button from '../Button.astro';
+import Icon from '../Icon.astro';
+import ContactDetails from '../ContactDetails.astro';
+import Form from '../Form.astro';
+import { getPage, getUi, waLink, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('contact', lang);
 const t = getUi(lang);
+const wa = waLink();
 ---
-<BandHero title={p.title} />
-<Section tone="white" narrow>
-  <TextBlock text={p.intro} lang={lang} />
-  <h2 class="visually-sub">{t.form.title}</h2>
-  <ContactForm lang={lang} />
-</Section>
+<PageHead title={p.title} intro={p.intro} lang={lang} />
+<Panel tone="navy" class="panel--contact">
+  {wa && <div class="btn-row btn-row--big"><Button href={wa} variant="wa" external class="btn--big"><Icon name="whatsapp" size={26} />{t.whatsapp.button}</Button></div>}
+  <ContactDetails lang={lang} variant="cards" />
+</Panel>
+<Panel tone="light" title={t.form.contactTitle} id="contact-form" class="panel--form">
+  <Form lang={lang} kind="contact" />
+</Panel>

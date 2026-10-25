@@ -5,9 +5,20 @@ import images from '../generated/images.json';
 export type Lang = 'he' | 'en';
 export { settings };
 
-export const SLUGS = ['index', 'about', 'vision', 'community', 'contact', 'accessibility', 'privacy', 'donate'] as const;
-export const NAV = ['index', 'about', 'vision', 'community', 'contact'] as const;
-export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', community: 'community', contact: 'contact' };
+export const SLUGS = ['index', 'about', 'vision', 'values', 'community', 'education', 'join', 'faq', 'contact', 'accessibility', 'privacy', 'donate'] as const;
+/** Menu order. Join is rendered separately as the gold button at the end. */
+export const NAV = ['index', 'about', 'vision', 'values', 'community', 'education', 'faq', 'contact'] as const;
+export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', values: 'values', community: 'community', education: 'education', faq: 'faq', contact: 'contact', join: 'join' };
+
+/** Which Settings field holds each page's background photo. Pages not listed use legalBackground. */
+const BG_KEYS: Record<string, string> = {
+  index: 'homeBackground', about: 'aboutBackground', vision: 'visionBackground', values: 'valuesBackground',
+  community: 'communityBackground', education: 'educationBackground', join: 'joinBackground', faq: 'faqBackground', contact: 'contactBackground',
+};
+export function bgFor(slug: string) {
+  const key = BG_KEYS[slug];
+  return { src: ((settings as any)[key || 'legalBackground'] as string) || '/photos/vision-sunset.jpg', variant: key ? slug : 'legal' };
+}
 
 export const getUi = (lang: Lang) => ui[lang];
 
@@ -92,24 +103,14 @@ export function contactValue(kind: 'phone' | 'email' | 'instagram' | 'facebook')
   return v;
 }
 
-export function formatDate(iso: string, lang: Lang) {
-  const d = new Date(iso);
-  if (isNaN(+d)) return iso;
-  return new Intl.DateTimeFormat(lang === 'he' ? 'he-IL' : 'en-GB', { dateStyle: 'long', timeZone: 'UTC' }).format(d);
+/** "0534749499" -> "053-474-9499" */
+export function phoneDisplay() {
+  const d = (settings.phone || '').replace(/\D/g, '');
+  return d.length === 10 ? `${d.slice(0, 3)}-${d.slice(3, 6)}-${d.slice(6)}` : settings.phone;
 }
-
-export function getEvents(lang: Lang) {
-  const files = import.meta.glob('../content/events/*.json', { eager: true }) as Record<string, { default: any }>;
-  return Object.values(files)
-    .map((f) => f.default)
-    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
-    .map((e) => ({
-      title: e[`title_${lang}`] || e.title_he || e.title_en,
-      date: e.date,
-      place: e[`place_${lang}`] || '',
-      description: e[`description_${lang}`] || '',
-      photo: e.photo || '',
-      photoAlt: e[`photoAlt_${lang}`] || '',
-    }))
-    .filter((e) => e.title);
+/** "0534749499" -> "https://wa.me/972534749499" */
+export function waLink() {
+  const d = (settings.phone || '').replace(/\D/g, '');
+  if (!d) return '';
+  return `https://wa.me/${d.startsWith('0') ? '972' + d.slice(1) : d}`;
 }

@@ -1,0 +1,26 @@
+---
+import Panel from '../Panel.astro';
+import PageHead from '../PageHead.astro';
+import Icon from '../Icon.astro';
+import Form from '../Form.astro';
+import { getPage, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('join', lang);
+---
+<PageHead title={p.title} intro={p.intro} lang={lang} />
+<Panel tone="navy" title={p.stepsTitle}>
+  <ol class="steps">
+    {p.steps.map((s: any, i: number) => (
+      <li class="step">
+        <span class="step-icon"><Icon name={s.icon} size={34} /><span class="step-num" aria-hidden="true">{i + 1}</span></span>
+        <h3>{s.title}</h3>
+        <p>{s.text}</p>
+      </li>
+    ))}
+  </ol>
+  <p class="steps-note">{p.stepsNote}</p>
+</Panel>
+<Panel tone="light" title={p.formTitle} id="join-form" class="panel--form">
+  <Form lang={lang} kind="join" />
+</Panel>

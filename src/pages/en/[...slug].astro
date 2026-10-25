@@ -1,12 +1,6 @@
 ---
-import BaseLayout from '../../components/BaseLayout.astro';
-import Home from '../../components/pages/Home.astro';
-import About from '../../components/pages/About.astro';
-import Vision from '../../components/pages/Vision.astro';
-import Community from '../../components/pages/Community.astro';
-import Contact from '../../components/pages/Contact.astro';
-import Legal from '../../components/pages/Legal.astro';
-import { SLUGS, getPage, settings } from '../../lib/site';
+import PageView from '../../components/PageView.astro';
+import { SLUGS, settings } from '../../lib/site';
 
 export function getStaticPaths() {
   return SLUGS.filter((s) => s !== 'donate' || settings.donateEnabled).map((s) => ({
@@ -14,12 +8,6 @@ export function getStaticPaths() {
     props: { slug: s },
   }));
 }
-const lang = 'en';
 const { slug } = Astro.props;
-const p = getPage(slug, lang);
-const views: Record<string, any> = { index: Home, about: About, vision: Vision, community: Community, contact: Contact };
-const View = views[slug];
 ---
-<BaseLayout lang={lang} slug={slug} title={p.seoTitle} description={p.seoDescription} noindex={slug === 'donate'}>
-  {View ? <View lang={lang} /> : <Legal lang={lang} slug={slug} />}
-</BaseLayout>
+<PageView lang="en" slug={slug} />

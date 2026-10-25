@@ -35,75 +35,88 @@ const bilingual = (fieldsFn) => [
   { label: 'English', name: 'en', widget: 'object', collapsed: false, fields: fieldsFn('en') },
 ];
 const seo = [text('seoTitle', 'כותרת לגוגל / SEO title'), area('seoDescription', 'תיאור לגוגל / SEO description')];
-const MARK = 'טיפ: [[FAMILY]] מוסיף סימון אדום "מספר משפחות לא מאומת" / Tip: [[FAMILY]] inserts the red family-count marker. Blank line = new paragraph.';
-const PARA = 'שורה ריקה = פסקה חדשה / A blank line starts a new paragraph.';
+const MARK = 'טיפ: [[DRAFT]] מוסיף סימון אדום "טקסט זמני - ממתין לנוסח הסופי". מחקו אותו כשהנוסח סופי / Tip: [[DRAFT]] shows the red "placeholder copy" marker. Delete it when the wording is final.';
+const PARA = 'שורה ריקה = פסקה חדשה / A blank line starts a new paragraph. ' + '[[DRAFT]] = red "final wording needed" marker.';
 
 const filesEntry = (file, label, fields) => ({ name: file.split('/').pop().replace('.json', ''), label, file: `src/content/${file}`, fields });
 const page = (key, label, fnFields) => filesEntry(`pages/${key}.json`, label, bilingual(fnFields));
 
+const bgAlt = text('backgroundAlt', 'תיאור תמונת הרקע (נגישות) / Background photo description (alt)');
+const ICONS = ['zion', 'family', 'education', 'national', 'service', 'mutual', 'work', 'independence', 'unity', 'form', 'chat', 'people', 'path', 'sunrise', 'house'];
+const icon = () => ({ label: 'אייקון / Icon', name: 'icon', widget: 'select', options: ICONS, default: 'people' });
+const PAGES = ['about', 'vision', 'values', 'community', 'education', 'join', 'faq', 'contact'];
+const pageLink = () => ({ label: 'קישור לעמוד / Links to page', name: 'link', widget: 'select', options: PAGES, default: 'about' });
+// Vision, Community and Education share one structure.
+const sectionPage = (key, label) => page(key, label, () => [
+  ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
+  objList('sections', 'פסקאות (כל אחת בתיבה משלה) / Sections (each in its own box)', [text('title', 'כותרת / Title'), area('text', 'טקסט / Text', MARK)]),
+  text('ctaTitle', 'כותרת הזמנה בסוף העמוד / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
+]);
+
 const pages = [
   page('home', '🏠 בית / Home', () => [
-    ...seo, text('tagline', 'משפט פתיחה / Tagline'), text('backgroundAlt', 'תיאור התמונה (נגישות) / Photo description (alt)'),
+    ...seo, text('headline', 'משפט ראשי / Main line'), text('tagline', 'סלוגן / Slogan'), bgAlt,
     text('introTitle', 'כותרת מבוא / Intro title'), area('intro', 'טקסט מבוא / Intro text', MARK),
+    text('teasersTitle', 'כותרת כרטיסי ההיכרות / Teaser cards title'),
+    objList('teasers', 'כרטיסי היכרות (קישור לעמודים) / Teaser cards (link to pages)', [icon(), text('title', 'כותרת / Title'), area('text', 'טקסט קצר / Short text'), pageLink()]),
+    text('valuesTitle', 'כותרת הערכים / Values title'), area('valuesText', 'טקסט מעל סמלי הערכים / Text above the value icons'),
     objList('photos', 'תמונות מתחת לאזור הראשי (עד 2) / Photos below the intro (up to 2)', [img('image', 'תמונה / Photo'), text('alt', 'תיאור התמונה / Alt text')]),
+    text('ctaTitle', 'כותרת הזמנה בסוף / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
   ]),
-  page('about', '👥 אודות / About', () => [
-    ...seo, text('title', 'כותרת / Title'), text('backgroundAlt', 'תיאור תמונת הרקע / Background alt'),
-    text('storyTitle', 'כותרת הסיפור / Story title'), area('story', 'הסיפור / Story', MARK),
+  page('about', '👥 מי אנחנו / About', () => [
+    ...seo, text('title', 'כותרת / Title'), bgAlt,
+    text('identityTitle', 'כותרת זהות הקהילה / Identity title'), area('identity', 'זהות הקהילה / Community identity', MARK),
+    text('whoTitle', 'כותרת "למי" / Who-it-is-for title'), area('who', 'למי הקהילה מיועדת / Who it is for', MARK),
+    text('characterTitle', 'כותרת אופי הקהילה / Character title'), area('character', 'אופי הקהילה / Character', MARK),
     text('memorialTitle', 'כותרת לזכרם / Memorial title'), text('memorialTag', 'שורה קטנה בתחתית כל כרטיס / Small line at the bottom of each card'), area('memorialIntro', 'פתיח לזכרם / Memorial intro'),
     objList('memorials', 'הנופלים (6) / The fallen (6)', [text('name', 'שם / Name'), area('text', 'טקסט קצר / Short text'), img('photo', 'תמונה / Photo'), text('photoAlt', 'תיאור התמונה / Alt text')]),
   ]),
-  page('vision', '🌄 החזון / Vision', () => [
-    ...seo, text('title', 'כותרת / Title'), text('backgroundAlt', 'תיאור תמונת הרקע / Background alt'), area('intro', 'מבוא / Intro'),
-    text('valuesTitle', 'כותרת ערכים / Values title'), objList('values', 'ערכים / Values', [text('title', 'כותרת / Title'), area('text', 'טקסט / Text')]),
-    text('futureTitle', 'כותרת העתיד / Future title'), area('goal', 'היעד (כ-85 משפחות) / Goal'),
-    text('elementsTitle', 'כותרת רעיונות / Ideas title'), list('elements', 'רעיונות לטווח ארוך / Long-term ideas'),
-    text('disclaimer', 'הבהרה / Disclaimer'), area('economy', 'בסיס כלכלי / Economic foundation'),
+  sectionPage('vision', '🌄 החזון / Vision'),
+  page('values', '💎 הערכים / Values', () => [
+    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
+    objList('values', 'כרטיסי ערכים (3 בשורה במחשב) / Value cards (3 per row on desktop)', [icon(), text('title', 'כותרת / Title'), area('text', 'הסבר (משפט או שניים) / Explanation (1-2 sentences)')]),
+    text('ctaTitle', 'כותרת הזמנה בסוף / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
   ]),
-  page('community', '🤝 הקהילה / Community', () => [
-    ...seo, text('title', 'כותרת / Title'), text('backgroundAlt', 'תיאור תמונת הרקע / Background alt'),
-    text('fitTitle', 'כותרת "מי מתאים" / Fit title'), area('fit', 'מי מתאים / Who is a good fit', PARA),
-    text('audienceTitle', 'כותרת קהלי יעד / Audience title'), list('audience', 'קהלי יעד / Audience'),
-    text('processTitle', 'כותרת היכרות / Process title'), area('process', 'תהליך ההיכרות / Process'),
-    text('commitmentTitle', 'כותרת מחויבות / Commitment title'), area('commitment', 'מחויבות / Commitment'),
-    text('eventsTitle', 'כותרת אירועים / Events title'), area('eventsEmpty', 'הודעה כשאין אירועים / Empty-state message'),
-    text('ctaTitle', 'כותרת הזמנה / CTA title'), area('ctaText', 'טקסט הזמנה / CTA text'),
+  sectionPage('community', '🤝 הקהילה וחיי המשפחה / Community & family life'),
+  sectionPage('education', '📚 חינוך וזהות יהודית / Education & Jewish identity'),
+  page('join', '✋ הצטרפות / Join', () => [
+    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
+    text('stepsTitle', 'כותרת השלבים / Steps title'),
+    objList('steps', 'ארבעת השלבים / The four steps', [icon(), text('title', 'כותרת / Title'), text('text', 'טקסט קצר / Short text')]),
+    text('stepsNote', 'הערה מתחת לשלבים / Note under the steps'), text('formTitle', 'כותרת הטופס / Form title'),
   ]),
-  page('contact', '✉️ צור קשר / Contact', () => [...seo, text('title', 'כותרת / Title'), area('intro', 'מבוא / Intro')]),
-  page('accessibility', '♿ הצהרת נגישות / Accessibility', () => [...seo, text('title', 'כותרת / Title'), area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
-  page('privacy', '🔒 מדיניות פרטיות / Privacy', () => [...seo, text('title', 'כותרת / Title'), area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
+  page('faq', '❓ שאלות נפוצות / FAQ', () => [
+    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא (לא חובה) / Intro (optional)'),
+    objList('items', 'שאלות ותשובות (אפשר להוסיף) / Questions and answers (you can add more)', [text('q', 'שאלה / Question'), area('a', 'תשובה / Answer', MARK)]),
+  ]),
+  page('contact', '✉️ צור קשר / Contact', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro')]),
+  page('accessibility', '♿ הצהרת נגישות / Accessibility', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
+  page('privacy', '🔒 מדיניות פרטיות / Privacy', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
   page('donate', '💙 תרומות (כבוי) / Donate (off)', () => [...seo, text('title', 'כותרת / Title'), area('text', 'טקסט / Text')]),
 ];
 
-const t = (key, label) => ({ label, name: key, widget: 'string', required: false });
-const uiFields = (lang) => [
-  t('siteName', 'שם האתר'), t('skip', 'דלג לתוכן'), t('btnJoin', 'כפתור: אני רוצה להצטרף'), t('btnJoinCommunity', 'כפתור: הצטרפות (קהילה)'),
-  { label: 'תפריט / Menu', name: 'nav', widget: 'object', fields: ['home', 'about', 'vision', 'community', 'contact'].map((k) => t(k, k)) },
-  { label: 'כותרת תחתית / Footer', name: 'footer', widget: 'object', fields: ['contactTitle', 'phone', 'email', 'instagram', 'facebook', 'accessibility', 'privacy', 'copyright'].map((k) => t(k, k)) },
-  { label: 'מילוי מקום / Placeholders', name: 'placeholders', widget: 'object', fields: ['phone', 'email', 'instagram', 'facebook', 'legalName'].map((k) => t(k, k)) },
-  { label: 'סימונים אדומים / Red markers', name: 'todo', widget: 'object', fields: ['photo', 'family', 'memorial', 'phone', 'email', 'instagram', 'facebook', 'form', 'formDemo', 'legal', 'generic'].map((k) => t(k, k)) },
-  { label: 'טופס / Form', name: 'form', widget: 'object', fields: ['title', 'name', 'phone', 'email', 'contactHint', 'type', 'typeJoin', 'typePartner', 'typeGeneral', 'message', 'consent', 'consentLink', 'required', 'submit', 'errName', 'errContact', 'errEmail', 'errPhone', 'errConsent', 'errorSummary', 'success', 'failure'].map((k) => t(k, k)) },
-  { label: 'אירועים / Events', name: 'events', widget: 'object', fields: ['date', 'place'].map((k) => t(k, k)) },
-  { label: 'תפריט נגישות / Accessibility menu', name: 'a11y', widget: 'object', fields: ['button', 'title', 'close', 'bigger', 'smaller', 'contrast', 'underline', 'reset'].map((k) => t(k, k)) },
-  { label: 'עמוד 404', name: 'notFound', widget: 'object', fields: ['title', 'text', 'back'].map((k) => t(k, k)) },
-  t('logoAlt', 'תיאור הלוגו (alt)'), t('menuOpen', 'פתח תפריט'), t('menuClose', 'סגור תפריט'),
-];
+// Fixed texts (menu, buttons, form, footer): fields are generated from ui.json itself, so they never go out of sync.
+const fromJson = (o) => Object.entries(o).map(([k, v]) => (typeof v === 'object' && v !== null && !Array.isArray(v)
+  ? { label: k, name: k, widget: 'object', collapsed: true, fields: fromJson(v) }
+  : { label: k, name: k, widget: 'string', required: false }));
+const ui = JSON.parse(fs.readFileSync('src/content/ui.json', 'utf8'));
+const uiFields = (lang) => fromJson(ui[lang]);
 
+const bg = (name, label) => img(name, `תמונת רקע: ${label}`, { required: true });
 const settingsFields = [
   { label: 'הצג סימונים אדומים (TODO) / Show red TODO markers', name: 'showTodo', widget: 'boolean', default: true, hint: 'כבו לפני ההשקה / Turn OFF at launch' },
   { label: 'הפעל עמוד תרומות / Turn on the Donate page', name: 'donateEnabled', widget: 'boolean', default: false },
-  { label: 'מספר המשפחות אומת ואושר / Family count verified', name: 'familyCountVerified', widget: 'boolean', default: false },
+  { label: 'מספר המשפחות אומת ואושר / Family count verified', name: 'familyCountVerified', widget: 'boolean', default: false, hint: 'האתר אינו מציג מספר משפחות / The site shows no family number' },
   { label: 'המשפחות אישרו את פרטי הנופלים / Memorial approved by families', name: 'memorialApproved', widget: 'boolean', default: false },
   { label: 'תמונת הבית מורשית / Home photo is licensed', name: 'homePhotoLicensed', widget: 'boolean', default: false },
   text('siteUrl', 'כתובת האתר (https://...) / Site address'),
   text('phone', 'טלפון / וואטסאפ (מספר אחד) / Telephone / WhatsApp (one number)'),
   text('email', 'דוא״ל / Email'), text('instagram', 'אינסטגרם (קישור מלא) / Instagram URL'), text('facebook', 'פייסבוק (קישור מלא) / Facebook URL'),
-  text('formAction', 'כתובת שירות הטפסים / Form service URL', { hint: 'למשל / e.g. https://formspree.io/f/xxxx' }),
+  text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
-  img('homeBackground', 'תמונת רקע: בית / Home background', { required: true }),
-  img('aboutBackground', 'תמונת רקע: אודות / About background', { required: true }),
-  img('visionBackground', 'תמונת רקע: החזון / Vision background', { required: true }),
-  img('communityBackground', 'תמונת רקע: הקהילה / Community background', { required: true }),
+  bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון / Vision'), bg('valuesBackground', 'הערכים / Values'),
+  bg('communityBackground', 'הקהילה / Community'), bg('educationBackground', 'חינוך / Education'), bg('joinBackground', 'הצטרפות / Join'),
+  bg('faqBackground', 'שאלות נפוצות / FAQ'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
 ];
 
 const config = {
@@ -115,11 +128,6 @@ const config = {
   public_folder: '/photos',
   collections: [
     { name: 'pages', label: 'עמודים / Pages', files: pages },
-    { name: 'events', label: '📅 אירועים / Events', label_singular: 'אירוע / Event', folder: 'src/content/events', extension: 'json', format: 'json', create: true, slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-      summary: '{{title_he}} — {{date}}',
-      fields: [text('title_he', 'כותרת (עברית)', { required: true }), text('title_en', 'Title (English)'), { label: 'תאריך / Date', name: 'date', widget: 'datetime', time_format: false, date_format: 'YYYY-MM-DD', format: 'YYYY-MM-DD' },
-        text('place_he', 'מקום (עברית)'), text('place_en', 'Place (English)'), area('description_he', 'תיאור (עברית)'), area('description_en', 'Description (English)'),
-        img('photo', 'תמונה (לא חובה) / Photo (optional)'), text('photoAlt_he', 'תיאור התמונה (עברית)'), text('photoAlt_en', 'Photo description (English)')] },
     { name: 'site', label: '⚙️ הגדרות / Settings', files: [
       filesEntry('settings.json', '⚙️ הגדרות כלליות, קשר ותמונות רקע / General settings, contact, backgrounds', settingsFields),
       { name: 'ui', label: '🔤 טקסטים קבועים (תפריט, טופס, תחתית) / Menus, form, footer text', file: 'src/content/ui.json', fields: bilingual(uiFields) },

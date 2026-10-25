@@ -1,0 +1,23 @@
+---
+import Panel from '../Panel.astro';
+import PageHead from '../PageHead.astro';
+import Icon from '../Icon.astro';
+import CtaPanel from '../CtaPanel.astro';
+import { getPage, type Lang } from '../../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const p = getPage('values', lang);
+---
+<PageHead title={p.title} intro={p.intro} lang={lang} />
+<Panel tone="light" class="panel--grid">
+  <ul class="value-cards">
+    {p.values.map((v: any) => (
+      <li class="value-card">
+        <Icon name={v.icon} size={44} class="value-icon" />
+        <h2>{v.title}</h2>
+        <p>{v.text}</p>
+      </li>
+    ))}
+  </ul>
+</Panel>
+<CtaPanel lang={lang} title={p.ctaTitle} text={p.ctaText} />

@@ -1,11 +1,35 @@
 {
   "he": {
-    "seoTitle": "חלוצי נוף — קהילה ויישוב בהקמה",
-    "seoDescription": "חלוצי נוף היא יוזמה קהילתית ויישובית בראשית דרכה. בונים קהילה, חולמים על יישוב, יוצרים עתיד.",
-    "tagline": "לא רק חולמים על הארץ בונים אותה",
+    "seoTitle": "חלוצי נוף — חזון ציוני, קהילה חזקה, בית לדורות",
+    "seoDescription": "חלוצי נוף נוסדה על ידי חברים ששירתו יחד בצה״ל. אנחנו שואפים להקים קהילה חדשה בארץ ישראל, פתוחה למשפחות, לזוגות צעירים ולכל מי שחולק את הערכים.",
+    "headline": "חזון ציוני. קהילה חזקה. בית לדורות.",
+    "tagline": "חלוצי נוף — בונים את העתיד של ההתיישבות.",
     "backgroundAlt": "נוף של יישוב על צלע הר בשעת שקיעה",
     "introTitle": "מי אנחנו",
-    "intro": "חלוצי נוף היא יוזמה קהילתית ויישובית בראשית דרכה. היא צמחה מתוך שאיפותיהם של צעירים, ובהם משוחררי צה״ל, חיילים בודדים ועולים חדשים, המבקשים דרך משותפת המושתתת על חיי משפחה, קהילה, תורה, עבודה, ציונות ותרומה למדינת ישראל.\n\nהמטרה שלנו היא לבנות תחילה קהילה חזקה ומגובשת, ובהמשך, בשיתוף הגופים הרשמיים הרלוונטיים, להקים יישוב קהילתי חדש.",
+    "intro": "חלוצי נוף נוסדה על ידי חברים ששירתו יחד בצה״ל. אנחנו שואפים להקים קהילה חדשה בארץ ישראל: קהילה של משפחות וזוגות צעירים, פתוחה לכל מי שחולק את הערכים שלנו.\n\nאנחנו בתחילת הדרך, וגרעין המשפחות שלנו הולך וגדל. [[DRAFT]]",
+    "teasersTitle": "להכיר אותנו",
+    "teasers": [
+      {
+        "icon": "people",
+        "title": "מי אנחנו",
+        "text": "חברים ששירתו יחד, וקהילה הפתוחה לכל מי שחולק את הדרך.",
+        "link": "about"
+      },
+      {
+        "icon": "sunrise",
+        "title": "החזון",
+        "text": "קהילה חדשה בארץ ישראל, שבנויה על משפחה, חינוך וערבות הדדית.",
+        "link": "vision"
+      },
+      {
+        "icon": "house",
+        "title": "חיי קהילה",
+        "text": "שכנות אמיתית, טבע, יוזמה ומשפחות שגדלות יחד.",
+        "link": "community"
+      }
+    ],
+    "valuesTitle": "הערכים שלנו",
+    "valuesText": "תשעה ערכים מובילים אותנו בדרך. הכירו אותם.",
     "photos": [
       {
         "image": "",
@@ -15,15 +39,41 @@
         "image": "",
         "alt": ""
       }
-    ]
+    ],
+    "ctaTitle": "מוזמנים להכיר",
+    "ctaText": "אם הדרך הזו מדברת אליכם, נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]"
   },
   "en": {
-    "seoTitle": "Halutzei Nof — A Community and Settlement in the Making",
-    "seoDescription": "Halutzei Nof is a community and settlement initiative in its early stage. Building a community, dreaming of a settlement, creating a future.",
-    "tagline": "Not Just Dreaming About the Land, Building It",
+    "seoTitle": "Halutzei Nof — A Zionist vision. A strong community. A home for generations.",
+    "seoDescription": "Halutzei Nof was founded by friends who served together in the IDF. We aim to build a new community in the Land of Israel, open to families, young couples and everyone who shares our values.",
+    "headline": "A Zionist vision. A strong community. A home for generations.",
+    "tagline": "Halutzei Nof — building a new community in the Land of Israel.",
     "backgroundAlt": "A hillside village at sunset",
     "introTitle": "Who We Are",
-    "intro": "Halutzei Nof is a community and settlement initiative in its early stage. It grew out of the aspirations of young adults, including discharged soldiers, lone soldiers and olim, who seek a shared path built on family life, community, Torah, work, Zionism and contributing to the State of Israel.\n\nOur goal is first to build a strong, cohesive community and then, in cooperation with the relevant official bodies, to establish a new community settlement.",
+    "intro": "Halutzei Nof was founded by friends who served together in the IDF. We aim to build a new community in the Land of Israel: a community of families and young couples, open to everyone who shares our values.\n\nWe are at the beginning of the road, and our core of families is growing. [[DRAFT]]",
+    "teasersTitle": "Get to Know Us",
+    "teasers": [
+      {
+        "icon": "people",
+        "title": "About Us",
+        "text": "Friends who served together, and a community open to everyone who shares the path.",
+        "link": "about"
+      },
+      {
+        "icon": "sunrise",
+        "title": "Our Vision",
+        "text": "A new community in the Land of Israel, built on family, education and mutual responsibility.",
+        "link": "vision"
+      },
+      {
+        "icon": "house",
+        "title": "Community Life",
+        "text": "Real neighborliness, nature, initiative and families growing up together.",
+        "link": "community"
+      }
+    ],
+    "valuesTitle": "Our Values",
+    "valuesText": "Nine values guide us on the way. Get to know them.",
     "photos": [
       {
         "image": "",
@@ -33,6 +83,8 @@
         "image": "",
         "alt": ""
       }
-    ]
+    ],
+    "ctaTitle": "Come and Meet Us",
+    "ctaText": "If this path speaks to you, we would love to get to know you. Leave your details and we will get back to you personally. [[DRAFT]]"
   }
 }

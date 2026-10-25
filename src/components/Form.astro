@@ -1,0 +1,103 @@
+---
+// One form component for both forms. Both post to the same FormSubmit address;
+// the hidden field form_type (join | contact) tells them apart in the inbox.
+import { getUi, pagePath, settings, todoMark, siteRoot, type Lang } from '../lib/site';
+interface Props { lang: Lang; kind: 'join' | 'contact' }
+const { lang, kind } = Astro.props;
+const t = getUi(lang);
+const f = t.form;
+const ajax = settings.formAction || '';
+const plain = ajax.replace('/ajax/', '/');
+const root = siteRoot();
+const next = root ? root + pagePath(kind, lang) + '?sent=1' : '';
+const id = (n: string) => `${kind}-${n}`;
+const subject = kind === 'join'
+  ? (lang === 'he' ? 'בקשת הצטרפות חדשה — חלוצי נוף' : 'New join request — Halutzei Nof')
+  : (lang === 'he' ? 'פנייה חדשה מעמוד צור קשר — חלוצי נוף' : 'New contact message — Halutzei Nof');
+---
+<form class="form" method="post" action={plain || undefined} novalidate data-form={kind} data-action={ajax} data-demo={settings.showTodo ? '1' : ''}
+  data-msg-failure={f.failure} data-msg-demo={t.todo.formDemo} data-sending={f.sending}
+  data-err-name={f.errName} data-err-contact={f.errContact} data-err-email={f.errEmail} data-err-phone={f.errPhone}
+  data-err-emailorphone={f.errEmailOrPhone} data-err-family={f.errFamily} data-err-message={f.errMessage} data-err-consent={f.errConsent}>
+  <div class="form-error-summary" role="alert" tabindex="-1" hidden data-summary>
+    <strong>{f.errorSummary}</strong>
+    <ul data-summary-list></ul>
+  </div>
+
+  <div class="field">
+    <label for={id('name')}>{f.name} <span class="req" aria-hidden="true">*</span><span class="sr-only"> ({f.required})</span></label>
+    <input id={id('name')} data-field="name" name="name" type="text" autocomplete="name" required aria-describedby={`e-${id('name')}`} />
+    <p class="err" id={`e-${id('name')}`} data-err="name" hidden></p>
+  </div>
+
+  {kind === 'join' ? (
+    <>
+      <fieldset class="field-group">
+        <legend>{f.contactHint}</legend>
+        <div class="field">
+          <label for={id('phone')}>{f.phone}</label>
+          <input id={id('phone')} data-field="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" aria-describedby={`e-${id('phone')} e-${id('contact')}`} />
+          <p class="err" id={`e-${id('phone')}`} data-err="phone" hidden></p>
+        </div>
+        <div class="field">
+          <label for={id('email')}>{f.email}</label>
+          <input id={id('email')} data-field="email" name="email" type="email" autocomplete="email" dir="ltr" aria-describedby={`e-${id('email')} e-${id('contact')}`} />
+          <p class="err" id={`e-${id('email')}`} data-err="email" hidden></p>
+        </div>
+        <p class="err" id={`e-${id('contact')}`} data-err="contact" hidden></p>
+      </fieldset>
+      <div class="field-row">
+        <div class="field">
+          <label for={id('residence')}>{f.residence}</label>
+          <select id={id('residence')} name="residence">
+            <option value="">{f.residenceChoose}</option>
+            <option value="israel">{f.residenceIsrael}</option>
+            <option value="abroad">{f.residenceAbroad}</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for={id('family')}>{f.family}</label>
+          <input id={id('family')} data-field="family" name="family_members" type="number" inputmode="numeric" min="1" max="30" aria-describedby={`e-${id('family')}`} />
+          <p class="err" id={`e-${id('family')}`} data-err="family" hidden></p>
+        </div>
+      </div>
+      <div class="field">
+        <label for={id('about')}>{f.about}</label>
+        <textarea id={id('about')} name="about" rows="5"></textarea>
+      </div>
+    </>
+  ) : (
+    <>
+      <div class="field">
+        <label for={id('contact')}>{f.emailOrPhone} <span class="req" aria-hidden="true">*</span><span class="sr-only"> ({f.required})</span></label>
+        <input id={id('contact')} data-field="contact" name="email_or_phone" type="text" inputmode="email" autocomplete="email" dir="ltr" required aria-describedby={`e-${id('contact')}`} />
+        <p class="err" id={`e-${id('contact')}`} data-err="contact" hidden></p>
+      </div>
+      <div class="field">
+        <label for={id('message')}>{f.message} <span class="req" aria-hidden="true">*</span><span class="sr-only"> ({f.required})</span></label>
+        <textarea id={id('message')} data-field="message" name="message" rows="5" required aria-describedby={`e-${id('message')}`}></textarea>
+        <p class="err" id={`e-${id('message')}`} data-err="message" hidden></p>
+      </div>
+    </>
+  )}
+
+  <div class="field field--check">
+    <input id={id('consent')} data-field="consent" name="consent" type="checkbox" required aria-describedby={`e-${id('consent')}`} />
+    <label for={id('consent')}>{f.consent} <a href={pagePath('privacy', lang)} target="_blank" rel="noopener">{f.consentLink}</a> <span class="req" aria-hidden="true">*</span><span class="sr-only"> ({f.required})</span></label>
+    <p class="err" id={`e-${id('consent')}`} data-err="consent" hidden></p>
+  </div>
+
+  <input type="hidden" name="form_type" value={kind} />
+  <input type="hidden" name="_subject" value={subject} />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_next" value={next} data-next />
+  <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+  <button class="btn btn--gold" type="submit" data-submit>{f.submit}</button>
+  <p class="form-todo" set:html={todoMark('form', lang)} />
+  <p class="form-status" role="status" aria-live="polite" tabindex="-1" data-status hidden></p>
+  <div class="form-thanks" tabindex="-1" hidden data-thanks>
+    <h3>{f.thanksTitle}</h3>
+    <p>{kind === 'join' ? f.thanksJoin : f.thanksContact}</p>
+  </div>
+</form>

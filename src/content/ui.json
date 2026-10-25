@@ -6,10 +6,14 @@
     "skip": "דלג לתוכן הראשי",
     "nav": {
       "home": "בית",
-      "about": "אודות",
+      "about": "מי אנחנו",
       "vision": "החזון",
       "community": "הקהילה",
-      "contact": "צור קשר"
+      "contact": "צור קשר",
+      "values": "הערכים",
+      "education": "חינוך",
+      "faq": "שאלות נפוצות",
+      "join": "הצטרפות"
     },
     "menuOpen": "פתח תפריט",
     "menuClose": "סגור תפריט",
@@ -17,8 +21,8 @@
     "langLabel": "החלפת שפה",
     "langSwitchTo": "English",
     "langSwitchAria": "Switch to English",
-    "btnJoin": "אני רוצה להצטרף",
-    "btnJoinCommunity": "אני רוצה להצטרף",
+    "btnJoin": "הצטרפו למעגל המתעניינים",
+    "btnJoinCommunity": "הצטרפו למעגל המתעניינים",
     "scrollDown": "גללו למטה",
     "footer": {
       "contactTitle": "יצירת קשר",
@@ -28,7 +32,10 @@
       "facebook": "פייסבוק",
       "accessibility": "הצהרת נגישות",
       "privacy": "מדיניות פרטיות",
-      "copyright": "© {year} חלוצי נוף. כל הזכויות שמורות."
+      "copyright": "© {year} חלוצי נוף. כל הזכויות שמורות.",
+      "tagline": "חזון ציוני. קהילה חזקה. בית לדורות.",
+      "pagesTitle": "באתר",
+      "faq": "שאלות נפוצות"
     },
     "placeholders": {
       "phone": "[מספר טלפון / וואטסאפ]",
@@ -46,37 +53,44 @@
       "instagram": "יש להזין קישור לאינסטגרם",
       "facebook": "יש להזין קישור לפייסבוק",
       "form": "יעד שליחת הטופס טרם הוגדר (יחובר בהמשך באמצעות תוסף)",
-      "formDemo": "הטופס אינו מחובר עדיין — פנייה זו לא נשלחה לאף גורם",
       "legal": "שם הגוף המשפטי / מעמד משפטי טרם נקבעו",
-      "generic": "יש להשלים"
+      "generic": "יש להשלים",
+      "draft": "טקסט זמני — ממתין לנוסח הסופי",
+      "formDemo": "הטופס אינו מחובר עדיין — פנייה זו לא נשלחה לאף גורם"
     },
     "form": {
       "title": "השאירו פרטים",
+      "contactTitle": "כתבו לנו",
       "name": "שם מלא",
       "phone": "טלפון",
       "email": "דוא״ל",
+      "emailOrPhone": "דוא״ל או טלפון",
       "contactHint": "יש למלא טלפון או דוא״ל (לפחות אחד מהם)",
-      "type": "סוג הפנייה",
-      "typeJoin": "הצטרפות לקהילה",
-      "typePartner": "שותפות / שיתוף פעולה",
-      "typeGeneral": "פנייה כללית",
-      "message": "ספרו לנו בקצרה על עצמכם / על הפנייה",
+      "residence": "אזור מגורים",
+      "residenceChoose": "בחרו…",
+      "residenceIsrael": "בישראל",
+      "residenceAbroad": "בחו״ל",
+      "family": "מספר בני המשפחה",
+      "about": "כמה מילים על עצמכם",
+      "message": "הודעה",
       "consent": "אני מסכים/ה שיחזרו אליי. קראתי את",
       "consentLink": "מדיניות הפרטיות",
       "required": "שדה חובה",
       "submit": "שליחה",
+      "sending": "שולחים…",
       "errName": "נא להזין שם מלא.",
       "errContact": "נא להזין טלפון או דוא״ל.",
       "errEmail": "כתובת הדוא״ל אינה תקינה.",
       "errPhone": "מספר הטלפון אינו תקין.",
+      "errEmailOrPhone": "נא להזין דוא״ל או טלפון תקינים.",
+      "errFamily": "נא להזין מספר בין 1 ל-30.",
+      "errMessage": "נא לכתוב הודעה.",
       "errConsent": "יש לאשר את ההסכמה כדי להמשיך.",
       "errorSummary": "יש לתקן את השדות המסומנים:",
-      "success": "תודה! פנייתכם התקבלה ונחזור אליכם בהקדם.",
+      "thanksTitle": "תודה!",
+      "thanksJoin": "הפרטים התקבלו. נחזור אליכם אישית בהקדם.",
+      "thanksContact": "ההודעה התקבלה. נחזור אליכם בהקדם.",
       "failure": "אירעה שגיאה בשליחה. נסו שוב מאוחר יותר או פנו אלינו ישירות."
-    },
-    "events": {
-      "date": "תאריך",
-      "place": "מקום"
     },
     "a11y": {
       "button": "תפריט נגישות",
@@ -97,6 +111,17 @@
       "text": "Your browser is set to English. This site is also available in English.",
       "go": "View in English",
       "dismiss": "Not now"
+    },
+    "btnMore": "לקריאה נוספת",
+    "whatsapp": {
+      "button": "שלחו לנו הודעה בוואטסאפ",
+      "fab": "שיחה בוואטסאפ",
+      "title": "וואטסאפ"
+    },
+    "contactPage": {
+      "callLabel": "טלפון",
+      "emailLabel": "דוא״ל",
+      "socialLabel": "ברשתות"
     }
   },
   "en": {
@@ -106,10 +131,14 @@
     "skip": "Skip to main content",
     "nav": {
       "home": "Home",
-      "about": "About Us",
+      "about": "About",
       "vision": "Vision",
       "community": "Community",
-      "contact": "Contact Us"
+      "contact": "Contact",
+      "values": "Values",
+      "education": "Education",
+      "faq": "FAQ",
+      "join": "Join"
     },
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
@@ -117,8 +146,8 @@
     "langLabel": "Change language",
     "langSwitchTo": "עברית",
     "langSwitchAria": "החלפה לעברית",
-    "btnJoin": "I Want to Join",
-    "btnJoinCommunity": "I Want to Join",
+    "btnJoin": "Join our circle of interest",
+    "btnJoinCommunity": "Join our circle of interest",
     "scrollDown": "Scroll down",
     "footer": {
       "contactTitle": "Contact",
@@ -128,7 +157,10 @@
       "facebook": "Facebook",
       "accessibility": "Accessibility Statement",
       "privacy": "Privacy Policy",
-      "copyright": "© {year} Halutzei Nof. All rights reserved."
+      "copyright": "© {year} Halutzei Nof. All rights reserved.",
+      "tagline": "A Zionist vision. A strong community. A home for generations.",
+      "pagesTitle": "On this site",
+      "faq": "Frequently asked questions"
     },
     "placeholders": {
       "phone": "[Telephone / WhatsApp number]",
@@ -146,37 +178,44 @@
       "instagram": "Instagram link to be added",
       "facebook": "Facebook link to be added",
       "form": "form destination not set (a plug-in will be added later)",
-      "formDemo": "the form is not connected yet — this submission was not sent to anyone",
       "legal": "legal entity name / legal status not yet determined",
-      "generic": "to be completed"
+      "generic": "to be completed",
+      "draft": "placeholder copy — final wording needed",
+      "formDemo": "the form is not connected yet — this submission was not sent to anyone"
     },
     "form": {
       "title": "Leave your details",
+      "contactTitle": "Write to us",
       "name": "Full name",
       "phone": "Phone",
       "email": "Email",
+      "emailOrPhone": "Email or phone",
       "contactHint": "Please provide a phone number or an email (at least one)",
-      "type": "Inquiry type",
-      "typeJoin": "Joining the community",
-      "typePartner": "Partnership / collaboration",
-      "typeGeneral": "General inquiry",
-      "message": "Tell us briefly about yourself / your inquiry",
+      "residence": "Area of residence",
+      "residenceChoose": "Choose…",
+      "residenceIsrael": "In Israel",
+      "residenceAbroad": "Abroad",
+      "family": "Number of family members",
+      "about": "A few words about yourselves",
+      "message": "Message",
       "consent": "I agree to be contacted back. I have read the",
       "consentLink": "Privacy Policy",
       "required": "Required",
       "submit": "Send",
+      "sending": "Sending…",
       "errName": "Please enter your full name.",
       "errContact": "Please enter a phone number or an email.",
       "errEmail": "The email address is not valid.",
       "errPhone": "The phone number is not valid.",
+      "errEmailOrPhone": "Please enter a valid email or phone number.",
+      "errFamily": "Please enter a number between 1 and 30.",
+      "errMessage": "Please write a message.",
       "errConsent": "Please confirm your consent to continue.",
       "errorSummary": "Please fix the highlighted fields:",
-      "success": "Thank you! Your message was received and we will get back to you soon.",
+      "thanksTitle": "Thank you!",
+      "thanksJoin": "We received your details and will get back to you personally soon.",
+      "thanksContact": "Your message was received. We will get back to you soon.",
       "failure": "Something went wrong while sending. Please try again later or contact us directly."
-    },
-    "events": {
-      "date": "Date",
-      "place": "Place"
     },
     "a11y": {
       "button": "Accessibility menu",
@@ -197,6 +236,17 @@
       "text": "",
       "go": "",
       "dismiss": ""
+    },
+    "btnMore": "Read more",
+    "whatsapp": {
+      "button": "Message us on WhatsApp",
+      "fab": "Chat on WhatsApp",
+      "title": "WhatsApp"
+    },
+    "contactPage": {
+      "callLabel": "Phone",
+      "emailLabel": "Email",
+      "socialLabel": "Social media"
     }
   }
 }
