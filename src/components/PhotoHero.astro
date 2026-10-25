@@ -1,8 +1,8 @@
 ---
 import Pic from './Pic.astro';
 import { getUi, type Lang } from '../lib/site';
-interface Props { src: string; alt: string; variant: 'home' | 'about' | 'vision' | 'community'; lang: Lang }
-const { src, alt, variant, lang } = Astro.props;
+interface Props { src: string; alt: string; variant: 'home' | 'about' | 'vision' | 'community'; lang: Lang; fade?: 'navy' | 'white' }
+const { src, alt, variant, lang, fade = 'navy' } = Astro.props;
 const t = getUi(lang);
 ---
 <div class="bg" data-bg data-variant={variant}>
@@ -18,4 +18,4 @@ const t = getUi(lang);
     <a class="scroll-hint" href="#content" aria-label={t.scrollDown}><span aria-hidden="true"></span></a>
   </div>
 </section>
-<div id="content" class="content-fade" aria-hidden="true"></div>
+<div id="content" class="content-fade" data-fade={fade} aria-hidden="true"></div>

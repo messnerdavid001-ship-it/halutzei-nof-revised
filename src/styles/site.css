@@ -104,6 +104,7 @@ h3 { font-size: 1.3rem; }
 @media (prefers-reduced-motion: no-preference) { .scroll-hint span { animation: bob 1.8s infinite; } }
 @keyframes bob { 50% { transform: rotate(45deg) translate(2px, 2px); } }
 .content-fade { height: 14vh; background: linear-gradient(to bottom, transparent, var(--navy)); margin-top: -1px; }
+.content-fade[data-fade='white'] { background: linear-gradient(to bottom, transparent, var(--white)); }
 .hero-marker { margin: 0; background: rgba(255,255,255,.88); padding: 2px 10px; border-radius: 6px; }
 .hero-marker:empty { display: none; }
 
