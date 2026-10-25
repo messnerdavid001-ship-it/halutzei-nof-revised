@@ -14,7 +14,7 @@ const p = getPage('about', lang);
 <Section tone="navy" title={p.storyTitle}>
   <TextBlock text={p.story} lang={lang} />
 </Section>
-<Section tone="white" title={p.memorialTitle} id="memorial">
+<Section tone="navy" title={p.memorialTitle} id="memorial">
   <TextBlock text={p.memorialIntro} lang={lang} />
   <p class="memorial-todo" set:html={todoMark('memorial', lang)} />
   <ul class="memorials">
