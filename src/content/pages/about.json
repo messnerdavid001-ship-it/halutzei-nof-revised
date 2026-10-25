@@ -19,10 +19,10 @@
     "memorialIntro": "הקהילה נקראת על שמם ולזכרם של שישה חיילים שנפלו. כאן יופיעו פרטיהם, בכפוף לאישור משפחותיהם.",
     "memorials": [
       {
-        "name": "סרן גל שבת ז״ל",
-        "text": "סרן, מפקד הפלוגה (מ״פ).",
+        "name": "רס״ן גל שבת ז״ל",
+        "text": "מפקד הפלוגה (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
-        "photoAlt": "תצלום של סרן גל שבת ז״ל"
+        "photoAlt": "תצלום של רס״ן גל שבת ז״ל"
       },
       {
         "name": "רועי בית יעקב ז״ל",
@@ -76,10 +76,10 @@
     "memorialIntro": "The community is named in honor and in memory of six fallen soldiers. Their details will appear here, subject to the approval of their families.",
     "memorials": [
       {
-        "name": "Captain Gal Shabat, of blessed memory",
-        "text": "Captain, the company commander (מ״פ).",
+        "name": "Gal Shabat רס״ן, of blessed memory",
+        "text": "The company commander (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
-        "photoAlt": "Photo of Captain Gal Shabat, of blessed memory"
+        "photoAlt": "Photo of Gal Shabat, of blessed memory"
       },
       {
         "name": "Roi Bet Yaakov, of blessed memory",
