@@ -7,7 +7,7 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 
 | # | Item | Where it appears | How it is cleared |
 |---|---|---|---|
-| 1 | Home photo is not licensed | Bottom of the Home hero photo (he + en) | Replace `home-village.jpg` with a licensed photo, then tick "Home photo is licensed" |
+| 1 | Home photo is not licensed | Marker hidden at your request ("Home photo is licensed" is ticked) — the photo is still NOT licensed | Replace `home-village.jpg` with a licensed photo. To bring the marker back, untick "Home photo is licensed" |
 | 2 | **Placeholder copy — final wording needed** | End of most text blocks on every page (he + en) | Write the final wording, delete `[[DRAFT]]` from the text. Prompt B copy replaces these. |
 | 3 | Memorial details need the families' approval | About → "In Their Memory" (he + en) | Fill in the six cards, then tick "Memorial approved" |
 | 4 | Telephone / WhatsApp number | Footer + Contact | Done: 053-474-9499 (one field for both) |

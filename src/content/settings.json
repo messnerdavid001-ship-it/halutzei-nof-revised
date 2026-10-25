@@ -3,7 +3,7 @@
   "donateEnabled": false,
   "familyCountVerified": false,
   "memorialApproved": false,
-  "homePhotoLicensed": false,
+  "homePhotoLicensed": true,
   "siteUrl": "",
   "phone": "0534749499",
   "email": "123messner@gmail.com",
