@@ -5,9 +5,9 @@ import images from '../generated/images.json';
 export type Lang = 'he' | 'en';
 export { settings };
 
-export const SLUGS = ['index', 'about', 'vision', 'community', 'partners', 'contact', 'accessibility', 'privacy', 'donate'] as const;
-export const NAV = ['index', 'about', 'vision', 'community', 'partners', 'contact'] as const;
-export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', community: 'community', partners: 'partners', contact: 'contact' };
+export const SLUGS = ['index', 'about', 'vision', 'community', 'contact', 'accessibility', 'privacy', 'donate'] as const;
+export const NAV = ['index', 'about', 'vision', 'community', 'contact'] as const;
+export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', community: 'community', contact: 'contact' };
 
 export const getUi = (lang: Lang) => ui[lang];
 

@@ -12,7 +12,7 @@ How it works, in one line: when you press **Publish** in the admin panel, your e
 
 1. Go to `/admin/` and click **Sign in with token** (see "First-time setup" below for how to make the token once; the browser remembers it).
 3. On the left you will see:
-   - **עמודים / Pages** — Home, About, Vision, Community, Partners, Contact, Accessibility, Privacy.
+   - **עמודים / Pages** — Home, About, Vision, Community, Contact, Accessibility, Privacy.
    - **אירועים / Events** — the events list on the Community page.
    - **הגדרות / Settings** — contact details, background photos, on/off switches, and the fixed texts (menu, buttons, form, footer).
 4. Click a page. You will see two boxes: **עברית (Hebrew)** and **English**. Every sentence on the page is in one of these fields.

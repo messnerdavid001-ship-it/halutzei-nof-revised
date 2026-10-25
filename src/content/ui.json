@@ -9,7 +9,6 @@
       "about": "אודות",
       "vision": "החזון",
       "community": "הקהילה",
-      "partners": "שותפים לדרך",
       "contact": "צור קשר"
     },
     "menuOpen": "פתח תפריט",
@@ -19,8 +18,6 @@
     "langSwitchTo": "English",
     "langSwitchAria": "Switch to English",
     "btnJoin": "אני רוצה להצטרף",
-    "btnPartners": "שותפים לדרך",
-    "btnContactPartners": "צרו איתנו קשר",
     "btnJoinCommunity": "אני רוצה להצטרף",
     "scrollDown": "גללו למטה",
     "footer": {
@@ -112,7 +109,6 @@
       "about": "About Us",
       "vision": "Vision",
       "community": "Community",
-      "partners": "Partners",
       "contact": "Contact Us"
     },
     "menuOpen": "Open menu",
@@ -122,8 +118,6 @@
     "langSwitchTo": "עברית",
     "langSwitchAria": "החלפה לעברית",
     "btnJoin": "I Want to Join",
-    "btnPartners": "Partners on the Journey",
-    "btnContactPartners": "Get in touch",
     "btnJoinCommunity": "I Want to Join",
     "scrollDown": "Scroll down",
     "footer": {

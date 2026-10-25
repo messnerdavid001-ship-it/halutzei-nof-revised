@@ -69,12 +69,6 @@ const pages = [
     text('eventsTitle', 'כותרת אירועים / Events title'), area('eventsEmpty', 'הודעה כשאין אירועים / Empty-state message'),
     text('ctaTitle', 'כותרת הזמנה / CTA title'), area('ctaText', 'טקסט הזמנה / CTA text'),
   ]),
-  page('partners', '🌐 שותפים לדרך / Partners', () => [
-    ...seo, text('title', 'כותרת / Title'), area('intro', 'מבוא / Intro'),
-    text('whoTitle', 'כותרת "אל מי" / Who title'), list('who', 'גופים / Bodies'),
-    text('kindsTitle', 'כותרת סוגי שיתוף / Kinds title'), list('kinds', 'סוגי שיתוף פעולה / Kinds of collaboration'),
-    area('disclaimer', 'הבהרה (אין שותפות קיימת) / Disclaimer'), area('ctaText', 'טקסט קריאה לפעולה / CTA text'),
-  ]),
   page('contact', '✉️ צור קשר / Contact', () => [...seo, text('title', 'כותרת / Title'), area('intro', 'מבוא / Intro')]),
   page('accessibility', '♿ הצהרת נגישות / Accessibility', () => [...seo, text('title', 'כותרת / Title'), area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
   page('privacy', '🔒 מדיניות פרטיות / Privacy', () => [...seo, text('title', 'כותרת / Title'), area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
@@ -83,9 +77,8 @@ const pages = [
 
 const t = (key, label) => ({ label, name: key, widget: 'string', required: false });
 const uiFields = (lang) => [
-  t('siteName', 'שם האתר'), t('skip', 'דלג לתוכן'), t('btnJoin', 'כפתור: אני רוצה להצטרף'), t('btnPartners', 'כפתור: שותפים לדרך'),
-  t('btnContactPartners', 'כפתור: צרו קשר (שותפים)'), t('btnJoinCommunity', 'כפתור: הצטרפות (קהילה)'),
-  { label: 'תפריט / Menu', name: 'nav', widget: 'object', fields: ['home', 'about', 'vision', 'community', 'partners', 'contact'].map((k) => t(k, k)) },
+  t('siteName', 'שם האתר'), t('skip', 'דלג לתוכן'), t('btnJoin', 'כפתור: אני רוצה להצטרף'), t('btnJoinCommunity', 'כפתור: הצטרפות (קהילה)'),
+  { label: 'תפריט / Menu', name: 'nav', widget: 'object', fields: ['home', 'about', 'vision', 'community', 'contact'].map((k) => t(k, k)) },
   { label: 'כותרת תחתית / Footer', name: 'footer', widget: 'object', fields: ['contactTitle', 'phone', 'email', 'instagram', 'facebook', 'accessibility', 'privacy', 'copyright'].map((k) => t(k, k)) },
   { label: 'מילוי מקום / Placeholders', name: 'placeholders', widget: 'object', fields: ['phone', 'email', 'instagram', 'facebook', 'legalName'].map((k) => t(k, k)) },
   { label: 'סימונים אדומים / Red markers', name: 'todo', widget: 'object', fields: ['photo', 'family', 'memorial', 'phone', 'email', 'instagram', 'facebook', 'form', 'formDemo', 'legal', 'generic'].map((k) => t(k, k)) },

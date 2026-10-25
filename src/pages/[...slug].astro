@@ -4,7 +4,6 @@ import Home from '../components/pages/Home.astro';
 import About from '../components/pages/About.astro';
 import Vision from '../components/pages/Vision.astro';
 import Community from '../components/pages/Community.astro';
-import Partners from '../components/pages/Partners.astro';
 import Contact from '../components/pages/Contact.astro';
 import Legal from '../components/pages/Legal.astro';
 import { SLUGS, getPage, settings } from '../lib/site';
@@ -18,7 +17,7 @@ export function getStaticPaths() {
 const lang = 'he';
 const { slug } = Astro.props;
 const p = getPage(slug, lang);
-const views: Record<string, any> = { index: Home, about: About, vision: Vision, community: Community, partners: Partners, contact: Contact };
+const views: Record<string, any> = { index: Home, about: About, vision: Vision, community: Community, contact: Contact };
 const View = views[slug];
 ---
 <BaseLayout lang={lang} slug={slug} title={p.seoTitle} description={p.seoDescription} noindex={slug === 'donate'}>
