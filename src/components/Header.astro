@@ -18,9 +18,8 @@ const other: Lang = lang === 'he' ? 'en' : 'he';
     <nav id="site-nav" class="site-nav" aria-label={t.menuLabel} data-nav>
       <ul>
         {NAV.map((s) => (
-          <li class={s === 'faq' ? 'nav-faq' : undefined}><a href={pagePath(s, lang)} aria-current={s === slug ? 'page' : undefined}>{(t.nav as any)[NAV_KEYS[s]]}</a></li>
+          <li><a href={pagePath(s, lang)} aria-current={s === slug ? 'page' : undefined}>{(t.nav as any)[NAV_KEYS[s]]}</a></li>
         ))}
-        <li class="nav-join"><a class="btn btn--gold" href={pagePath('join', lang)} aria-current={slug === 'join' ? 'page' : undefined}>{t.nav.join}</a></li>
       </ul>
       <a class="lang-toggle" href={pagePath(slug === '404' ? 'index' : slug, other)} hreflang={other} lang={other} data-lang-toggle={other} aria-label={t.langSwitchAria}>{t.langSwitchTo}</a>
     </nav>

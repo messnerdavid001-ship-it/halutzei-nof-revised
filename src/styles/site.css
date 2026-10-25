@@ -63,7 +63,6 @@ h2::after, .page-head h1::after { content: ''; display: block; width: 56px; heig
 .site-nav a { text-decoration: none; font-weight: 600; padding: 6px 2px; border-bottom: 3px solid transparent; white-space: nowrap; transition: border-color 0.15s; }
 .site-nav a:hover { border-bottom-color: var(--navy); }
 .site-nav a[aria-current='page'] { border-bottom-color: var(--navy); font-weight: 800; }
-.site-nav .nav-join a, .site-nav .nav-join a:hover { padding: 0.35em 1.2em; min-height: 40px; border: 2px solid var(--gold); font-size: 1rem; }
 .lang-toggle { border: 2px solid var(--navy); border-radius: 999px; padding: 4px 16px !important; font-weight: 700 !important; border-bottom-width: 2px !important; }
 .site-nav .lang-toggle, .site-nav .lang-toggle:hover { border-bottom-color: var(--navy); }
 .lang-toggle:hover { background: var(--navy); color: var(--white); }
@@ -92,8 +91,6 @@ h2::after, .page-head h1::after { content: ''; display: block; width: 56px; heig
   .site-nav.open { display: flex; }
   .site-nav ul { flex-direction: column; align-items: stretch; gap: 4px; width: 100%; }
   .site-nav ul a { display: block; padding: 12px; font-size: 1.15rem; border-bottom-color: var(--line); }
-  .site-nav .nav-join { margin-top: 12px; }
-  .site-nav .nav-join a { display: flex; }
   .lang-toggle { align-self: center; }
   @media (prefers-reduced-motion: no-preference) { .site-nav.open { animation: drop 0.2s ease-out; } }
 }
@@ -354,7 +351,6 @@ html.hc .panel--navy { border: 2px solid #fff; }
   body { font-size: max(17px, var(--body-size)); }
   .panel { width: calc(100% - 32px); }
   .btn { width: 100%; }
-  .site-header .btn { width: 100%; }
   .btn-row { flex-direction: column; width: 100%; }
   .hero { padding-inline: 16px; }
   main { padding-bottom: 96px; } /* keeps the last buttons clear of the floating buttons */

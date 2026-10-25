@@ -7,7 +7,7 @@
     "nav": {
       "home": "בית",
       "about": "מי אנחנו",
-      "vision": "החזון והערכים",
+      "vision": "החזון",
       "community": "קהילה וחינוך",
       "contact": "צור קשר",
       "join": "הצטרפות"
@@ -137,7 +137,7 @@
     "nav": {
       "home": "Home",
       "about": "About",
-      "vision": "Vision & Values",
+      "vision": "Vision",
       "community": "Community & Education",
       "contact": "Contact",
       "join": "Join"
