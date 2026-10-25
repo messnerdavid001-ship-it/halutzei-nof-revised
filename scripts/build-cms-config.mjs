@@ -42,7 +42,7 @@ const filesEntry = (file, label, fields) => ({ name: file.split('/').pop().repla
 const page = (key, label, fnFields) => filesEntry(`pages/${key}.json`, label, bilingual(fnFields));
 
 const bgAlt = text('backgroundAlt', 'תיאור תמונת הרקע (נגישות) / Background photo description (alt)');
-const ICONS = ['zion', 'family', 'education', 'national', 'service', 'mutual', 'work', 'independence', 'unity', 'form', 'chat', 'people', 'path', 'sunrise', 'house'];
+const ICONS = ['zion', 'family', 'education', 'national', 'service', 'mutual', 'work', 'independence', 'unity', 'form', 'chat', 'people', 'path', 'sunrise', 'house', 'lightbulb'];
 const icon = () => ({ label: 'אייקון / Icon', name: 'icon', widget: 'select', options: ICONS, default: 'people' });
 const PAGES = ['about', 'vision', 'community', 'join', 'contact'];
 const pageLink = () => ({ label: 'קישור לעמוד / Links to page', name: 'link', widget: 'select', options: PAGES, default: 'about' });
