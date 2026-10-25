@@ -13,7 +13,7 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 | 4 | Telephone / WhatsApp number | Footer (every page) + Contact | Done: 0534749499 (one field for both) |
 | 5 | Email address | Footer + Contact | Settings → Email |
 | 6 | Instagram link | Done: instagram.com/halutzei_nof | — |
-| 7 | Facebook link | Footer + Contact | Settings → Facebook |
+| 7 | Facebook link | Done | — |
 | 8 | Contact form destination | Under the Contact form (cleared: form now sends to 123messner@gmail.com via FormSubmit; first test submission must be confirmed by email) | Settings → Form service URL |
 | 9 | Legal entity name / legal status | Footer copyright line, Accessibility Statement, Privacy Policy | Settings → Legal entity name |
 | 10 | Template text to complete ("to be completed") | Accessibility Statement (coordinator name/phone/email, date), Privacy Policy (entity details, form provider, retention, privacy contact) | Edit the text in CMS → Pages |
