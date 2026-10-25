@@ -43,6 +43,7 @@ h3 { font-size: 1.3rem; }
 .site-nav a:hover { border-bottom-color: var(--navy); }
 .site-nav a[aria-current='page'] { border-bottom-color: var(--navy); font-weight: 800; }
 .lang-toggle { border: 2px solid var(--navy); border-radius: 999px; padding: 4px 16px !important; font-weight: 700 !important; border-bottom-width: 2px !important; }
+.site-nav .lang-toggle, .site-nav .lang-toggle:hover { border-bottom-color: var(--navy); }
 .lang-toggle:hover { background: var(--navy); color: var(--white); }
 .menu-btn { display: none; background: none; border: 2px solid var(--navy); border-radius: 8px; width: 46px; height: 46px; cursor: pointer; align-items: center; justify-content: center; }
 .bars, .bars::before, .bars::after { display: block; width: 22px; height: 2.5px; background: var(--navy); border-radius: 2px; position: relative; transition: transform .2s, opacity .2s; }
