@@ -25,8 +25,7 @@
     "scrollDown": "גללו למטה",
     "footer": {
       "contactTitle": "יצירת קשר",
-      "phone": "טלפון",
-      "whatsapp": "וואטסאפ",
+      "phone": "טלפון / וואטסאפ",
       "email": "דוא״ל",
       "instagram": "אינסטגרם",
       "facebook": "פייסבוק",
@@ -35,8 +34,7 @@
       "copyright": "© {year} חלוצי נוף. כל הזכויות שמורות."
     },
     "placeholders": {
-      "phone": "[מספר טלפון]",
-      "whatsapp": "[מספר וואטסאפ]",
+      "phone": "[מספר טלפון / וואטסאפ]",
       "email": "[כתובת דוא״ל]",
       "instagram": "[קישור לאינסטגרם]",
       "facebook": "[קישור לפייסבוק]",
@@ -130,8 +128,7 @@
     "scrollDown": "Scroll down",
     "footer": {
       "contactTitle": "Contact",
-      "phone": "Phone",
-      "whatsapp": "WhatsApp",
+      "phone": "Telephone / WhatsApp",
       "email": "Email",
       "instagram": "Instagram",
       "facebook": "Facebook",
@@ -140,8 +137,7 @@
       "copyright": "© {year} Halutzei Nof. All rights reserved."
     },
     "placeholders": {
-      "phone": "[Phone number]",
-      "whatsapp": "[WhatsApp number]",
+      "phone": "[Telephone / WhatsApp number]",
       "email": "[Email address]",
       "instagram": "[Instagram link]",
       "facebook": "[Facebook link]",
@@ -151,7 +147,7 @@
       "photo": "This is not a licensed photo. It will be replaced with a licensed photo.",
       "family": "family count not yet verified or approved",
       "memorial": "awaiting approval from the families",
-      "phone": "phone / WhatsApp number to be added",
+      "phone": "telephone / WhatsApp number to be added",
       "email": "email address to be added",
       "instagram": "Instagram link to be added",
       "facebook": "Facebook link to be added",

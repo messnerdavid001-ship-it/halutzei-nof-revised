@@ -47,7 +47,7 @@ export function todoMark(kind: string, lang: Lang): string {
     photo: settings.homePhotoLicensed,
     family: settings.familyCountVerified,
     memorial: settings.memorialApproved,
-    phone: !!(settings.phone || settings.whatsapp),
+    phone: !!settings.phone,
     email: !!settings.email,
     instagram: !!settings.instagram,
     facebook: !!settings.facebook,
@@ -87,9 +87,9 @@ export function imgInfo(src: string): ImgInfo | null {
   return m ? { ...m, name } : null;
 }
 
-export function contactValue(kind: 'phone' | 'whatsapp' | 'email' | 'instagram' | 'facebook') {
+export function contactValue(kind: 'phone' | 'email' | 'instagram' | 'facebook') {
   const v = (settings as any)[kind] as string;
-  return kind === 'whatsapp' ? v || settings.phone : v;
+  return v;
 }
 
 export function formatDate(iso: string, lang: Lang) {
