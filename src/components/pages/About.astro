@@ -8,13 +8,13 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('about', lang);
 ---
-<PhotoHero src={settings.aboutBackground} alt={p.backgroundAlt} variant="about" lang={lang} fade="white">
+<PhotoHero src={settings.aboutBackground} alt={p.backgroundAlt} variant="about" lang={lang}>
   <h1 class="hero-title">{p.title}</h1>
 </PhotoHero>
-<Section tone="white" title={p.storyTitle}>
+<Section tone="navy" title={p.storyTitle}>
   <TextBlock text={p.story} lang={lang} />
 </Section>
-<Section tone="navy" title={p.memorialTitle} id="memorial">
+<Section tone="white" title={p.memorialTitle} id="memorial">
   <TextBlock text={p.memorialIntro} lang={lang} />
   <p class="memorial-todo" set:html={todoMark('memorial', lang)} />
   <ul class="memorials">

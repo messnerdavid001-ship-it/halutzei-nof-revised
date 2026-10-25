@@ -154,6 +154,8 @@ h3 { font-size: 1.3rem; }
 .memorial-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 28%; }
 .memorial h3 { margin: 0 0 .3em; font-size: 1.2rem; }
 .memorial p { margin: 0; font-size: .98rem; }
+.section--white .memorial { border-color: var(--navy); }
+.section--white .memorial-photo { border-color: var(--navy); background: transparent; }
 .memorial-tag { margin: 14px 0 0 !important; font-size: .78rem !important; opacity: .85; letter-spacing: .02em; }
 .memorial-todo { margin: 0; }
 
