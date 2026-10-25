@@ -367,6 +367,3 @@ html.hc .panel--navy { border: 2px solid #fff; }
 .footer-title { text-align: center; }
 .faq-a p { margin-inline: 0; }
 .form .btn { margin-inline: auto; }
-
-/* a panel whose short paragraphs are centred */
-.panel--centered .prose { text-align: center; }
