@@ -80,16 +80,12 @@ The Donate page exists but is **off**. It is not in the menu and not shown to Go
 
 ## 7. The contact form
 
-At the moment the form is **not connected**: visitors can fill it in but nothing is sent anywhere (the red note says so). Pick one service and connect it:
+The form sends each message to **123messner@gmail.com** through a free service called **FormSubmit**.
 
-| Service | Notes |
-|---|---|
-| **Formspree** | Free plan. Create a form, copy the address it gives you (looks like `https://formspree.io/f/abcd1234`). |
-| **Web3Forms / Getform** | Similar to Formspree. |
-
-Once you have an address, paste it in Admin → Settings → "Form service URL" → Save. The red note disappears and messages arrive by email.
-
-Remember to fill in the Privacy Policy details (who receives the messages, how long they are kept) before launch.
+- **First time only:** open the live site, send one test message, then check that Gmail inbox. FormSubmit emails an **activation link** — click it. After that every message arrives as a normal email (also check Spam the first time).
+- **To send messages somewhere else or to use another service** (Formspree, Web3Forms...): Admin → Settings → "Form service URL" → paste the new address → Save.
+- Note: the destination email is visible in the site's code. Expect some spam, and consider a dedicated address (like contact@yourdomain) later.
+- Remember to complete the Privacy Policy details (how long messages are kept, who to contact) before launch.
 
 ## 8. First-time setup (only once)
 

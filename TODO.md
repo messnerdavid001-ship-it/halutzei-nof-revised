@@ -14,14 +14,14 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 | 5 | Email address | Footer + Contact | Settings → Email |
 | 6 | Instagram link | Footer + Contact | Settings → Instagram |
 | 7 | Facebook link | Footer + Contact | Settings → Facebook |
-| 8 | Contact form destination not set | Under the Contact form | Settings → Form service URL |
+| 8 | Contact form destination | Under the Contact form (cleared: form now sends to 123messner@gmail.com via FormSubmit; first test submission must be confirmed by email) | Settings → Form service URL |
 | 9 | Legal entity name / legal status | Footer copyright line, Accessibility Statement, Privacy Policy | Settings → Legal entity name |
 | 10 | Template text to complete ("to be completed") | Accessibility Statement (coordinator name/phone/email, date), Privacy Policy (entity details, form provider, retention, privacy contact) | Edit the text in CMS → Pages |
 
 ## Not shown on the site (decisions still open)
 
 - [ ] **Custom domain** — not chosen. Site runs on a free temporary subdomain. See README-FOR-DAVE.md, "Connect a domain".
-- [ ] **Form service** — pick one (Formspree, Web3Forms, Getform...) and paste its URL in Settings.
+- [ ] **Form service** — FormSubmit is set up for 123messner@gmail.com. Send ONE test message from the live site, then click the activation link FormSubmit emails you. Consider a long-term service and a role email address instead of a personal one.
 - [ ] **Licensed home photo** — replace the current one.
 - [ ] **Higher-resolution `about-soldiers.jpg`** — current file is 1026×744 and looks soft on large screens.
 - [ ] **Six memorial cards** — names, photos, text, families' approval.

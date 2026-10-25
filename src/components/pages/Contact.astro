@@ -3,7 +3,6 @@ import BandHero from '../BandHero.astro';
 import Section from '../Section.astro';
 import TextBlock from '../TextBlock.astro';
 import ContactForm from '../ContactForm.astro';
-import ContactDetails from '../ContactDetails.astro';
 import { getPage, getUi, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -15,10 +14,4 @@ const t = getUi(lang);
   <TextBlock text={p.intro} lang={lang} />
   <h2 class="visually-sub">{t.form.title}</h2>
   <ContactForm lang={lang} />
-</Section>
-<Section tone="white">
-  <div class="contact-card site-footer-like">
-    <h2 class="footer-title">{t.footer.contactTitle}</h2>
-    <ContactDetails lang={lang} />
-  </div>
 </Section>
