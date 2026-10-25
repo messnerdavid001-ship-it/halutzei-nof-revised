@@ -17,7 +17,6 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 | 9 | Legal entity name / legal status | Footer copyright line, Accessibility Statement, Privacy Policy | Settings → Legal entity name |
 | 10 | Template text to complete ("to be completed") | Accessibility Statement (coordinator name/phone/email, date), Privacy Policy (entity details, form provider, retention, privacy contact) | Edit the text in CMS → Pages |
 
-| 11 | Text deleted here (About → Our Story, 3 places) | Marks where sentences about regions, collaboration/guidance and "not guaranteed" were removed | Edit the story text in CMS → Pages → About and delete each `[[DELETED]]` |
 
 ## Not shown on the site (decisions still open)
 
