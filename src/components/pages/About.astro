@@ -28,7 +28,7 @@ const p = getPage('about', lang);
           {m.photo ? <Pic src={m.photo} alt={m.photoAlt || m.name} sizes="220px" /> : <span aria-hidden="true"></span>}
         </div>
         <h3 set:html={inline(m.name, lang)} />
-        <p set:html={inline(m.text, lang)} />
+        {m.text && <p set:html={inline(m.text, lang)} />}
         <p class="memorial-tag">{p.memorialTag}</p>
       </li>
     ))}
