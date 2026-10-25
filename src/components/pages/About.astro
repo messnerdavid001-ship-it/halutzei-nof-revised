@@ -2,7 +2,6 @@
 import PhotoHero from '../PhotoHero.astro';
 import Section from '../Section.astro';
 import TextBlock from '../TextBlock.astro';
-import ListBlock from '../ListBlock.astro';
 import Pic from '../Pic.astro';
 import { getPage, settings, todoMark, inline, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
@@ -14,9 +13,6 @@ const p = getPage('about', lang);
 </PhotoHero>
 <Section tone="navy" title={p.storyTitle}>
   <TextBlock text={p.story} lang={lang} />
-</Section>
-<Section tone="white" title={p.principlesTitle}>
-  <ListBlock items={p.principles} lang={lang} />
 </Section>
 <Section tone="navy" title={p.memorialTitle} id="memorial">
   <TextBlock text={p.memorialIntro} lang={lang} />
