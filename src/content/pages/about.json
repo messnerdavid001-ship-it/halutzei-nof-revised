@@ -20,37 +20,37 @@
     "memorials": [
       {
         "name": "סרן גל שבת ז״ל",
-        "text": "סרן, מ״פ — מפקד הפלוגה שלנו.",
+        "text": "סרן, מפקד הפלוגה (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
         "photoAlt": "תצלום של סרן גל שבת ז״ל"
       },
       {
         "name": "רועי בית יעקב ז״ל",
-        "text": "מ״מ — מפקד מחלקה בפלוגה שלנו.",
+        "text": "קצין, מפקד מחלקה (מ״מ) בפלוגה.",
         "photo": "/photos/roi-bet-yaakov.png",
         "photoAlt": "תצלום של רועי בית יעקב ז״ל"
       },
       {
         "name": "דניאל חמו ז״ל",
-        "text": "מטוליסט בפלוגה שלנו.",
+        "text": "מטוליסט בפלוגה.",
         "photo": "/photos/daniel-chemo.png",
         "photoAlt": "תצלום של דניאל חמו ז״ל"
       },
       {
         "name": "אילן כהן ז״ל",
-        "text": "מטוליסט בפלוגה שלנו.",
+        "text": "מטוליסט בפלוגה.",
         "photo": "/photos/ilan-cohen.webp",
         "photoAlt": "תצלום של אילן כהן ז״ל"
       },
       {
         "name": "בצלאל שעשוע ז״ל",
-        "text": "חובש בפלוגה שלנו.",
+        "text": "חובש בפלוגה.",
         "photo": "",
         "photoAlt": ""
       },
       {
         "name": "גלעד בוים ז״ל",
-        "text": "חופ״ל — החובש הפלוגתי שלנו.",
+        "text": "חופ״ל — חובש הפלוגה.",
         "photo": "",
         "photoAlt": ""
       }
@@ -77,37 +77,37 @@
     "memorials": [
       {
         "name": "Captain Gal Shabat, of blessed memory",
-        "text": "Captain, our company commander (מ״פ).",
+        "text": "Captain, the company commander (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
         "photoAlt": "Photo of Captain Gal Shabat, of blessed memory"
       },
       {
         "name": "Roi Bet Yaakov, of blessed memory",
-        "text": "A platoon commander in our company (מ״מ).",
+        "text": "An officer, a platoon commander (מ״מ) in the company.",
         "photo": "/photos/roi-bet-yaakov.png",
         "photoAlt": "Photo of Roi Bet Yaakov, of blessed memory"
       },
       {
         "name": "Daniel Chemo, of blessed memory",
-        "text": "A grenade launcher operator (מטוליסט) in our company.",
+        "text": "A matolist (grenade-launcher operator) in the company.",
         "photo": "/photos/daniel-chemo.png",
         "photoAlt": "Photo of Daniel Chemo, of blessed memory"
       },
       {
         "name": "Ilan Cohen, of blessed memory",
-        "text": "A grenade launcher operator (מטוליסט) in our company.",
+        "text": "A matolist (grenade-launcher operator) in the company.",
         "photo": "/photos/ilan-cohen.webp",
         "photoAlt": "Photo of Ilan Cohen, of blessed memory"
       },
       {
         "name": "Betzalel Sha'ashua, of blessed memory",
-        "text": "A medic in our company.",
+        "text": "A medic in the company.",
         "photo": "",
         "photoAlt": ""
       },
       {
         "name": "Gilad Boim, of blessed memory",
-        "text": "Our company medic (חופ״ל).",
+        "text": "The company medic (חופ״ל).",
         "photo": "",
         "photoAlt": ""
       }
