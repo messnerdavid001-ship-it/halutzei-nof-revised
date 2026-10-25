@@ -7,11 +7,26 @@
     "intro": "אנחנו מבקשים לבנות קהילה שבה ערכים הם לא סיסמה אלא דרך חיים יומיומית, ובהמשך, יישוב שיצמח מתוך הקהילה הזו.",
     "valuesTitle": "הערכים שלנו",
     "values": [
-      { "title": "תורה וחיים", "text": "חיים שבהם התורה היא חלק מהמציאות היומיומית: בבית, בקהילה ובעבודה, מתוך כבוד לשונות בין בני הקהילה." },
-      { "title": "משפחה וקהילה", "text": "המשפחה היא יסוד הקהילה, והקהילה היא בית רחב שבו אנשים נושאים יחד בשמחות ובקשיים." },
-      { "title": "שירות וציונות", "text": "מתוך השירות בצה״ל ומתוך אהבת הארץ, אנחנו רואים בבניית הקהילה והיישוב המשך של התרומה למדינת ישראל." },
-      { "title": "עבודה ויזמות", "text": "אנחנו מאמינים בעבודה, ביוזמה ובעצמאות כלכלית, ובבניית מקורות פרנסה מקומיים לצד תעסוקה בסביבה." },
-      { "title": "ערבות הדדית", "text": "כל אחד נושא באחריות לחברו: קהילה שבה אף אחד לא נשאר לבד, ובהם גם חיילים בודדים ועולים חדשים." }
+      {
+        "title": "תורה וחיים",
+        "text": "בחזון שלנו תורה וחיים הולכות יד ביד. אנו מאמינים בעיקר ש״דרך ארץ קדמה לתורה״."
+      },
+      {
+        "title": "משפחה וקהילה",
+        "text": "המשפחה היא יסוד הקהילה, והקהילה היא בית רחב שבו אנשים נושאים יחד בשמחות ובקשיים."
+      },
+      {
+        "title": "שירות וציונות",
+        "text": "מתוך השירות בצה״ל ומתוך אהבת הארץ, אנחנו רואים בבניית הקהילה והיישוב המשך של התרומה למדינת ישראל."
+      },
+      {
+        "title": "עבודה ויזמות",
+        "text": "אנחנו מאמינים בעבודה, ביוזמה ובעצמאות כלכלית, ובבניית מקורות פרנסה מקומיים לצד תעסוקה בסביבה."
+      },
+      {
+        "title": "ערבות הדדית",
+        "text": "כל אחד נושא באחריות לחברו: קהילה שבה אף אחד לא נשאר לבד, ובהם גם חיילים בודדים ועולים חדשים."
+      }
     ],
     "futureTitle": "העתיד שאנחנו מבקשים לבנות",
     "goal": "היעד ארוך הטווח שלנו הוא יישוב של כ-85 משפחות. יעד זה מותנה בצמיחת הקהילה, באישורים רשמיים ובמשאבים, ואין בו התחייבות או הבטחה.",
@@ -41,11 +56,26 @@
     "intro": "We wish to build a community where values are not slogans but a daily way of life and, over time, a settlement that grows out of that community.",
     "valuesTitle": "Our Values",
     "values": [
-      { "title": "Torah and Life", "text": "A life in which Torah is part of everyday reality: at home, in the community and at work, with respect for the differences between community members." },
-      { "title": "Family and Community", "text": "The family is the foundation of the community, and the community is a wider home where people share both joys and hardships." },
-      { "title": "Service and Zionism", "text": "Out of our IDF service and our love of the land, we see building a community and a settlement as a continuation of contributing to the State of Israel." },
-      { "title": "Work and Entrepreneurship", "text": "We believe in work, initiative and economic independence, and in building local sources of livelihood alongside employment in the surrounding area." },
-      { "title": "Mutual Responsibility", "text": "Each person is responsible for the other: a community where no one is left alone, including lone soldiers and new olim." }
+      {
+        "title": "Torah and Life",
+        "text": "In our vision, Torah and life go hand in hand. We mainly believe that דרך ארץ קדמה לתורה."
+      },
+      {
+        "title": "Family and Community",
+        "text": "The family is the foundation of the community, and the community is a wider home where people share both joys and hardships."
+      },
+      {
+        "title": "Service and Zionism",
+        "text": "Out of our IDF service and our love of the land, we see building a community and a settlement as a continuation of contributing to the State of Israel."
+      },
+      {
+        "title": "Work and Entrepreneurship",
+        "text": "We believe in work, initiative and economic independence, and in building local sources of livelihood alongside employment in the surrounding area."
+      },
+      {
+        "title": "Mutual Responsibility",
+        "text": "Each person is responsible for the other: a community where no one is left alone, including lone soldiers and new olim."
+      }
     ],
     "futureTitle": "The Future We Wish to Build",
     "goal": "Our long-term goal is a settlement of approximately 85 families. This goal depends on the community's growth, official approvals and resources, and is neither a commitment nor a promise.",
