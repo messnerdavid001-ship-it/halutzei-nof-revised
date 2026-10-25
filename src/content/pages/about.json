@@ -20,37 +20,37 @@
     "memorials": [
       {
         "name": "סרן גל שבת ז״ל",
-        "text": "סרן, מפקד היחידה שלנו.",
+        "text": "סרן, מ״פ — מפקד הפלוגה שלנו.",
         "photo": "/photos/gal-shabat.jpg",
         "photoAlt": "תצלום של סרן גל שבת ז״ל"
       },
       {
         "name": "רועי בית יעקב ז״ל",
-        "text": "קצין ביחידה שלנו.",
+        "text": "מ״מ — מפקד מחלקה בפלוגה שלנו.",
         "photo": "/photos/roi-bet-yaakov.png",
         "photoAlt": "תצלום של רועי בית יעקב ז״ל"
       },
       {
         "name": "דניאל חמו ז״ל",
-        "text": "רימונאי ביחידה שלנו.",
+        "text": "מטוליסט בפלוגה שלנו.",
         "photo": "/photos/daniel-chemo.png",
         "photoAlt": "תצלום של דניאל חמו ז״ל"
       },
       {
         "name": "אילן כהן ז״ל",
-        "text": "רימונאי ביחידה שלנו.",
+        "text": "מטוליסט בפלוגה שלנו.",
         "photo": "/photos/ilan-cohen.webp",
         "photoAlt": "תצלום של אילן כהן ז״ל"
       },
       {
         "name": "בצלאל שעשוע ז״ל",
-        "text": "איש הצוות הרפואי של המחלקה.",
+        "text": "חובש בפלוגה שלנו.",
         "photo": "",
         "photoAlt": ""
       },
       {
         "name": "גלעד בוים ז״ל",
-        "text": "חובש המחלקה.",
+        "text": "חופ״ל — החובש הפלוגתי שלנו.",
         "photo": "",
         "photoAlt": ""
       }
@@ -77,37 +77,37 @@
     "memorials": [
       {
         "name": "Captain Gal Shabat, of blessed memory",
-        "text": "Captain, the commander of our unit.",
+        "text": "Captain, our company commander (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
         "photoAlt": "Photo of Captain Gal Shabat, of blessed memory"
       },
       {
         "name": "Roi Bet Yaakov, of blessed memory",
-        "text": "An officer in our unit.",
+        "text": "A platoon commander in our company (מ״מ).",
         "photo": "/photos/roi-bet-yaakov.png",
         "photoAlt": "Photo of Roi Bet Yaakov, of blessed memory"
       },
       {
         "name": "Daniel Chemo, of blessed memory",
-        "text": "A grenadier in our unit.",
+        "text": "A grenade launcher operator (מטוליסט) in our company.",
         "photo": "/photos/daniel-chemo.png",
         "photoAlt": "Photo of Daniel Chemo, of blessed memory"
       },
       {
         "name": "Ilan Cohen, of blessed memory",
-        "text": "A grenadier in our unit.",
+        "text": "A grenade launcher operator (מטוליסט) in our company.",
         "photo": "/photos/ilan-cohen.webp",
         "photoAlt": "Photo of Ilan Cohen, of blessed memory"
       },
       {
         "name": "Betzalel Sha'ashua, of blessed memory",
-        "text": "A member of the platoon's medical team.",
+        "text": "A medic in our company.",
         "photo": "",
         "photoAlt": ""
       },
       {
         "name": "Gilad Boim, of blessed memory",
-        "text": "The platoon medic.",
+        "text": "Our company medic (חופ״ל).",
         "photo": "",
         "photoAlt": ""
       }
