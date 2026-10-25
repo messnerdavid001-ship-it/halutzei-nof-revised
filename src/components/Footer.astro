@@ -14,10 +14,6 @@ const legal = settings.legalName[lang];
       <a class="footer-logo" href={pagePath('index', lang)} aria-label={t.siteName}><Pic src="/photos/logo.png" alt={t.logoAlt} sizes="160px" /></a>
       <p class="footer-tagline">{t.footer.tagline}</p>
     </div>
-    <div class="footer-col">
-      <h2 class="footer-title">{t.footer.contactTitle}</h2>
-      <ContactDetails lang={lang} />
-    </div>
     <nav class="footer-col" aria-label={t.footer.pagesTitle}>
       <h2 class="footer-title">{t.footer.pagesTitle}</h2>
       <ul class="footer-links">
@@ -26,6 +22,10 @@ const legal = settings.legalName[lang];
         <li><a href={pagePath('privacy', lang)}>{t.footer.privacy}</a></li>
       </ul>
     </nav>
+    <div class="footer-col">
+      <h2 class="footer-title">{t.footer.contactTitle}</h2>
+      <ContactDetails lang={lang} />
+    </div>
     <p class="copyright">
       {t.footer.copyright.replace('{year}', String(year))}
       {legal ? ` ${legal}` : ''}
