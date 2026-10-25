@@ -8,7 +8,6 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 | # | Item | Where it appears | How it is cleared |
 |---|---|---|---|
 | 1 | Home photo is not licensed | Bottom of the Home hero photo (he + en) | Replace `home-village.jpg` with a licensed photo, then tick "Home photo is licensed" |
-| 2 | Family count (about 10) not verified or approved | Next to the figure: Home intro, About story (he + en) | Tick "Family count verified" in Settings |
 | 3 | Memorial details need the families' approval | About → "In Their Memory" (he + en) | Fill in the six cards, then tick "Memorial approved" |
 | 4 | Telephone / WhatsApp number | Footer (every page) + Contact | Done: 0534749499 (one field for both) |
 | 5 | Email address | Footer + Contact | Settings → Email |
