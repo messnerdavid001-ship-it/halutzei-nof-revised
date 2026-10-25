@@ -20,7 +20,7 @@ A marker disappears on its own once the matching value is filled in / confirmed 
 
 ## Needs your input
 
-- [ ] **Memorial stories** — names, photos, text for the six cards, and the families' approval. Note: the six names and photos are currently visible on the About page even before approval; the switch only controls the red note. Say if you want the cards hidden until approval.
+- [ ] **Memorial stories** — names, photos, text for the six cards, and the families' approval. Decision: the six names and photos stay visible on the About page even before approval; the "Memorial approved" switch only controls the red note.
 - [ ] **Final copy** — all page text is placeholder (red marker 2) until the wording prompt (Prompt B) is applied.
 - [ ] **Legal entity name** — Settings → Legal entity name (he + en). Hidden in the footer while empty.
 - [ ] **Licensed home photo** — replace `public/photos/home-village.jpg`.
