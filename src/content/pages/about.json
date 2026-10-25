@@ -5,7 +5,7 @@
     "title": "מי אנחנו",
     "backgroundAlt": "כעשרים חיילים בתצלום קבוצתי מתחת לגג בטון",
     "identityTitle": "הקהילה שלנו",
-    "identity": "חלוצי נוף נוסדה על ידי חברים ששירתו יחד בצה״ל. השירות המשותף יצר בינינו אמון וערבות הדדית, ומתוכם צמח הרצון להמשיך יחד: לבנות בית ומשפחה, ולתרום למדינת ישראל גם בחיים האזרחיים.\n\nאנחנו שואפים להקים קהילה חדשה בארץ ישראל — קהילה חמה ומחוברת, שבה גדלים ילדים עם שורשים וערכים. [[DRAFT]]",
+    "identity": "חלוצי נוף נוסדה על ידי חברים ששירתו יחד בצה״ל. השירות המשותף יצר בינינו אמון וערבות הדדית, ומתוכם צמח הרצון להמשיך יחד: לבנות בית ומשפחה, ולתרום למדינת ישראל גם בחיים האזרחיים.\n\nאנחנו שואפים להקים קהילה חדשה בארץ ישראל — קהילה חמה ומחוברת, שבה גדלים ילדים עם שורשים וערכים. [[DRAFT]] [[BM6]]",
     "whoTitle": "למי הקהילה מיועדת",
     "who": "הקהילה פונה בראש ובראשונה למשפחות ולזוגות צעירים, והיא פתוחה לכל מי שחולק את הערכים שלנו — גם ליהודים מהתפוצות, וגם לחיילים בודדים המחפשים בית וקהילה.\n\nשירות בצה״ל הוא ערך חשוב בעינינו, אך אינו תנאי להצטרפות. [[DRAFT]]",
     "characterTitle": "אופי הקהילה",
@@ -50,7 +50,8 @@
         "photoAlt": "תצלום של סמ״ר גלעד בוים"
       }
     ],
-    "memorialTag": "זכרונו לברכה"
+    "memorialTag": "זכרונו לברכה",
+    "intro": "חברים ששירתו יחד בצה״ל, וקהילה הפתוחה לכל מי שחולק את הדרך."
   },
   "en": {
     "seoTitle": "About Us — Halutzei Nof",
@@ -58,7 +59,7 @@
     "title": "About Us",
     "backgroundAlt": "About twenty soldiers posing together under a concrete shelter roof",
     "identityTitle": "Our Community",
-    "identity": "Halutzei Nof was founded by friends who served together in the IDF. That shared service built trust and mutual responsibility between us, and out of it grew the wish to carry on together: to build homes and families, and to keep contributing to the State of Israel in civilian life.\n\nWe aim to build a new community in the Land of Israel: a warm, close community where children grow up with roots and values. [[DRAFT]]",
+    "identity": "Halutzei Nof was founded by friends who served together in the IDF. That shared service built trust and mutual responsibility between us, and out of it grew the wish to carry on together: to build homes and families, and to keep contributing to the State of Israel in civilian life.\n\nWe aim to build a new community in the Land of Israel: a warm, close community where children grow up with roots and values. [[DRAFT]] [[BM6]]",
     "whoTitle": "Who the Community Is For",
     "who": "The community is meant first of all for families and young couples, and it is open to everyone who shares our values, including Jews from the diaspora and lone soldiers looking for a home and a community.\n\nIDF service is an important value to us, but it is not a condition for joining. [[DRAFT]]",
     "characterTitle": "The Character of the Community",
@@ -103,6 +104,7 @@
         "photoAlt": "Photo of Gilad Boim"
       }
     ],
-    "memorialTag": "of blessed memory"
+    "memorialTag": "of blessed memory",
+    "intro": "Friends who served together in the IDF, and a community open to everyone who shares the path."
   }
 }

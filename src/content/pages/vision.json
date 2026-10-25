@@ -1,64 +1,192 @@
 {
   "he": {
-    "seoTitle": "החזון שלנו — חלוצי נוף",
-    "seoDescription": "החזון של חלוצי נוף: קהילה חדשה בארץ ישראל, מבוססת משפחה, חינוך, ערבות הדדית ועתיד משותף.",
-    "title": "החזון שלנו",
+    "seoTitle": "החזון והערכים — חלוצי נוף",
+    "seoDescription": "החזון והערכים של חלוצי נוף: קהילה חדשה בארץ ישראל, מבוססת משפחה, חינוך, ערבות הדדית ועתיד משותף.",
+    "title": "החזון והערכים",
     "backgroundAlt": "שקיעה מעל האופק, ומשטח אבן בקדמת התמונה",
-    "intro": "אנחנו רואים בחזון שלנו קהילה חדשה בארץ ישראל: בית שנבנה בידי משפחות, סביב ערכים שאנחנו מאמינים בהם.",
-    "sections": [
+    "intro": "קהילה חדשה בארץ ישראל, שנבנית בידי משפחות סביב ערכים משותפים. [[DRAFT]]",
+    "groups": [
       {
-        "title": "קהילה חדשה בארץ ישראל",
-        "text": "אנחנו שואפים להקים קהילה חדשה בארץ ישראל — מקום שנבנה בידי משפחות שבחרו לבנות בית יחד, מתוך אהבת הארץ ורצון לתרום לה. [[DRAFT]]"
+        "id": "vision",
+        "title": "החזון שלנו",
+        "intro": "",
+        "cards": [
+          {
+            "icon": "zion",
+            "title": "קהילה חדשה בארץ ישראל",
+            "text": "בית שנבנה בידי משפחות, מתוך אהבת הארץ."
+          },
+          {
+            "icon": "family",
+            "title": "קהילה מבוססת משפחה",
+            "text": "המשפחה בליבה: זוגות צעירים ומשפחות שמוצאים בית ושכנים."
+          },
+          {
+            "icon": "education",
+            "title": "חינוך",
+            "text": "דור שגדל על ערכים, מורשת ואהבת הארץ."
+          },
+          {
+            "icon": "mutual",
+            "title": "ערבות הדדית",
+            "text": "תרבות של עזרה, נדיבות ואחריות משותפת."
+          },
+          {
+            "icon": "sunrise",
+            "title": "עתיד משותף",
+            "text": "בית לילדינו ולדורות שאחריהם."
+          }
+        ]
       },
       {
-        "title": "קהילה מבוססת משפחה",
-        "text": "המשפחה היא הליבה. אנחנו רואים קהילה שבה זוגות צעירים ומשפחות מוצאים בית, שכנים וחברים לדרך. [[DRAFT]]"
-      },
-      {
-        "title": "חינוך",
-        "text": "אנחנו מבקשים לגדל דור על ערכים, על קשר למורשת ועל אהבת הארץ. [[DRAFT]]"
-      },
-      {
-        "title": "ערבות הדדית",
-        "text": "קהילה חזקה היא קהילה שבה נושאים בעול יחד. אנחנו מבקשים לבנות תרבות של עזרה הדדית, נדיבות ואחריות. [[DRAFT]]"
-      },
-      {
-        "title": "עתיד משותף",
-        "text": "מה שאנחנו בונים הוא לא רק לנו. הוא לילדינו ולדורות שאחריהם — בית שיוכלו לקרוא לו שלהם. [[DRAFT]]"
+        "id": "values",
+        "title": "הערכים שלנו",
+        "intro": "תשעה ערכים מובילים אותנו בדרך.",
+        "cards": [
+          {
+            "icon": "zion",
+            "title": "ציונות והתיישבות",
+            "text": "אהבת הארץ והרצון לבנות בה בית הם הבסיס לדרכנו. אנחנו רואים בהתיישבות המשך טבעי של השירות ושל התרומה למדינה."
+          },
+          {
+            "icon": "family",
+            "title": "משפחה וקהילה",
+            "text": "המשפחה היא יסוד הקהילה, והקהילה היא בית רחב שבו שותפים לשמחות ולקשיים."
+          },
+          {
+            "icon": "education",
+            "title": "חינוך וערכים",
+            "text": "אנחנו מבקשים לגדל ילדים על ערכים, על סקרנות ועל שורשים יהודיים וישראליים."
+          },
+          {
+            "icon": "national",
+            "title": "אחריות לאומית",
+            "text": "כל אחד מאיתנו נושא חלק באחריות למדינה ולחברה, בבית, בעבודה ובקהילה."
+          },
+          {
+            "icon": "service",
+            "title": "שירות ותרומה למדינה",
+            "text": "שירות בצה״ל הוא ערך חשוב בעינינו, ורוח התרומה והנתינה מלווה אותנו גם בחיים האזרחיים. השירות אינו תנאי להצטרפות."
+          },
+          {
+            "icon": "mutual",
+            "title": "ערבות הדדית",
+            "text": "קהילה שבה אף אחד לא נשאר לבד: עוזרים זה לזה בימים רגילים ובימים קשים."
+          },
+          {
+            "icon": "work",
+            "title": "עבודה ויוזמה",
+            "text": "אנחנו מאמינים בעבודה, ביוזמה ובפרנסה מכבדת, ומעודדים אנשים להקים ולפתח."
+          },
+          {
+            "icon": "independence",
+            "title": "עצמאות אישית",
+            "text": "לכל אדם ולכל משפחה הזכות לבחור את דרכם. קהילה חזקה בנויה מאנשים עצמאיים."
+          },
+          {
+            "icon": "unity",
+            "title": "אחדות וכבוד הדדי",
+            "text": "אנחנו שונים זה מזה ומאוחדים בכוונה משותפת. מחלוקת מכבדת היא חלק מהדרך."
+          }
+        ]
       }
     ],
-    "ctaTitle": "רוצים להיות חלק מהחזון?",
-    "ctaText": "נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]"
+    "ctaTitle": "הערכים האלה מדברים אליכם?",
+    "ctaText": "נשמח להכיר ולשמוע מה חשוב לכם. [[DRAFT]]"
   },
   "en": {
-    "seoTitle": "Our Vision — Halutzei Nof",
-    "seoDescription": "The vision of Halutzei Nof: a new community in the Land of Israel, built on family, education, mutual responsibility and a shared future.",
-    "title": "Our Vision",
+    "seoTitle": "Vision and Values — Halutzei Nof",
+    "seoDescription": "The vision and values of Halutzei Nof: a new community in the Land of Israel, built on family, education, mutual responsibility and a shared future.",
+    "title": "Vision and Values",
     "backgroundAlt": "Sunset over the horizon with a stone surface in the foreground",
-    "intro": "Our vision is a new community in the Land of Israel: a home built by families, around values we believe in.",
-    "sections": [
+    "intro": "A new community in the Land of Israel, built by families around shared values. [[DRAFT]]",
+    "groups": [
       {
-        "title": "A New Community in the Land of Israel",
-        "text": "We aim to build a new community in the Land of Israel, a place built by families who chose to make a home together, out of love for the Land and a wish to contribute to it. [[DRAFT]]"
+        "id": "vision",
+        "title": "Our Vision",
+        "intro": "",
+        "cards": [
+          {
+            "icon": "zion",
+            "title": "A New Community in the Land of Israel",
+            "text": "A home built by families, out of love for the Land."
+          },
+          {
+            "icon": "family",
+            "title": "Family at the Core",
+            "text": "Young couples and families finding a home and neighbors."
+          },
+          {
+            "icon": "education",
+            "title": "Education",
+            "text": "A generation raised on values, heritage and love of the Land."
+          },
+          {
+            "icon": "mutual",
+            "title": "Mutual Responsibility",
+            "text": "A culture of help, generosity and shared responsibility."
+          },
+          {
+            "icon": "sunrise",
+            "title": "A Shared Future",
+            "text": "A home for our children and the generations after them."
+          }
+        ]
       },
       {
-        "title": "A Family-Based Community",
-        "text": "The family is the core. Our vision is a community where young couples and families find a home, neighbors and companions for the road. [[DRAFT]]"
-      },
-      {
-        "title": "Education",
-        "text": "We hope to raise a generation grounded in values, connected to its heritage and in love with the Land. [[DRAFT]]"
-      },
-      {
-        "title": "Mutual Responsibility",
-        "text": "A strong community is one where people carry the load together. We want to build a culture of mutual help, generosity and responsibility. [[DRAFT]]"
-      },
-      {
-        "title": "A Shared Future",
-        "text": "What we are building is not only for us. It is for our children and the generations after them: a home they can call their own. [[DRAFT]]"
+        "id": "values",
+        "title": "Our Values",
+        "intro": "Nine values guide us on the way.",
+        "cards": [
+          {
+            "icon": "zion",
+            "title": "Zionism and Building the Land",
+            "text": "Love of the Land and the wish to build a home in it are the foundation of our path. We see building new communities here as a natural continuation of service and of contributing to the country."
+          },
+          {
+            "icon": "family",
+            "title": "Family and Community",
+            "text": "The family is the foundation of the community, and the community is a wide home where people share both joys and hardships."
+          },
+          {
+            "icon": "education",
+            "title": "Education and Values",
+            "text": "We hope to raise children on values, curiosity and Jewish and Israeli roots."
+          },
+          {
+            "icon": "national",
+            "title": "National Responsibility",
+            "text": "Each of us carries a share of responsibility for the country and for society: at home, at work and in the community."
+          },
+          {
+            "icon": "service",
+            "title": "Service and Contribution",
+            "text": "IDF service is an important value to us, and the spirit of giving stays with us in civilian life. Service is not a condition for joining."
+          },
+          {
+            "icon": "mutual",
+            "title": "Mutual Responsibility",
+            "text": "A community where no one is left alone: we help one another in ordinary days and in hard ones."
+          },
+          {
+            "icon": "work",
+            "title": "Work and Initiative",
+            "text": "We believe in work, initiative and honest livelihood, and we encourage people to start and build."
+          },
+          {
+            "icon": "independence",
+            "title": "Personal Independence",
+            "text": "Every person and every family has the right to choose their own path. A strong community is made of independent people."
+          },
+          {
+            "icon": "unity",
+            "title": "Unity and Mutual Respect",
+            "text": "We are different from one another and united in a shared purpose. Respectful disagreement is part of the way."
+          }
+        ]
       }
     ],
-    "ctaTitle": "Want to Be Part of the Vision?",
-    "ctaText": "We would love to meet you. Leave your details and we will get back to you personally. [[DRAFT]]"
+    "ctaTitle": "Do These Values Speak to You?",
+    "ctaText": "We would love to meet you and hear what matters to you. [[DRAFT]]"
   }
 }

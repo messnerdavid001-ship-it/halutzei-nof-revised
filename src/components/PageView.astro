@@ -3,10 +3,8 @@
 import BaseLayout from './BaseLayout.astro';
 import Home from './pages/Home.astro';
 import About from './pages/About.astro';
-import Sections from './pages/Sections.astro';
-import Values from './pages/Values.astro';
+import CardsPage from './pages/CardsPage.astro';
 import Join from './pages/Join.astro';
-import Faq from './pages/Faq.astro';
 import Contact from './pages/Contact.astro';
 import Legal from './pages/Legal.astro';
 import { getPage, bgFor, type Lang } from '../lib/site';
@@ -14,15 +12,13 @@ interface Props { lang: Lang; slug: string }
 const { lang, slug } = Astro.props;
 const p = getPage(slug, lang);
 const bg = { ...bgFor(slug), alt: p.backgroundAlt || '' };
-const sectioned = ['vision', 'community', 'education'];
+const cardPages = ['vision', 'community'];
 ---
 <BaseLayout lang={lang} slug={slug} title={p.seoTitle} description={p.seoDescription} noindex={slug === 'donate'} bg={bg}>
   {slug === 'index' ? <Home lang={lang} /> :
    slug === 'about' ? <About lang={lang} /> :
-   sectioned.includes(slug) ? <Sections lang={lang} slug={slug} /> :
-   slug === 'values' ? <Values lang={lang} /> :
+   cardPages.includes(slug) ? <CardsPage lang={lang} slug={slug} /> :
    slug === 'join' ? <Join lang={lang} /> :
-   slug === 'faq' ? <Faq lang={lang} /> :
    slug === 'contact' ? <Contact lang={lang} /> :
    <Legal lang={lang} slug={slug} />}
 </BaseLayout>

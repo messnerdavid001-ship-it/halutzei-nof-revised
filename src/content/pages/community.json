@@ -1,61 +1,149 @@
 {
   "he": {
-    "seoTitle": "הקהילה וחיי המשפחה — חלוצי נוף",
-    "seoDescription": "חיי קהילה ומשפחה בחלוצי נוף: שכנות אמיתית, אחריות הדדית, טבע ויוזמה.",
-    "title": "הקהילה וחיי המשפחה",
+    "seoTitle": "קהילה וחינוך — חלוצי נוף",
+    "seoDescription": "חיי קהילה ומשפחה וחינוך לערכים וזהות יהודית בחלוצי נוף: שכנות אמיתית, אחריות הדדית, עצמאות ואהבת הארץ.",
+    "title": "קהילה וחינוך",
     "backgroundAlt": "תצלום לילה קבוצתי של צעירים וצעירות, ומבני העיר ברקע",
-    "intro": "אנחנו מבקשים לבנות קהילה שבה כל משפחה מרגישה בבית וכל אחד מרגיש שייך.",
-    "sections": [
+    "intro": "קהילה שבה כל משפחה מרגישה בבית, וחינוך שגדל מתוך הבית. [[DRAFT]]",
+    "groups": [
       {
-        "title": "שכנות אמיתית",
-        "text": "אנחנו חולמים על מקום שבו מכירים את השכנים בשמם, ילדים משחקים יחד בחוץ, ודלת פתוחה היא דבר טבעי. [[DRAFT]]"
+        "id": "community",
+        "title": "הקהילה וחיי המשפחה",
+        "intro": "",
+        "cards": [
+          {
+            "icon": "house",
+            "title": "שכנות אמיתית",
+            "text": "שכנים שמכירים בשמם, ילדים שמשחקים יחד, ודלת פתוחה."
+          },
+          {
+            "icon": "mutual",
+            "title": "אחריות הדדית",
+            "text": "עוזרים זה לזה בשמחות, בימי חולין ובימים קשים."
+          },
+          {
+            "icon": "sunrise",
+            "title": "טבע וחיים פשוטים",
+            "text": "קרבה לטבע, קצב אנושי וזמן למשפחה ולחברים."
+          },
+          {
+            "icon": "work",
+            "title": "יוזמה",
+            "text": "קהילה נבנית מאנשים שמציעים, מתנדבים ומקימים."
+          },
+          {
+            "icon": "family",
+            "title": "המשפחה במרכז",
+            "text": "חגים משותפים, ערבי שבת וילדים שגדלים יחד."
+          }
+        ]
       },
       {
-        "title": "אחריות הדדית",
-        "text": "בקהילה שלנו עוזרים זה לזה — בשמחות, בימי חולין ובימים קשים. אף משפחה לא אמורה להרגיש לבד. [[DRAFT]]"
-      },
-      {
-        "title": "טבע וחיים פשוטים",
-        "text": "אנחנו מבקשים חיים קרובים לטבע, בקצב אנושי, עם זמן למשפחה ולחברים. [[DRAFT]]"
-      },
-      {
-        "title": "יוזמה",
-        "text": "קהילה נבנית מאנשים שמציעים, מתנדבים ומקימים. אנחנו מעודדים יוזמות של חברים, קטנות כגדולות. [[DRAFT]]"
-      },
-      {
-        "title": "המשפחה במרכז",
-        "text": "חיי הקהילה בנויים סביב המשפחה: חגים משותפים, ערבי שבת, ילדים שגדלים יחד והורים שתומכים זה בזה. [[DRAFT]]"
+        "id": "education",
+        "title": "חינוך וזהות יהודית",
+        "intro": "אנחנו מבקשים לגדל דור שמכיר את שורשיו, אוהב את הארץ ולוקח אחריות. [[BM4]]",
+        "cards": [
+          {
+            "icon": "education",
+            "title": "חינוך לערכים",
+            "text": "כבוד, אחריות ויושרה — החינוך מתחיל בבית ובקהילה."
+          },
+          {
+            "icon": "independence",
+            "title": "עצמאות ואחריות",
+            "text": "יוזמה ואחריות אישית כבר מגיל צעיר."
+          },
+          {
+            "icon": "zion",
+            "title": "מורשת יהודית",
+            "text": "חגים, שבת ולימוד, מתוך שמחה ובחירה."
+          },
+          {
+            "icon": "national",
+            "title": "אהבת הארץ",
+            "text": "טיולים, היסטוריה ותרומה למדינה."
+          },
+          {
+            "icon": "unity",
+            "title": "כבוד לדרכים שונות",
+            "text": "ללא כפייה דתית וללא אורח חיים אחד מחייב."
+          }
+        ]
       }
     ],
     "ctaTitle": "מעוניינים להכיר?",
     "ctaText": "נשמח לשיחת היכרות עם משפחות ויחידים שהדרך שלנו מדברת אליהם. [[DRAFT]]"
   },
   "en": {
-    "seoTitle": "Community and Family Life — Halutzei Nof",
-    "seoDescription": "Community and family life at Halutzei Nof: real neighborliness, mutual responsibility, nature and initiative.",
-    "title": "Community and Family Life",
+    "seoTitle": "Community and Education — Halutzei Nof",
+    "seoDescription": "Community, family life, values education and Jewish identity at Halutzei Nof: real neighborliness, mutual responsibility, independence and love of the Land.",
+    "title": "Community and Education",
     "backgroundAlt": "A night group photo of young men and women with city buildings behind them",
-    "intro": "We hope to build a community where every family feels at home and everyone feels they belong.",
-    "sections": [
+    "intro": "A community where every family feels at home, and education that grows out of the home. [[DRAFT]]",
+    "groups": [
       {
-        "title": "Real Neighborliness",
-        "text": "We dream of a place where neighbors know one another by name, children play outside together, and an open door is simply normal. [[DRAFT]]"
+        "id": "community",
+        "title": "Community and Family Life",
+        "intro": "",
+        "cards": [
+          {
+            "icon": "house",
+            "title": "Real Neighborliness",
+            "text": "Neighbors who know one another, children who play together, an open door."
+          },
+          {
+            "icon": "mutual",
+            "title": "Mutual Responsibility",
+            "text": "Helping one another in joy, in ordinary days and in hard ones."
+          },
+          {
+            "icon": "sunrise",
+            "title": "Nature and a Simple Life",
+            "text": "Closeness to nature, a human pace, time for family and friends."
+          },
+          {
+            "icon": "work",
+            "title": "Initiative",
+            "text": "A community built by people who propose, volunteer and start things."
+          },
+          {
+            "icon": "family",
+            "title": "Family at the Center",
+            "text": "Shared holidays, Shabbat evenings and children growing up together."
+          }
+        ]
       },
       {
-        "title": "Mutual Responsibility",
-        "text": "In our community people help one another: in joyful times, in ordinary days and in hard ones. No family should feel alone. [[DRAFT]]"
-      },
-      {
-        "title": "Nature and a Simple Life",
-        "text": "We want a life close to nature, at a human pace, with time for family and friends. [[DRAFT]]"
-      },
-      {
-        "title": "Initiative",
-        "text": "A community is built by people who propose, volunteer and start things. We encourage initiatives from our members, small and large. [[DRAFT]]"
-      },
-      {
-        "title": "Family at the Center",
-        "text": "Community life is built around the family: shared holidays, Shabbat evenings, children growing up together and parents supporting one another. [[DRAFT]]"
+        "id": "education",
+        "title": "Education and Jewish Identity",
+        "intro": "We hope to raise a generation that knows its roots, loves the Land and takes responsibility. [[BM4]]",
+        "cards": [
+          {
+            "icon": "education",
+            "title": "Education for Values",
+            "text": "Respect, responsibility and integrity: education begins at home and in the community."
+          },
+          {
+            "icon": "independence",
+            "title": "Independence and Responsibility",
+            "text": "Initiative and personal responsibility from an early age."
+          },
+          {
+            "icon": "zion",
+            "title": "Jewish Heritage",
+            "text": "Holidays, Shabbat and learning, out of joy and choice."
+          },
+          {
+            "icon": "national",
+            "title": "Love of the Land",
+            "text": "Hiking, history and contributing to the country."
+          },
+          {
+            "icon": "unity",
+            "title": "Respect for Different Ways",
+            "text": "No religious coercion and no single required lifestyle."
+          }
+        ]
       }
     ],
     "ctaTitle": "Interested in Getting to Know Us?",

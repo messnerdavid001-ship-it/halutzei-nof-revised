@@ -9,7 +9,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('about', lang);
 ---
-<PageHead title={p.title} lang={lang} />
+<PageHead title={p.title} intro={p.intro} lang={lang} />
 <Panel tone="navy" title={p.identityTitle}><TextBlock text={p.identity} lang={lang} /></Panel>
 <Panel tone="navy" title={p.whoTitle}><TextBlock text={p.who} lang={lang} /></Panel>
 <Panel tone="navy" title={p.characterTitle}><TextBlock text={p.character} lang={lang} /></Panel>

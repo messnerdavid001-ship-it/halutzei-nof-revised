@@ -5,15 +5,15 @@ import images from '../generated/images.json';
 export type Lang = 'he' | 'en';
 export { settings };
 
-export const SLUGS = ['index', 'about', 'vision', 'values', 'community', 'education', 'join', 'faq', 'contact', 'accessibility', 'privacy', 'donate'] as const;
+export const SLUGS = ['index', 'about', 'vision', 'community', 'join', 'contact', 'accessibility', 'privacy', 'donate'] as const;
 /** Menu order. Join is rendered separately as the gold button at the end. */
-export const NAV = ['index', 'about', 'vision', 'values', 'community', 'education', 'faq', 'contact'] as const;
-export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', values: 'values', community: 'community', education: 'education', faq: 'faq', contact: 'contact', join: 'join' };
+export const NAV = ['index', 'about', 'vision', 'community', 'contact'] as const;
+export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', community: 'community', contact: 'contact', join: 'join' };
 
 /** Which Settings field holds each page's background photo. Pages not listed use legalBackground. */
 const BG_KEYS: Record<string, string> = {
-  index: 'homeBackground', about: 'aboutBackground', vision: 'visionBackground', values: 'valuesBackground',
-  community: 'communityBackground', education: 'educationBackground', join: 'joinBackground', faq: 'faqBackground', contact: 'contactBackground',
+  index: 'homeBackground', about: 'aboutBackground', vision: 'visionBackground',
+  community: 'communityBackground', join: 'joinBackground', contact: 'contactBackground',
 };
 export function bgFor(slug: string) {
   const key = BG_KEYS[slug];
@@ -79,7 +79,7 @@ export function richText(text: string, lang: Lang): string {
     .filter(Boolean)
     .map((p) => {
       const html = escapeHtml(p)
-        .replace(/\[\[([A-Z]+)\]\]/g, (_, k) => todoMark(k.toLowerCase(), lang))
+        .replace(/\[\[([A-Z0-9]+)\]\]/g, (_, k) => todoMark(k.toLowerCase(), lang))
         .replace(/\n/g, '<br>');
       return `<p>${html}</p>`;
     })
@@ -88,7 +88,7 @@ export function richText(text: string, lang: Lang): string {
 
 /** Inline text (single line) with markers. */
 export function inline(text: string, lang: Lang): string {
-  return escapeHtml(text).replace(/\[\[([A-Z]+)\]\]/g, (_, k) => todoMark(k.toLowerCase(), lang));
+  return escapeHtml(text).replace(/\[\[([A-Z0-9]+)\]\]/g, (_, k) => todoMark(k.toLowerCase(), lang));
 }
 
 export type ImgInfo = { width: number; height: number; widths: number[]; fallback: string; name: string };

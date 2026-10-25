@@ -24,7 +24,7 @@ To stop, press `Ctrl + C` in Terminal.
 
 On the left:
 
-- **עמודים / Pages**: Home, About, Vision, Values, Community, Education, Join, FAQ, Contact, Accessibility, Privacy, Donate (off).
+- **עמודים / Pages**: Home, About, Vision & Values, Community & Education, Join & FAQ, Contact, Accessibility, Privacy, Donate (off).
 - **הגדרות / Settings**: contact details, background photos, on/off switches, and the fixed texts (menu, buttons, form messages, footer).
 
 Every page has two boxes: **עברית (Hebrew)** and **English**. Every sentence on the page is in one of them. A **blank line** inside a long text starts a new paragraph.
@@ -33,28 +33,27 @@ The name is always written **Halutzei Nof** in English. Do not translate it.
 
 ## 3. The pages
 
+The menu has five items plus the gold Join button.
+
 | Page | Address (Hebrew / English) | What you edit |
 |---|---|---|
-| Home | `/` and `/en/` | Main line, slogan, intro, three teaser cards, the photos below the intro, closing text |
-| About | `/about/` | Community identity, who it is for, character, and **In Their Memory** at the bottom |
-| Vision | `/vision/` | Intro and a list of sections (each one is its own box) |
-| Values | `/values/` | The nine value cards |
-| Community | `/community/` | Intro and a list of sections |
-| Education | `/education/` | Intro and a list of sections |
-| Join | `/join/` | Intro, the four steps, the join form |
-| FAQ | `/faq/` | Questions and answers |
+| Home | `/` and `/en/` | Main line, slogan, overview sentence, three teaser cards, "Who the community is for", the value icons, photos below the intro, closing text |
+| About | `/about/` | One-line summary, community identity, who it is for, character, and **In Their Memory** at the bottom |
+| Vision & Values | `/vision/` | Two groups of cards: the vision (5 cards) and the nine values |
+| Community & Education | `/community/` | Two groups of cards: community and family life, and education and Jewish identity |
+| Join | `/join/` | Intro, the four steps, the **FAQ**, and the join form |
 | Contact | `/contact/` | Intro; the contact details come from Settings |
 
-**Vision, Community and Education** all work the same way: a list of sections. Add, remove or reorder them with the list buttons. Each section becomes a box on the page.
-
-### Values
-Admin → Pages → **Values**. Each card has an icon (pick from the list), a title and a sentence or two. You can add more cards, but the nine described in the brief are already there.
+**Vision & Values and Community & Education** work the same way: each page is a list of **groups**, and each group is a box of short cards (an icon, a title of two to four words, and one line). Add, remove or reorder them with the list buttons. The "link id" of a group (for example `values`) is what makes the link `/vision/#values` work, so please do not change it.
 
 ### FAQ
-Admin → Pages → **FAQ** → "Questions and answers". Click **Add** for a new question. Each one needs a question and an answer. They show on the site as an open-and-close list. Please do not add a question about location.
+It is on the Join page. Admin → Pages → **Join & FAQ** → "Questions and answers". Click **Add** for a new question. Each one needs a question and an answer. Please do not add a question about location. The footer link "Frequently asked questions" jumps straight to it.
+
+### The blue bookmarks
+Blue notes on the pages are ideas about what a visitor will want to know. They are listed with suggestions in `TODO.md`. Delete the `[[BM1]]` style code from the text when you have decided. They disappear with the red notes when you turn off "Show red TODO markers".
 
 ### The Join form
-- The four steps are in Admin → Pages → **Join**.
+- The four steps are in Admin → Pages → **Join & FAQ**.
 - The form labels and error messages are in Admin → Settings → **Menus, form, footer text** → Form.
 - The form sends to the same address as the Contact form (Settings → "Form service URL"). Each message carries a hidden label, `form_type = join` or `form_type = contact`, so you can tell them apart in your inbox. The email subject also says which form it came from.
 

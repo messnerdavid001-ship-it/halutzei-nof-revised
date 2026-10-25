@@ -9,7 +9,7 @@ import { getPage, getUi, pagePath, todoMark, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('index', lang);
-const v = getPage('values', lang);
+const v = getPage('vision', lang).groups.find((g: any) => g.id === 'values');
 const t = getUi(lang);
 const photos = (p.photos || []).filter((x: any) => x.image);
 ---
@@ -45,11 +45,24 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   </ul>
 </Panel>
 
+<Panel tone="navy" title={p.audienceTitle} id="audience">
+  <ul class="value-cards value-cards--4">
+    {p.audience.map((a: any) => (
+      <li class="value-card">
+        <Icon name={a.icon} size={40} class="value-icon" />
+        <h3>{a.title}</h3>
+        <p>{a.text}</p>
+      </li>
+    ))}
+  </ul>
+  <TextBlock text={p.audienceNote} lang={lang} class="group-note" />
+</Panel>
+
 <Panel tone="navy" title={p.valuesTitle} id="values-teaser">
   <TextBlock text={p.valuesText} lang={lang} />
   <ul class="icon-strip">
-    {v.values.map((x: any) => (
-      <li><a href={pagePath('values', lang)}><Icon name={x.icon} size={34} /><span>{x.title}</span></a></li>
+    {v.cards.map((x: any) => (
+      <li><a href={pagePath('vision', lang) + '#values'}><Icon name={x.icon} size={34} /><span>{x.title}</span></a></li>
     ))}
   </ul>
 </Panel>

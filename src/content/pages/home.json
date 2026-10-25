@@ -6,30 +6,30 @@
     "tagline": "חלוצי נוף — בונים את העתיד של ההתיישבות.",
     "backgroundAlt": "נוף של יישוב על צלע הר בשעת שקיעה",
     "introTitle": "מי אנחנו",
-    "intro": "חלוצי נוף נוסדה על ידי חברים ששירתו יחד בצה״ל. אנחנו שואפים להקים קהילה חדשה בארץ ישראל: קהילה של משפחות וזוגות צעירים, פתוחה לכל מי שחולק את הערכים שלנו.\n\nאנחנו בתחילת הדרך, וגרעין המשפחות שלנו הולך וגדל.",
+    "intro": "חלוצי נוף מחברת בין ציונות למעשה, בין משפחה לקהילה, ובין שורשים לעתיד.\n\nנוסדה על ידי חברים ששירתו יחד בצה״ל, וגרעין המשפחות שלה הולך וגדל.",
     "teasersTitle": "להכיר אותנו",
     "teasers": [
       {
         "icon": "people",
         "title": "מי אנחנו",
-        "text": "חברים ששירתו יחד, וקהילה הפתוחה לכל מי שחולק את הדרך.",
+        "text": "חברים ששירתו יחד, וקהילה פתוחה.",
         "link": "about"
       },
       {
         "icon": "sunrise",
-        "title": "החזון",
-        "text": "קהילה חדשה בארץ ישראל, שבנויה על משפחה, חינוך וערבות הדדית.",
+        "title": "החזון והערכים",
+        "text": "משפחה, חינוך וערבות הדדית.",
         "link": "vision"
       },
       {
         "icon": "house",
-        "title": "חיי קהילה",
-        "text": "שכנות אמיתית, טבע, יוזמה ומשפחות שגדלות יחד.",
+        "title": "קהילה וחינוך",
+        "text": "שכנות אמיתית וילדים שגדלים יחד.",
         "link": "community"
       }
     ],
     "valuesTitle": "הערכים שלנו",
-    "valuesText": "תשעה ערכים מובילים אותנו בדרך. הכירו אותם.",
+    "valuesText": "תשעה ערכים מובילים אותנו בדרך.",
     "photos": [
       {
         "image": "",
@@ -41,7 +41,31 @@
       }
     ],
     "ctaTitle": "מוזמנים להכיר",
-    "ctaText": "אם הדרך הזו מדברת אליכם, נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]"
+    "ctaText": "אם הדרך הזו מדברת אליכם, נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]",
+    "audienceTitle": "למי הקהילה מיועדת",
+    "audience": [
+      {
+        "icon": "family",
+        "title": "משפחות",
+        "text": "בית וקהילה לגידול ילדים עם שורשים וערכים."
+      },
+      {
+        "icon": "unity",
+        "title": "זוגות צעירים",
+        "text": "מקום להתחיל בו חיים משותפים, עם שכנים וחברים."
+      },
+      {
+        "icon": "zion",
+        "title": "יהודי התפוצות",
+        "text": "מי שמבקש לבנות בית בארץ ישראל בתוך קהילה."
+      },
+      {
+        "icon": "national",
+        "title": "חיילים בודדים",
+        "text": "בית וקהילה למי שמחפש משפחה מסביב."
+      }
+    ],
+    "audienceNote": "הקהילה פתוחה לכל מי שחולק את הערכים שלנו. שירות בצה״ל הוא ערך חשוב, אך אינו תנאי. [[DRAFT]]"
   },
   "en": {
     "seoTitle": "Halutzei Nof — A strong community. A home for generations.",
@@ -50,30 +74,30 @@
     "tagline": "Halutzei Nof — building a new community in the Land of Israel.",
     "backgroundAlt": "A hillside village at sunset",
     "introTitle": "Who We Are",
-    "intro": "Halutzei Nof was founded by friends who served together in the IDF. We aim to build a new community in the Land of Israel: a community of families and young couples, open to everyone who shares our values.\n\nWe are at the beginning of the road, and our core of families is growing.",
+    "intro": "Halutzei Nof brings together Zionism and action, family and community, roots and future.\n\nIt was founded by friends who served together in the IDF, and its core of families is growing.",
     "teasersTitle": "Get to Know Us",
     "teasers": [
       {
         "icon": "people",
         "title": "About Us",
-        "text": "Friends who served together, and a community open to everyone who shares the path.",
+        "text": "Friends who served together, and an open community.",
         "link": "about"
       },
       {
         "icon": "sunrise",
-        "title": "Our Vision",
-        "text": "A new community in the Land of Israel, built on family, education and mutual responsibility.",
+        "title": "Vision and Values",
+        "text": "Family, education and mutual responsibility.",
         "link": "vision"
       },
       {
         "icon": "house",
-        "title": "Community Life",
-        "text": "Real neighborliness, nature, initiative and families growing up together.",
+        "title": "Community and Education",
+        "text": "Real neighborliness, children growing up together.",
         "link": "community"
       }
     ],
     "valuesTitle": "Our Values",
-    "valuesText": "Nine values guide us on the way. Get to know them.",
+    "valuesText": "Nine values guide us on the way.",
     "photos": [
       {
         "image": "",
@@ -85,6 +109,30 @@
       }
     ],
     "ctaTitle": "Come and Meet Us",
-    "ctaText": "If this path speaks to you, we would love to get to know you. Leave your details and we will get back to you personally. [[DRAFT]]"
+    "ctaText": "If this path speaks to you, we would love to get to know you. Leave your details and we will get back to you personally. [[DRAFT]]",
+    "audienceTitle": "Who the Community Is For",
+    "audience": [
+      {
+        "icon": "family",
+        "title": "Families",
+        "text": "A home and a community to raise children with roots and values."
+      },
+      {
+        "icon": "unity",
+        "title": "Young Couples",
+        "text": "A place to start a shared life, with neighbors and friends."
+      },
+      {
+        "icon": "zion",
+        "title": "Jews from the Diaspora",
+        "text": "For those who want to build a home in the Land of Israel within a community."
+      },
+      {
+        "icon": "national",
+        "title": "Lone Soldiers",
+        "text": "A home and a community for those looking for family around them."
+      }
+    ],
+    "audienceNote": "The community is open to everyone who shares our values. IDF service is an important value, but not a condition. [[DRAFT]]"
   }
 }

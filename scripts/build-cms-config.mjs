@@ -44,12 +44,16 @@ const page = (key, label, fnFields) => filesEntry(`pages/${key}.json`, label, bi
 const bgAlt = text('backgroundAlt', 'תיאור תמונת הרקע (נגישות) / Background photo description (alt)');
 const ICONS = ['zion', 'family', 'education', 'national', 'service', 'mutual', 'work', 'independence', 'unity', 'form', 'chat', 'people', 'path', 'sunrise', 'house'];
 const icon = () => ({ label: 'אייקון / Icon', name: 'icon', widget: 'select', options: ICONS, default: 'people' });
-const PAGES = ['about', 'vision', 'values', 'community', 'education', 'join', 'faq', 'contact'];
+const PAGES = ['about', 'vision', 'community', 'join', 'contact'];
 const pageLink = () => ({ label: 'קישור לעמוד / Links to page', name: 'link', widget: 'select', options: PAGES, default: 'about' });
-// Vision, Community and Education share one structure.
-const sectionPage = (key, label) => page(key, label, () => [
-  ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
-  objList('sections', 'פסקאות (כל אחת בתיבה משלה) / Sections (each in its own box)', [text('title', 'כותרת / Title'), area('text', 'טקסט / Text', MARK)]),
+// Vision & Values and Community & Education share one structure: groups of short cards.
+const MARKS = 'סימניות [[BM1]]-[[BM8]] הן הצעות (כחול) / [[BM1]]-[[BM8]] are blue bookmarks with ideas - delete them once handled.';
+const cardsPage = (key, label) => page(key, label, () => [
+  ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'משפט פתיחה קצר / One-line summary', MARK),
+  objList('groups', 'קבוצות כרטיסים (כל קבוצה בתיבה משלה) / Card groups (each in its own box)', [
+    text('id', 'מזהה לקישור (באנגלית, בלי רווחים) / Link id (English, no spaces)'), text('title', 'כותרת / Title'), area('intro', 'פתיח לקבוצה (לא חובה) / Group intro (optional)', MARK),
+    objList('cards', 'כרטיסים / Cards', [icon(), text('title', 'כותרת קצרה (2-4 מילים) / Short title (2-4 words)'), area('text', 'משפט אחד / One line')]),
+  ]),
   text('ctaTitle', 'כותרת הזמנה בסוף העמוד / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
 ]);
 
@@ -59,35 +63,31 @@ const pages = [
     text('introTitle', 'כותרת מבוא / Intro title'), area('intro', 'טקסט מבוא / Intro text', MARK),
     text('teasersTitle', 'כותרת כרטיסי ההיכרות / Teaser cards title'),
     objList('teasers', 'כרטיסי היכרות (קישור לעמודים) / Teaser cards (link to pages)', [icon(), text('title', 'כותרת / Title'), area('text', 'טקסט קצר / Short text'), pageLink()]),
+    text('audienceTitle', 'כותרת "למי" / Who-it-is-for title'),
+    objList('audience', 'למי הקהילה מיועדת (כרטיסים) / Who it is for (cards)', [icon(), text('title', 'כותרת / Title'), area('text', 'משפט אחד / One line')]),
+    area('audienceNote', 'הערה מתחת לכרטיסים / Note under the cards', MARK),
     text('valuesTitle', 'כותרת הערכים / Values title'), area('valuesText', 'טקסט מעל סמלי הערכים / Text above the value icons'),
     objList('photos', 'תמונות מתחת לאזור הראשי (עד 2) / Photos below the intro (up to 2)', [img('image', 'תמונה / Photo'), text('alt', 'תיאור התמונה / Alt text')]),
     text('ctaTitle', 'כותרת הזמנה בסוף / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
   ]),
   page('about', '👥 מי אנחנו / About', () => [
-    ...seo, text('title', 'כותרת / Title'), bgAlt,
+    ...seo, text('title', 'כותרת / Title'), bgAlt, text('intro', 'משפט פתיחה קצר / One-line summary'),
     text('identityTitle', 'כותרת זהות הקהילה / Identity title'), area('identity', 'זהות הקהילה / Community identity', MARK),
     text('whoTitle', 'כותרת "למי" / Who-it-is-for title'), area('who', 'למי הקהילה מיועדת / Who it is for', MARK),
     text('characterTitle', 'כותרת אופי הקהילה / Character title'), area('character', 'אופי הקהילה / Character', MARK),
     text('memorialTitle', 'כותרת לזכרם / Memorial title'), text('memorialTag', 'שורה קטנה בתחתית כל כרטיס / Small line at the bottom of each card'), area('memorialIntro', 'פתיח לזכרם / Memorial intro'),
     objList('memorials', 'הנופלים (6) / The fallen (6)', [text('name', 'שם / Name'), area('text', 'טקסט קצר / Short text'), img('photo', 'תמונה / Photo'), text('photoAlt', 'תיאור התמונה / Alt text')]),
   ]),
-  sectionPage('vision', '🌄 החזון / Vision'),
-  page('values', '💎 הערכים / Values', () => [
-    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
-    objList('values', 'כרטיסי ערכים (3 בשורה במחשב) / Value cards (3 per row on desktop)', [icon(), text('title', 'כותרת / Title'), area('text', 'הסבר (משפט או שניים) / Explanation (1-2 sentences)')]),
-    text('ctaTitle', 'כותרת הזמנה בסוף / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
-  ]),
-  sectionPage('community', '🤝 הקהילה וחיי המשפחה / Community & family life'),
-  sectionPage('education', '📚 חינוך וזהות יהודית / Education & Jewish identity'),
-  page('join', '✋ הצטרפות / Join', () => [
+  cardsPage('vision', '🌄 החזון והערכים / Vision & Values'),
+  cardsPage('community', '🤝 קהילה וחינוך / Community & Education'),
+  page('join', '✋ הצטרפות ושאלות נפוצות / Join & FAQ', () => [
     ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
     text('stepsTitle', 'כותרת השלבים / Steps title'),
     objList('steps', 'ארבעת השלבים / The four steps', [icon(), text('title', 'כותרת / Title'), text('text', 'טקסט קצר / Short text')]),
-    text('stepsNote', 'הערה מתחת לשלבים / Note under the steps'), text('formTitle', 'כותרת הטופס / Form title'),
-  ]),
-  page('faq', '❓ שאלות נפוצות / FAQ', () => [
-    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא (לא חובה) / Intro (optional)'),
-    objList('items', 'שאלות ותשובות (אפשר להוסיף) / Questions and answers (you can add more)', [text('q', 'שאלה / Question'), area('a', 'תשובה / Answer', MARK)]),
+    text('stepsNote', 'הערה מתחת לשלבים / Note under the steps'),
+    text('faqTitle', 'כותרת שאלות נפוצות / FAQ title'),
+    objList('faq', 'שאלות ותשובות (אפשר להוסיף) / Questions and answers (you can add more)', [text('q', 'שאלה / Question'), area('a', 'תשובה / Answer', MARK)]),
+    text('formTitle', 'כותרת הטופס / Form title'), area('formNote', 'שורה מעל הטופס / Line above the form', MARK),
   ]),
   page('contact', '✉️ צור קשר / Contact', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro')]),
   page('accessibility', '♿ הצהרת נגישות / Accessibility', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
@@ -114,9 +114,8 @@ const settingsFields = [
   text('email', 'דוא״ל / Email'), text('instagram', 'אינסטגרם (קישור מלא) / Instagram URL'), text('facebook', 'פייסבוק (קישור מלא) / Facebook URL'),
   text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
-  bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון / Vision'), bg('valuesBackground', 'הערכים / Values'),
-  bg('communityBackground', 'הקהילה / Community'), bg('educationBackground', 'חינוך / Education'), bg('joinBackground', 'הצטרפות / Join'),
-  bg('faqBackground', 'שאלות נפוצות / FAQ'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
+  bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון והערכים / Vision & Values'),
+  bg('communityBackground', 'קהילה וחינוך / Community & Education'), bg('joinBackground', 'הצטרפות / Join'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
 ];
 
 const config = {

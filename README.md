@@ -11,6 +11,6 @@ npm run build      # outputs dist/
 - Photos: drop into `public/photos/`; `scripts/optimize-images.mjs` makes WebP + JPG variants at build.
 - CMS config is generated: edit `scripts/build-cms-config.mjs`, not `public/admin/config.yml`.
 - Local CMS editing: run `npm run dev`, open `/admin/index.html` in Chrome and choose "Work with Local Repository".
-- Pages: home, about, vision, values, community, education, join, faq, contact, accessibility, privacy (+ donate, off by default). Both forms (join, contact) post to the same FormSubmit address with a hidden `form_type`.
+- Pages: home, about, vision (+ values), community (+ education), join (+ faq), contact, accessibility, privacy (+ donate, off by default). Both forms (join, contact) post to the same FormSubmit address with a hidden `form_type`.
 - Set "Site address" in CMS → Settings once hosting is chosen (sitemap, hreflang, share image).
 - Non-technical guide: `README-FOR-DAVE.md`. Open items: `TODO.md`.
