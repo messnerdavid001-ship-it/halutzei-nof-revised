@@ -31,16 +31,16 @@
         "photoAlt": "תצלום של סר״ן רועי בית יעקב"
       },
       {
-        "name": "דניאל חמו",
+        "name": "סמ״ל דניאל חמו",
         "text": "מטוליסט בפלוגה.",
         "photo": "/photos/daniel-chemo.png",
-        "photoAlt": "תצלום של דניאל חמו"
+        "photoAlt": "תצלום של סמ״ל דניאל חמו"
       },
       {
-        "name": "אילן כהן",
+        "name": "סמ״ל אילן כהן",
         "text": "מטוליסט בפלוגה.",
         "photo": "/photos/ilan-cohen.webp",
-        "photoAlt": "תצלום של אילן כהן"
+        "photoAlt": "תצלום של סמ״ל אילן כהן"
       },
       {
         "name": "בצלאל שעשוע",
@@ -89,13 +89,13 @@
         "photoAlt": "Photo of Roi Bet Yaakov"
       },
       {
-        "name": "Daniel Chemo",
+        "name": "Daniel Chemo סמ״ל",
         "text": "A matolist (grenade-launcher operator) in the company.",
         "photo": "/photos/daniel-chemo.png",
         "photoAlt": "Photo of Daniel Chemo"
       },
       {
-        "name": "Ilan Cohen",
+        "name": "Ilan Cohen סמ״ל",
         "text": "A matolist (grenade-launcher operator) in the company.",
         "photo": "/photos/ilan-cohen.webp",
         "photoAlt": "Photo of Ilan Cohen"
