@@ -9,7 +9,7 @@ const { lang } = Astro.props;
 const p = getPage('values', lang);
 ---
 <PageHead title={p.title} intro={p.intro} lang={lang} />
-<Panel tone="light" class="panel--grid">
+<Panel tone="navy" class="panel--grid">
   <ul class="value-cards">
     {p.values.map((v: any) => (
       <li class="value-card">

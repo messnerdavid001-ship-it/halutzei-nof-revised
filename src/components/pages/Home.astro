@@ -32,7 +32,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   <TextBlock text={p.intro} lang={lang} />
 </Panel>
 
-<Panel tone="light" title={p.teasersTitle} id="teasers">
+<Panel tone="navy" title={p.teasersTitle} id="teasers">
   <ul class="teasers">
     {p.teasers.map((x: any) => (
       <li class="teaser">
@@ -55,7 +55,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
 </Panel>
 
 {photos.length > 0 && (
-  <Panel tone="light" class="panel--photos">
+  <Panel tone="navy" class="panel--photos">
     <div class="photo-slots">
       {photos.slice(0, 2).map((ph: any) => (
         <figure class="slot"><Pic src={ph.image} alt={ph.alt} sizes="(min-width: 768px) 460px, 90vw" /></figure>

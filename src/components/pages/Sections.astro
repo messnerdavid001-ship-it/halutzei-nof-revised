@@ -11,6 +11,6 @@ const p = getPage(slug, lang);
 ---
 <PageHead title={p.title} intro={p.intro} lang={lang} />
 {p.sections.map((s: any, i: number) => (
-  <Panel tone={i % 2 ? 'navy' : 'light'} title={s.title}><TextBlock text={s.text} lang={lang} /></Panel>
+  <Panel tone="navy" title={s.title}><TextBlock text={s.text} lang={lang} /></Panel>
 ))}
 <CtaPanel lang={lang} title={p.ctaTitle} text={p.ctaText} />

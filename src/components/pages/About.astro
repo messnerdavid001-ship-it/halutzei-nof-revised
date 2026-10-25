@@ -10,9 +10,9 @@ const { lang } = Astro.props;
 const p = getPage('about', lang);
 ---
 <PageHead title={p.title} lang={lang} />
-<Panel tone="light" title={p.identityTitle}><TextBlock text={p.identity} lang={lang} /></Panel>
+<Panel tone="navy" title={p.identityTitle}><TextBlock text={p.identity} lang={lang} /></Panel>
 <Panel tone="navy" title={p.whoTitle}><TextBlock text={p.who} lang={lang} /></Panel>
-<Panel tone="light" title={p.characterTitle}><TextBlock text={p.character} lang={lang} /></Panel>
+<Panel tone="navy" title={p.characterTitle}><TextBlock text={p.character} lang={lang} /></Panel>
 <CtaPanel lang={lang} title={getPage('home', lang).ctaTitle} text={getPage('home', lang).ctaText} />
 
 <section class="panel panel--navy memorial-panel" id="memorial" aria-labelledby="memorial-title" data-reveal>
