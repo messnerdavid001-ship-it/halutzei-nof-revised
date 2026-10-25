@@ -13,8 +13,8 @@
         "cards": [
           {
             "icon": "house",
-            "title": "שכנות אמיתית",
-            "text": "שכנים שמכירים בשמם, ילדים שמשחקים יחד, ודלת פתוחה."
+            "title": "קהילה",
+            "text": "אנחנו מקיימים אירועי קהילה וארוחות משותפות באופן קבוע."
           },
           {
             "icon": "mutual",
@@ -88,8 +88,8 @@
         "cards": [
           {
             "icon": "house",
-            "title": "Real Neighborliness",
-            "text": "Neighbors who know one another, children who play together, an open door."
+            "title": "Community",
+            "text": "We hold community events and meals on a regular basis."
           },
           {
             "icon": "mutual",
