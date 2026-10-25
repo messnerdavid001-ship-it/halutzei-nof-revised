@@ -359,7 +359,7 @@ html.hc .panel--navy { border: 2px solid #fff; }
 /* ---- where centring fits: titles, short lines, cards, hero, footer. Paragraphs, forms and FAQ read from the start. ---- */
 .page-head, .page-head .prose, .cta, .cta .prose, .hero, .memorial-panel, .memorial-panel .prose,
 .group-intro, .group-note, .form-note, .steps-note, .step, .teaser, .value-card, .contact-cards, .contact-card,
-.icon-strip, .form-thanks, .form-status, #content .prose, .empty, .btn-row { text-align: center; }
+.icon-strip, .form-thanks, .form-status, .empty, .btn-row { text-align: center; }
 .site-footer { text-align: center; }
 .footer-tagline { margin-inline: auto; }
 .cd, .social { align-items: center; justify-content: center; }
