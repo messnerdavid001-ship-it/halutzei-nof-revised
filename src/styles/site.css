@@ -15,6 +15,7 @@ html { font-size: 100%; scroll-behavior: smooth; -webkit-text-size-adjust: 100%;
 body {
   margin: 0; font-family: var(--font); color: var(--navy); background: var(--white);
   line-height: 1.7; text-align: center; font-size: 1.0625rem;
+  overflow-x: clip; /* no sideways scrolling */
 }
 img { max-width: 100%; height: auto; }
 a { color: inherit; text-underline-offset: 0.2em; }
@@ -175,6 +176,7 @@ h3 { font-size: 1.3rem; }
 label { display: block; font-weight: 700; margin-bottom: 6px; }
 input[type='text'], input[type='tel'], input[type='email'], select, textarea {
   width: 100%; font: inherit; color: var(--navy); background: #fff; border: 2px solid var(--navy); border-radius: 10px; padding: .65em .85em; }
+input.sr-only { width: 1px; height: 1px; padding: 0; border: 0; }
 input[aria-invalid='true'] { border-style: dashed; border-width: 3px; }
 .field--check { display: grid; grid-template-columns: 24px 1fr; gap: 0 10px; align-items: start; }
 .field--check input { width: 22px; height: 22px; margin-top: 4px; accent-color: var(--navy); }
