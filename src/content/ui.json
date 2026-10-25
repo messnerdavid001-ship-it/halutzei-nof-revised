@@ -51,7 +51,8 @@
       "form": "יעד שליחת הטופס טרם הוגדר (יחובר בהמשך באמצעות תוסף)",
       "formDemo": "הטופס אינו מחובר עדיין — פנייה זו לא נשלחה לאף גורם",
       "legal": "שם הגוף המשפטי / מעמד משפטי טרם נקבעו",
-      "generic": "יש להשלים"
+      "generic": "יש להשלים",
+      "deleted": "כאן נמחק טקסט"
     },
     "form": {
       "title": "השאירו פרטים",
@@ -154,7 +155,8 @@
       "form": "form destination not set (a plug-in will be added later)",
       "formDemo": "the form is not connected yet — this submission was not sent to anyone",
       "legal": "legal entity name / legal status not yet determined",
-      "generic": "to be completed"
+      "generic": "to be completed",
+      "deleted": "text deleted here"
     },
     "form": {
       "title": "Leave your details",

@@ -88,7 +88,7 @@ const uiFields = (lang) => [
   { label: 'תפריט / Menu', name: 'nav', widget: 'object', fields: ['home', 'about', 'vision', 'community', 'partners', 'contact'].map((k) => t(k, k)) },
   { label: 'כותרת תחתית / Footer', name: 'footer', widget: 'object', fields: ['contactTitle', 'phone', 'email', 'instagram', 'facebook', 'accessibility', 'privacy', 'copyright'].map((k) => t(k, k)) },
   { label: 'מילוי מקום / Placeholders', name: 'placeholders', widget: 'object', fields: ['phone', 'email', 'instagram', 'facebook', 'legalName'].map((k) => t(k, k)) },
-  { label: 'סימונים אדומים / Red markers', name: 'todo', widget: 'object', fields: ['photo', 'family', 'memorial', 'phone', 'email', 'instagram', 'facebook', 'form', 'formDemo', 'legal', 'generic'].map((k) => t(k, k)) },
+  { label: 'סימונים אדומים / Red markers', name: 'todo', widget: 'object', fields: ['photo', 'family', 'memorial', 'phone', 'email', 'instagram', 'facebook', 'form', 'formDemo', 'legal', 'generic', 'deleted'].map((k) => t(k, k)) },
   { label: 'טופס / Form', name: 'form', widget: 'object', fields: ['title', 'name', 'phone', 'email', 'contactHint', 'type', 'typeJoin', 'typePartner', 'typeGeneral', 'message', 'consent', 'consentLink', 'required', 'submit', 'errName', 'errContact', 'errEmail', 'errPhone', 'errConsent', 'errorSummary', 'success', 'failure'].map((k) => t(k, k)) },
   { label: 'אירועים / Events', name: 'events', widget: 'object', fields: ['date', 'place'].map((k) => t(k, k)) },
   { label: 'תפריט נגישות / Accessibility menu', name: 'a11y', widget: 'object', fields: ['button', 'title', 'close', 'bigger', 'smaller', 'contrast', 'underline', 'reset'].map((k) => t(k, k)) },
