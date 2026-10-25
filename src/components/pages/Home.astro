@@ -10,7 +10,6 @@ const { lang } = Astro.props;
 const p = getPage('index', lang);
 const t = getUi(lang);
 const photos = (p.photos || []).filter((x: any) => x.image);
-const slots = 2;
 ---
 <PhotoHero src={settings.homeBackground} alt={p.backgroundAlt} variant="home" lang={lang}>
   <Pic class="hero-logo" src="/photos/logo.png" alt={t.logoAlt} sizes="(min-width: 768px) 400px, 62vw" loading="eager" fetchpriority="high" />
@@ -24,15 +23,12 @@ const slots = 2;
 <Section tone="navy" title={p.introTitle}>
   <TextBlock text={p.intro} lang={lang} />
 </Section>
-<Section tone="white">
-  <div class="photo-slots">
-    {Array.from({ length: slots }).map((_, i) => {
-      const ph = photos[i];
-      return ph ? (
+{photos.length > 0 && (
+  <Section tone="white">
+    <div class="photo-slots">
+      {photos.slice(0, 2).map((ph: any) => (
         <figure class="slot"><Pic src={ph.image} alt={ph.alt} sizes="(min-width: 768px) 460px, 90vw" /></figure>
-      ) : (
-        <div class="slot slot--empty" aria-hidden="true"></div>
-      );
-    })}
-  </div>
-</Section>
+      ))}
+    </div>
+  </Section>
+)}

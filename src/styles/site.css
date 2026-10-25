@@ -158,8 +158,6 @@ h3 { font-size: 1.3rem; }
 .slot { margin: 0; aspect-ratio: 4/3; border-radius: 14px; overflow: hidden; }
 .slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .slot--empty { border: 2px dashed var(--line); }
-.photo-slots:not(:has(.slot:not(.slot--empty))) { display: none; }
-.section:has(> .container > .photo-slots:not(:has(.slot:not(.slot--empty)))) { display: none; }
 
 .events { list-style: none; padding: 0; margin: 0 auto; max-width: 720px; display: grid; gap: 20px; }
 .event { border: 2px solid var(--navy); border-radius: 14px; padding: 22px 20px; }
