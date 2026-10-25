@@ -16,7 +16,6 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   <h1 class="tagline">{p.tagline}</h1>
   <div class="btn-row">
     <Button href={`${pagePath('contact', lang)}?type=join`}>{t.btnJoin}</Button>
-    <Button href={`${pagePath('contact', lang)}?type=partner`} variant="light">{t.btnPartners}</Button>
   </div>
   <p slot="marker" class="hero-marker" set:html={todoMark('photo', lang)} />
 </PhotoHero>
