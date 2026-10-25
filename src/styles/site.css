@@ -73,7 +73,7 @@ h2::after, .page-head h1::after { content: ''; display: block; width: 56px; heig
 .menu-btn[aria-expanded='true'] .bars { background: transparent; }
 .menu-btn[aria-expanded='true'] .bars::before { top: 0; transform: rotate(45deg); }
 .menu-btn[aria-expanded='true'] .bars::after { top: 0; transform: rotate(-45deg); }
-@media (min-width: 1280px) {
+@media (min-width: 961px) {
   /* logo | menu centred on the page | language toggle */
   .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; }
   .site-nav { display: contents; }
