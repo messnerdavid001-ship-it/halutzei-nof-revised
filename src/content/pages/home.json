@@ -2,25 +2,37 @@
   "he": {
     "seoTitle": "חלוצי נוף — קהילה ויישוב בהקמה",
     "seoDescription": "חלוצי נוף היא יוזמה קהילתית ויישובית בראשית דרכה. בונים קהילה, חולמים על יישוב, יוצרים עתיד.",
-    "tagline": "בונים קהילה. חולמים על יישוב. יוצרים עתיד.",
+    "tagline": "לא רק חולמים את הארץ, בונים עתיד",
     "backgroundAlt": "נוף של יישוב על צלע הר בשעת שקיעה",
     "introTitle": "מי אנחנו",
     "intro": "חלוצי נוף היא יוזמה קהילתית ויישובית בראשית דרכה. היא צמחה מתוך שאיפותיהם של צעירים, ובהם משוחררי צה״ל, חיילים בודדים ועולים חדשים, המבקשים דרך משותפת המושתתת על חיי משפחה, קהילה, תורה, עבודה, ציונות ותרומה למדינת ישראל.\n\nהמטרה שלנו היא לבנות תחילה קהילה חזקה ומגובשת, ובהמשך, בשיתוף הגופים הרשמיים הרלוונטיים, להקים יישוב קהילתי חדש. כיום אנחנו נמצאים בתהליך השגת קרקע; המיקום הסופי ומעמדו התכנוני טרם נקבעו.\n\nבגרעין הקבוצה כיום כ-10 משפחות [[FAMILY]], ועוד משפחות נמצאות בשלב שלפני פגישת ההיכרות.",
     "photos": [
-      { "image": "", "alt": "" },
-      { "image": "", "alt": "" }
+      {
+        "image": "",
+        "alt": ""
+      },
+      {
+        "image": "",
+        "alt": ""
+      }
     ]
   },
   "en": {
     "seoTitle": "Halutzei Nof — A Community and Settlement in the Making",
     "seoDescription": "Halutzei Nof is a community and settlement initiative in its early stage. Building a community, dreaming of a settlement, creating a future.",
-    "tagline": "Building a Community. Dreaming of a Settlement. Creating a Future.",
+    "tagline": "Not Just Dreaming of the Land, Building a Future",
     "backgroundAlt": "A hillside village at sunset",
     "introTitle": "Who We Are",
     "intro": "Halutzei Nof is a community and settlement initiative in its early stage. It grew out of the aspirations of young adults, including discharged soldiers, lone soldiers and olim, who seek a shared path built on family life, community, Torah, work, Zionism and contributing to the State of Israel.\n\nOur goal is first to build a strong, cohesive community and then, in cooperation with the relevant official bodies, to establish a new community settlement. We are currently in the process of attaining land; the final location and its planning status have not yet been determined.\n\nThe core group today includes about 10 families [[FAMILY]], with more families at the stage before an introductory meeting.",
     "photos": [
-      { "image": "", "alt": "" },
-      { "image": "", "alt": "" }
+      {
+        "image": "",
+        "alt": ""
+      },
+      {
+        "image": "",
+        "alt": ""
+      }
     ]
   }
 }

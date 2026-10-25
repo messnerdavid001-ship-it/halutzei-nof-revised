@@ -50,6 +50,14 @@ h3 { font-size: 1.3rem; }
 .menu-btn[aria-expanded='true'] .bars { background: transparent; }
 .menu-btn[aria-expanded='true'] .bars::before { top: 0; transform: rotate(45deg); }
 .menu-btn[aria-expanded='true'] .bars::after { top: 0; transform: rotate(-45deg); }
+@media (min-width: 961px) {
+  /* logo | menu centred on the page | language toggle */
+  .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; }
+  .site-nav { display: contents; }
+  .brand { justify-self: start; }
+  .site-nav ul { justify-self: center; }
+  .lang-toggle { justify-self: end; }
+}
 @media (max-width: 960px) {
   .menu-btn { display: inline-flex; }
   .site-nav { display: none; position: absolute; top: 100%; inset-inline: 0; background: var(--white); border-bottom: 1px solid var(--line); flex-direction: column; padding: 12px 20px 24px; gap: 16px; }
