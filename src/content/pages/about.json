@@ -19,42 +19,43 @@
     "memorialIntro": "הקהילה נקראת על שמם ולזכרם של שישה חיילים שנפלו. כאן יופיעו פרטיהם, בכפוף לאישור משפחותיהם.",
     "memorials": [
       {
-        "name": "רס״ן גל שבת ז״ל",
+        "name": "רס״ן גל שבת",
         "text": "מפקד הפלוגה (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
-        "photoAlt": "תצלום של רס״ן גל שבת ז״ל"
+        "photoAlt": "תצלום של רס״ן גל שבת"
       },
       {
-        "name": "סג״ן רועי בית יעקב ז״ל",
+        "name": "סג״ן רועי בית יעקב",
         "text": "קצין, מפקד מחלקה (מ״מ) בפלוגה.",
         "photo": "/photos/roi-bet-yaakov.png",
-        "photoAlt": "תצלום של סג״ן רועי בית יעקב ז״ל"
+        "photoAlt": "תצלום של סג״ן רועי בית יעקב"
       },
       {
-        "name": "דניאל חמו ז״ל",
+        "name": "דניאל חמו",
         "text": "מטוליסט בפלוגה.",
         "photo": "/photos/daniel-chemo.png",
-        "photoAlt": "תצלום של דניאל חמו ז״ל"
+        "photoAlt": "תצלום של דניאל חמו"
       },
       {
-        "name": "אילן כהן ז״ל",
+        "name": "אילן כהן",
         "text": "מטוליסט בפלוגה.",
         "photo": "/photos/ilan-cohen.webp",
-        "photoAlt": "תצלום של אילן כהן ז״ל"
+        "photoAlt": "תצלום של אילן כהן"
       },
       {
-        "name": "בצלאל שעשוע ז״ל",
+        "name": "בצלאל שעשוע",
         "text": "חובש בפלוגה.",
         "photo": "",
         "photoAlt": ""
       },
       {
-        "name": "גלעד בוים ז״ל",
+        "name": "גלעד בוים",
         "text": "חופ״ל — חובש הפלוגה.",
         "photo": "",
         "photoAlt": ""
       }
-    ]
+    ],
+    "memorialTag": "זכרונו לברכה"
   },
   "en": {
     "seoTitle": "About Us — Halutzei Nof",
@@ -76,41 +77,42 @@
     "memorialIntro": "The community is named in honor and in memory of six fallen soldiers. Their details will appear here, subject to the approval of their families.",
     "memorials": [
       {
-        "name": "Gal Shabat רס״ן, of blessed memory",
+        "name": "Gal Shabat רס״ן",
         "text": "The company commander (מ״פ).",
         "photo": "/photos/gal-shabat.jpg",
-        "photoAlt": "Photo of Gal Shabat, of blessed memory"
+        "photoAlt": "Photo of Gal Shabat"
       },
       {
-        "name": "Roi Bet Yaakov סג״ן, of blessed memory",
+        "name": "Roi Bet Yaakov סג״ן",
         "text": "An officer, a platoon commander (מ״מ) in the company.",
         "photo": "/photos/roi-bet-yaakov.png",
-        "photoAlt": "Photo of Roi Bet Yaakov, of blessed memory"
+        "photoAlt": "Photo of Roi Bet Yaakov"
       },
       {
-        "name": "Daniel Chemo, of blessed memory",
+        "name": "Daniel Chemo",
         "text": "A matolist (grenade-launcher operator) in the company.",
         "photo": "/photos/daniel-chemo.png",
-        "photoAlt": "Photo of Daniel Chemo, of blessed memory"
+        "photoAlt": "Photo of Daniel Chemo"
       },
       {
-        "name": "Ilan Cohen, of blessed memory",
+        "name": "Ilan Cohen",
         "text": "A matolist (grenade-launcher operator) in the company.",
         "photo": "/photos/ilan-cohen.webp",
-        "photoAlt": "Photo of Ilan Cohen, of blessed memory"
+        "photoAlt": "Photo of Ilan Cohen"
       },
       {
-        "name": "Betzalel Sha'ashua, of blessed memory",
+        "name": "Betzalel Sha'ashua",
         "text": "A medic in the company.",
         "photo": "",
         "photoAlt": ""
       },
       {
-        "name": "Gilad Boim, of blessed memory",
+        "name": "Gilad Boim",
         "text": "The company medic (חופ״ל).",
         "photo": "",
         "photoAlt": ""
       }
-    ]
+    ],
+    "memorialTag": "of blessed memory"
   }
 }

@@ -51,7 +51,7 @@ const pages = [
     ...seo, text('title', 'כותרת / Title'), text('backgroundAlt', 'תיאור תמונת הרקע / Background alt'),
     text('storyTitle', 'כותרת הסיפור / Story title'), area('story', 'הסיפור / Story', MARK),
     text('principlesTitle', 'כותרת עקרונות / Principles title'), list('principles', 'עקרונות / Principles'),
-    text('memorialTitle', 'כותרת לזכרם / Memorial title'), area('memorialIntro', 'פתיח לזכרם / Memorial intro'),
+    text('memorialTitle', 'כותרת לזכרם / Memorial title'), text('memorialTag', 'שורה קטנה בתחתית כל כרטיס / Small line at the bottom of each card'), area('memorialIntro', 'פתיח לזכרם / Memorial intro'),
     objList('memorials', 'הנופלים (6) / The fallen (6)', [text('name', 'שם / Name'), area('text', 'טקסט קצר / Short text'), img('photo', 'תמונה / Photo'), text('photoAlt', 'תיאור התמונה / Alt text')]),
   ]),
   page('vision', '🌄 החזון / Vision', () => [

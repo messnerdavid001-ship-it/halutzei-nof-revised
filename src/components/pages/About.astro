@@ -29,6 +29,7 @@ const p = getPage('about', lang);
         </div>
         <h3 set:html={inline(m.name, lang)} />
         <p set:html={inline(m.text, lang)} />
+        <p class="memorial-tag">{p.memorialTag}</p>
       </li>
     ))}
   </ul>
