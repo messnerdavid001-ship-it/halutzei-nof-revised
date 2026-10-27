@@ -2,14 +2,12 @@
 import Panel from '../Panel.astro';
 import Button from '../Button.astro';
 import Pic from '../Pic.astro';
-import Icon from '../Icon.astro';
 import TextBlock from '../TextBlock.astro';
 import CtaPanel from '../CtaPanel.astro';
 import { getPage, getUi, pagePath, todoMark, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('index', lang);
-const v = getPage('vision', lang).groups.find((g: any) => g.id === 'values');
 const t = getUi(lang);
 const photos = (p.photos || []).filter((x: any) => x.image);
 ---
@@ -38,11 +36,6 @@ const photos = (p.photos || []).filter((x: any) => x.image);
 
 <Panel tone="navy" title={p.valuesTitle} id="values-teaser">
   <TextBlock text={p.valuesText} lang={lang} />
-  <ul class="icon-strip">
-    {v.cards.map((x: any) => (
-      <li><a href={pagePath('vision', lang) + '#values'}><Icon name={x.icon} size={34} /><span>{x.title}</span></a></li>
-    ))}
-  </ul>
 </Panel>
 
 {photos.length > 0 && (
