@@ -70,8 +70,6 @@ const pages = [
   page('about', '👥 מי אנחנו / About', () => [
     ...seo, text('title', 'כותרת / Title'), bgAlt, text('intro', 'משפט פתיחה קצר / One-line summary'),
     text('identityTitle', 'כותרת זהות הקהילה / Identity title'), area('identity', 'זהות הקהילה / Community identity', MARK),
-    text('whoTitle', 'כותרת "למי" / Who-it-is-for title'), area('who', 'למי הקהילה מיועדת / Who it is for', MARK),
-    text('characterTitle', 'כותרת אופי הקהילה / Character title'), area('character', 'אופי הקהילה / Character', MARK),
     text('memorialTitle', 'כותרת לזכרם / Memorial title'), text('memorialTag', 'שורה קטנה בתחתית כל כרטיס / Small line at the bottom of each card'), area('memorialIntro', 'פתיח לזכרם / Memorial intro'),
     objList('memorials', 'הנופלים (6) / The fallen (6)', [text('name', 'שם / Name'), area('text', 'טקסט קצר / Short text'), img('photo', 'תמונה / Photo'), text('photoAlt', 'תיאור התמונה / Alt text')]),
   ]),
