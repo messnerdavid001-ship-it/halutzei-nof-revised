@@ -15,7 +15,7 @@ const p = getPage(slug, lang);
 {p.groups.map((g: any) => (
   <Panel tone="navy" title={g.title} id={g.id}>
     {g.intro && <TextBlock text={g.intro} lang={lang} class="group-intro" />}
-    <ul class="value-cards">
+    {g.cards.length > 0 && <ul class="value-cards">
       {g.cards.map((c: any) => (
         <li class="value-card">
           <Icon name={c.icon} size={44} class="value-icon" />
@@ -23,7 +23,7 @@ const p = getPage(slug, lang);
           <p set:html={inline(c.text, lang)} />
         </li>
       ))}
-    </ul>
+    </ul>}
   </Panel>
 ))}
 <CtaPanel lang={lang} title={p.ctaTitle} text={p.ctaText} />

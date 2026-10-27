@@ -4,39 +4,13 @@
     "seoDescription": "החזון והערכים של חלוצי נוף: קהילה חדשה בארץ ישראל, מבוססת משפחה, חינוך, ערבות הדדית ועתיד משותף.",
     "title": "החזון",
     "backgroundAlt": "שקיעה מעל האופק, ומשטח אבן בקדמת התמונה",
-    "intro": "קהילה חדשה בארץ ישראל, שנבנית בידי משפחות סביב ערכים משותפים. [[DRAFT]]",
+    "intro": "",
     "groups": [
       {
         "id": "vision",
         "title": "החזון שלנו",
-        "intro": "",
-        "cards": [
-          {
-            "icon": "zion",
-            "title": "קהילה חדשה בארץ ישראל",
-            "text": "בית שנבנה בידי משפחות, מתוך אהבת הארץ."
-          },
-          {
-            "icon": "family",
-            "title": "קהילה מבוססת משפחה",
-            "text": "המשפחה בליבה: זוגות צעירים ומשפחות שמוצאים בית ושכנים."
-          },
-          {
-            "icon": "education",
-            "title": "חינוך",
-            "text": "דור שגדל על ערכים, מורשת ואהבת הארץ."
-          },
-          {
-            "icon": "mutual",
-            "title": "ערבות הדדית",
-            "text": "תרבות של עזרה, נדיבות ואחריות משותפת."
-          },
-          {
-            "icon": "sunrise",
-            "title": "עתיד משותף",
-            "text": "בית לילדינו ולדורות שאחריהם."
-          }
-        ]
+        "intro": "החזון שלנו הוא קהילה חדשה בארץ ישראל, שנבנית בידי משפחות סביב ערכים משותפים. אנחנו רואים בית שצומח מתוך אהבת הארץ, שבו זוגות צעירים ומשפחות מוצאים מקום לגור ושכנים לחלוק אותו. אנחנו רוצים לגדל דור שמושרש בערכים, במורשת ובאהבת הארץ, בתרבות של עזרה, נדיבות ואחריות משותפת. מה שאנחנו בונים הוא עתיד משותף: בית לילדינו ולדורות שאחריהם. [[DRAFT]]",
+        "cards": []
       },
       {
         "id": "values",
@@ -99,39 +73,13 @@
     "seoDescription": "The vision and values of Halutzei Nof: a new community in the Land of Israel, built on family, education, mutual responsibility and a shared future.",
     "title": "Vision",
     "backgroundAlt": "Sunset over the horizon with a stone surface in the foreground",
-    "intro": "A new community in the Land of Israel, built by families around shared values. [[DRAFT]]",
+    "intro": "",
     "groups": [
       {
         "id": "vision",
         "title": "Our Vision",
-        "intro": "",
-        "cards": [
-          {
-            "icon": "zion",
-            "title": "A New Community in the Land of Israel",
-            "text": "A home built by families, out of love for the Land."
-          },
-          {
-            "icon": "family",
-            "title": "Family at the Core",
-            "text": "Young couples and families finding a home and neighbors."
-          },
-          {
-            "icon": "education",
-            "title": "Education",
-            "text": "A generation raised on values, heritage and love of the Land."
-          },
-          {
-            "icon": "mutual",
-            "title": "Mutual Responsibility",
-            "text": "A culture of help, generosity and shared responsibility."
-          },
-          {
-            "icon": "sunrise",
-            "title": "A Shared Future",
-            "text": "A home for our children and the generations after them."
-          }
-        ]
+        "intro": "Our vision is a new community in the Land of Israel, built by families around shared values. We see a home that grows out of love for the Land, where young couples and families find a place to live and neighbors to share it with. We want to raise a generation grounded in values, heritage and love of the Land, in a culture of help, generosity and shared responsibility. What we are building is a shared future: a home for our children and the generations after them. [[DRAFT]]",
+        "cards": []
       },
       {
         "id": "values",
