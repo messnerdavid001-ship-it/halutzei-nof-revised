@@ -73,7 +73,7 @@ const pages = [
     text('memorialTitle', 'כותרת לזכרם / Memorial title'), text('memorialTag', 'שורה קטנה בתחתית כל כרטיס / Small line at the bottom of each card'), area('memorialIntro', 'פתיח לזכרם / Memorial intro'),
     objList('memorials', 'הנופלים (6) / The fallen (6)', [text('name', 'שם / Name'), area('text', 'טקסט קצר / Short text'), img('photo', 'תמונה / Photo'), text('photoAlt', 'תיאור התמונה / Alt text')]),
   ]),
-  cardsPage('vision', '🌄 החזון והערכים / Vision & Values'),
+  cardsPage('vision', '🌄 החזון / Vision'),
   cardsPage('community', '🤝 קהילה וחינוך / Community & Education'),
   page('join', '✋ הצטרפות ושאלות נפוצות / Join & FAQ', () => [
     ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),

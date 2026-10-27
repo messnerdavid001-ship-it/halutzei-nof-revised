@@ -24,7 +24,7 @@ To stop, press `Ctrl + C` in Terminal.
 
 On the left:
 
-- **עמודים / Pages**: Home, About, Vision & Values, Community & Education, Join & FAQ, Contact, Accessibility, Privacy, Donate (off).
+- **עמודים / Pages**: Home, About, Vision, Community & Education, Join & FAQ, Contact, Accessibility, Privacy, Donate (off).
 - **הגדרות / Settings**: contact details, background photos, on/off switches, and the fixed texts (menu, buttons, form messages, footer).
 
 Every page has two boxes: **עברית (Hebrew)** and **English**. Every sentence on the page is in one of them. A **blank line** inside a long text starts a new paragraph.
@@ -39,12 +39,12 @@ The menu has five items plus the gold Join button.
 |---|---|---|
 | Home | `/` and `/en/` | Main line, slogan, overview sentence, three teaser cards, "Who the community is for", the value icons, photos below the intro, closing text |
 | About | `/about/` | One-line summary, community identity, who it is for, character, and **In Their Memory** at the bottom |
-| Vision & Values | `/vision/` | Two groups of cards: the vision (5 cards) and the nine values |
+| Vision | `/vision/` | Two groups of cards: the vision (5 cards) and the nine values |
 | Community & Education | `/community/` | Two groups of cards: community and family life, and education and Jewish identity |
 | Join | `/join/` | Intro, the four steps, the **FAQ**, and the join form |
 | Contact | `/contact/` | Intro; the contact details come from Settings |
 
-**Vision & Values and Community & Education** work the same way: each page is a list of **groups**, and each group is a box of short cards (an icon, a title of two to four words, and one line). Add, remove or reorder them with the list buttons. The "link id" of a group (for example `values`) is what makes the link `/vision/#values` work, so please do not change it.
+**Vision and Community** work the same way: each page is a list of **groups**, and each group is a box of short cards (an icon, a title of two to four words, and one line). Add, remove or reorder them with the list buttons. The "link id" of a group (for example `values`) is what makes the link `/vision/#values` work, so please do not change it.
 
 ### FAQ
 It is on the Join page. Admin → Pages → **Join & FAQ** → "Questions and answers". Click **Add** for a new question. Each one needs a question and an answer. Please do not add a question about location. The footer link "Frequently asked questions" jumps straight to it.
