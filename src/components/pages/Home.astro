@@ -33,16 +33,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
 </Panel>
 
 <Panel tone="navy" title={p.audienceTitle} id="audience">
-  <ul class="value-cards value-cards--4">
-    {p.audience.map((a: any) => (
-      <li class="value-card">
-        <Icon name={a.icon} size={40} class="value-icon" />
-        <h3>{a.title}</h3>
-        <p>{a.text}</p>
-      </li>
-    ))}
-  </ul>
-  <TextBlock text={p.audienceNote} lang={lang} class="group-note" />
+  <TextBlock text={p.audienceText} lang={lang} />
 </Panel>
 
 <Panel tone="navy" title={p.valuesTitle} id="values-teaser">

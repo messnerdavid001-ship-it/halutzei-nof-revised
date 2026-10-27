@@ -22,29 +22,7 @@
     "ctaTitle": "מוזמנים להכיר",
     "ctaText": "אם הדרך הזו מדברת אליכם, נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]",
     "audienceTitle": "למי הקהילה מיועדת",
-    "audience": [
-      {
-        "icon": "family",
-        "title": "משפחות",
-        "text": "בית וקהילה לגידול ילדים עם שורשים וערכים."
-      },
-      {
-        "icon": "unity",
-        "title": "זוגות צעירים",
-        "text": "מקום להתחיל בו חיים משותפים, עם שכנים וחברים."
-      },
-      {
-        "icon": "zion",
-        "title": "יהודי התפוצות",
-        "text": "מי שמבקש לבנות בית בארץ ישראל בתוך קהילה."
-      },
-      {
-        "icon": "national",
-        "title": "חיילים בודדים",
-        "text": "בית וקהילה למי שמחפש משפחה מסביב."
-      }
-    ],
-    "audienceNote": "הקהילה פתוחה לכל מי שחולק את הערכים שלנו. שירות בצה״ל הוא ערך חשוב, אך אינו תנאי. [[DRAFT]]"
+    "audienceText": "הקהילה פתוחה לכל מי שחולק את הערכים שלנו: משפחות שמחפשות בית שבו גדלים ילדים עם שורשים וערכים, זוגות צעירים שמתחילים חיים משותפים עם שכנים וחברים, יהודים מהתפוצות שרוצים לבנות בית בארץ ישראל בתוך קהילה, וחיילים בודדים שמחפשים משפחה סביבם. שירות בצה״ל הוא ערך חשוב, אך אינו תנאי. [[DRAFT]]"
   },
   "en": {
     "seoTitle": "Halutzei Nof — A strong community. A home for generations.",
@@ -69,28 +47,6 @@
     "ctaTitle": "Come and Meet Us",
     "ctaText": "If this path speaks to you, we would love to get to know you. Leave your details and we will get back to you personally. [[DRAFT]]",
     "audienceTitle": "Who the Community Is For",
-    "audience": [
-      {
-        "icon": "family",
-        "title": "Families",
-        "text": "A home and a community to raise children with roots and values."
-      },
-      {
-        "icon": "unity",
-        "title": "Young Couples",
-        "text": "A place to start a shared life, with neighbors and friends."
-      },
-      {
-        "icon": "zion",
-        "title": "Jews from the Diaspora",
-        "text": "For those who want to build a home in the Land of Israel within a community."
-      },
-      {
-        "icon": "national",
-        "title": "Lone Soldiers",
-        "text": "A home and a community for those looking for family around them."
-      }
-    ],
-    "audienceNote": "The community is open to everyone who shares our values. IDF service is an important value, but not a condition. [[DRAFT]]"
+    "audienceText": "The community is open to everyone who shares our values: families who want a home where children grow up with roots and values, young couples starting a shared life with neighbors and friends, Jews from the diaspora who want to build a home in the Land of Israel within a community, and lone soldiers looking for family around them. IDF service is an important value, but not a condition. [[DRAFT]]"
   }
 }
