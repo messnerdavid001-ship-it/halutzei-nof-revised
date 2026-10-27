@@ -6,28 +6,7 @@
     "tagline": "חלוצי נוף — בונים את העתיד של ההתיישבות.",
     "backgroundAlt": "נוף של יישוב על צלע הר בשעת שקיעה",
     "introTitle": "מי אנחנו",
-    "intro": "חלוצי נוף היא קבוצת חברים שהכירו בצבא. אנחנו מחברים בין משפחה, קהילה, ציונות ועתיד.",
-    "teasersTitle": "להכיר אותנו",
-    "teasers": [
-      {
-        "icon": "people",
-        "title": "מי אנחנו",
-        "text": "חברים ששירתו יחד, וקהילה פתוחה.",
-        "link": "about"
-      },
-      {
-        "icon": "lightbulb",
-        "title": "החזון והערכים",
-        "text": "משפחה, חינוך וערבות הדדית.",
-        "link": "vision"
-      },
-      {
-        "icon": "house",
-        "title": "קהילה וחינוך",
-        "text": "שכנות אמיתית וילדים שגדלים יחד.",
-        "link": "community"
-      }
-    ],
+    "intro": "חלוצי נוף היא קבוצת חברים שהכירו בצבא. אנחנו מחברים בין משפחה, קהילה, ציונות ועתיד: קהילה פתוחה, הבנויה על משפחה, חינוך וערבות הדדית, שבה שכנים מכירים זה את זה וילדים גדלים יחד.",
     "valuesTitle": "הערכים שלנו",
     "valuesText": "תשעה ערכים מובילים אותנו בדרך.",
     "photos": [
@@ -74,28 +53,7 @@
     "tagline": "Halutzei Nof — building a new community in the Land of Israel.",
     "backgroundAlt": "A hillside village at sunset",
     "introTitle": "Who We Are",
-    "intro": "Halutzei Nof is a group of friends who met in the army. We bring together family, community, Zionism and the future.",
-    "teasersTitle": "Get to Know Us",
-    "teasers": [
-      {
-        "icon": "people",
-        "title": "About Us",
-        "text": "Friends who served together, and an open community.",
-        "link": "about"
-      },
-      {
-        "icon": "lightbulb",
-        "title": "Vision and Values",
-        "text": "Family, education and mutual responsibility.",
-        "link": "vision"
-      },
-      {
-        "icon": "house",
-        "title": "Community and Education",
-        "text": "Real neighborliness, children growing up together.",
-        "link": "community"
-      }
-    ],
+    "intro": "Halutzei Nof is a group of friends who met in the army. We bring together family, community, Zionism and the future: an open community built on family, education and mutual responsibility, where neighbors know one another and children grow up together.",
     "valuesTitle": "Our Values",
     "valuesText": "Nine values guide us on the way.",
     "photos": [

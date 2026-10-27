@@ -32,19 +32,6 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   <TextBlock text={p.intro} lang={lang} />
 </Panel>
 
-<Panel tone="navy" title={p.teasersTitle} id="teasers">
-  <ul class="teasers">
-    {p.teasers.map((x: any) => (
-      <li class="teaser">
-        <Icon name={x.icon} size={40} class="teaser-icon" />
-        <h3>{x.title}</h3>
-        <p>{x.text}</p>
-        <a class="more" href={pagePath(x.link, lang)}>{t.btnMore}<span class="sr-only">: {x.title}</span></a>
-      </li>
-    ))}
-  </ul>
-</Panel>
-
 <Panel tone="navy" title={p.audienceTitle} id="audience">
   <ul class="value-cards value-cards--4">
     {p.audience.map((a: any) => (
