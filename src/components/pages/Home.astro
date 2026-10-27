@@ -26,15 +26,15 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   </div>
 </section>
 
-<Panel tone="navy" title={p.introTitle} id="content">
+<Panel tone="navy" title={p.introTitle} id="content" class="panel--centered">
   <TextBlock text={p.intro} lang={lang} />
 </Panel>
 
-<Panel tone="navy" title={p.audienceTitle} id="audience">
+<Panel tone="navy" title={p.audienceTitle} id="audience" class="panel--centered">
   <TextBlock text={p.audienceText} lang={lang} />
 </Panel>
 
-<Panel tone="navy" title={p.valuesTitle} id="values-teaser">
+<Panel tone="navy" title={p.valuesTitle} id="values-teaser" class="panel--centered">
   <TextBlock text={p.valuesText} lang={lang} />
 </Panel>
 
