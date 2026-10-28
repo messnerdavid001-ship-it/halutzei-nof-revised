@@ -27,11 +27,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   </div>
 </section>
 
-<Panel tone="navy" title={p.introTitle} id="content" class="panel--centered">
-  <TextBlock text={p.intro} lang={lang} />
-</Panel>
-
-<Panel tone="navy" title={p.teasersTitle} id="teasers">
+<Panel tone="navy" title={p.teasersTitle} id="content">
   <ul class="teasers">
     {p.teasers.map((x: any) => (
       <li class="teaser">
@@ -42,6 +38,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
       </li>
     ))}
   </ul>
+  <div class="btn-row"><Button href={pagePath('contact', lang)}>{t.btnReachOut}</Button></div>
 </Panel>
 
 <Panel tone="navy" title={p.audienceTitle} id="audience" class="panel--centered">

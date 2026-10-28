@@ -60,7 +60,6 @@ const cardsPage = (key, label) => page(key, label, () => [
 const pages = [
   page('home', '🏠 בית / Home', () => [
     ...seo, text('headline', 'משפט ראשי / Main line'), text('tagline', 'סלוגן / Slogan'), bgAlt,
-    text('introTitle', 'כותרת מבוא / Intro title'), area('intro', 'טקסט מבוא / Intro text', MARK),
     text('teasersTitle', 'כותרת כרטיסי ההיכרות / Teaser cards title'),
     objList('teasers', 'כרטיסי היכרות (קישור לעמודים) / Teaser cards (link to pages)', [icon(), text('title', 'כותרת / Title'), area('text', 'טקסט קצר / Short text'), pageLink()]),
     text('audienceTitle', 'כותרת "למי" / Who-it-is-for title'),
