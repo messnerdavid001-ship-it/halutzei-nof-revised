@@ -121,7 +121,8 @@
       "close": "סגירת המצגת",
       "prev": "שקופית קודמת",
       "next": "שקופית הבאה",
-      "counter": "שקופית {n} מתוך {total}"
+      "counter": "שקופית {n} מתוך {total}",
+      "rotate": "סובבו את הטלפון לרוחב לתצוגה גדולה יותר"
     },
     "whatsapp": {
       "button": "שלחו לנו הודעה בוואטסאפ",
@@ -256,7 +257,8 @@
       "close": "Close the slides",
       "prev": "Previous slide",
       "next": "Next slide",
-      "counter": "Slide {n} of {total}"
+      "counter": "Slide {n} of {total}",
+      "rotate": "Turn your phone sideways for a bigger view"
     },
     "whatsapp": {
       "button": "Message us on WhatsApp",
