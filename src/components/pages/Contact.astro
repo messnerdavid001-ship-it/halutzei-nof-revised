@@ -6,16 +6,20 @@ import Icon from '../Icon.astro';
 import ContactDetails from '../ContactDetails.astro';
 import Form from '../Form.astro';
 import TextBlock from '../TextBlock.astro';
-import { getPage, getUi, waLink, inline, type Lang } from '../../lib/site';
+import { getPage, getUi, settings, waLink, inline, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('contact', lang);
 const t = getUi(lang);
-const wa = waLink();
+const waButtons = (['phone', 'phone2'] as const)
+  .map((k) => ({ href: waLink((settings as any)[k]), person: (settings as any)[k + 'Name']?.[lang] || '' }))
+  .filter((b) => b.href);
 ---
 <PageHead title={p.title} intro={p.intro} lang={lang} />
 <Panel tone="navy" class="panel--contact">
-  {wa && <div class="btn-row btn-row--big"><Button href={wa} variant="wa" external class="btn--big"><Icon name="whatsapp" size={26} />{t.whatsapp.button}</Button></div>}
+  {waButtons.length > 0 && <div class="btn-row btn-row--big">{waButtons.map((b) => (
+    <Button href={b.href} variant="wa" external class="btn--big"><Icon name="whatsapp" size={26} />{t.whatsapp.button}{b.person && ` — ${b.person}`}</Button>
+  ))}</div>}
   <ContactDetails lang={lang} variant="cards" />
 </Panel>
 <Panel tone="navy" title={p.stepsTitle} id="how-it-works">

@@ -111,8 +111,8 @@ export function phoneDisplay(raw: string = settings.phone) {
   return d.length === 10 ? `${d.slice(0, 3)}-${d.slice(3, 6)}-${d.slice(6)}` : raw;
 }
 /** "0534749499" -> "https://wa.me/972534749499" */
-export function waLink() {
-  const d = (settings.phone || '').replace(/\D/g, '');
+export function waLink(raw: string = settings.phone) {
+  const d = (raw || '').replace(/\D/g, '');
   if (!d) return '';
   return `https://wa.me/${d.startsWith('0') ? '972' + d.slice(1) : d}`;
 }

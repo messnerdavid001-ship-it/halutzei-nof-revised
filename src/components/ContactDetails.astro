@@ -4,6 +4,7 @@ import { getUi, settings, contactValue, todoMark, phoneDisplay, waLink, type Lan
 interface Props { lang: Lang; variant?: 'footer' | 'cards' }
 const { lang, variant = 'footer' } = Astro.props;
 const t = getUi(lang);
+const isPhoneKind = (k: string) => k === 'phone' || k === 'phone2';
 const kinds = ['phone', 'phone2', 'email', 'instagram', 'facebook'] as const;
 const items = kinds
   .map((k) => {
@@ -18,7 +19,6 @@ const items = kinds
   .filter((i) => i.v || (settings.showTodo && i.k !== 'phone2'));
 const main = items.filter((i) => !i.social);
 const social = items.filter((i) => i.social);
-const wa = waLink();
 ---
 {variant === 'cards' ? (
   <ul class="contact-cards">
@@ -51,8 +51,8 @@ const wa = waLink();
           ) : (
             <span class="cd-ph">{i.label}: <bdi>{i.placeholder}</bdi></span>
           )}
-          {i.k === 'phone' && i.v && wa && (
-            <a class="cd-wa" href={wa} target="_blank" rel="noopener"><Icon name="whatsapp" size={20} /><span class="sr-only">{t.whatsapp.title}</span></a>
+          {isPhoneKind(i.k) && i.v && (
+            <a class="cd-wa" href={waLink(i.v)} target="_blank" rel="noopener"><Icon name="whatsapp" size={20} /><span class="sr-only">{t.whatsapp.title}</span></a>
           )}
           <Fragment set:html={i.v ? '' : i.mark} />
         </li>
