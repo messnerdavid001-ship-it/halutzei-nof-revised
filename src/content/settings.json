@@ -22,7 +22,7 @@
   "homeBackground": "/photos/home-village.jpg",
   "aboutBackground": "/photos/about-soldiers.jpg",
   "visionBackground": "/photos/vision-sunset.jpg",
-  "communityBackground": "/photos/community-group.jpg",
-  "contactBackground": "/photos/community-group.jpg",
+  "communityBackground": "/photos/vision-sunset.jpg",
+  "contactBackground": "/photos/vision-sunset.jpg",
   "legalBackground": "/photos/vision-sunset.jpg"
 }
