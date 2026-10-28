@@ -78,6 +78,8 @@ It is at the bottom of the About page, looking exactly as before: six cards. Fil
 
 ## 6. Red TODO markers
 
+**They are switched off now** and the "placeholder copy" codes were removed from the text. To see the reminders again, turn on "Show red TODO markers" in Settings. The table below describes what each one meant.
+
 The red notes are reminders for you. Each one disappears by itself when the thing it asks for is done:
 
 | Red note | What makes it disappear |

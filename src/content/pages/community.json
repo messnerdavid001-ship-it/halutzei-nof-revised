@@ -4,7 +4,7 @@
     "seoDescription": "חיי קהילה ומשפחה וחינוך לערכים וזהות יהודית בחלוצי נוף: שכנות אמיתית, אחריות הדדית, עצמאות ואהבת הארץ.",
     "title": "הקהילה",
     "backgroundAlt": "תצלום לילה קבוצתי של צעירים וצעירות, ומבני העיר ברקע",
-    "intro": "קהילה שבה כל משפחה מרגישה בבית, וחינוך שגדל מתוך הבית. [[DRAFT]]",
+    "intro": "קהילה שבה כל משפחה מרגישה בבית, וחינוך שגדל מתוך הבית.",
     "groups": [
       {
         "id": "community",
@@ -78,14 +78,14 @@
       }
     ],
     "ctaTitle": "מעוניינים להכיר?",
-    "ctaText": "נשמח לשיחת היכרות עם משפחות ויחידים שהדרך שלנו מדברת אליהם. [[DRAFT]]"
+    "ctaText": "נשמח לשיחת היכרות עם משפחות ויחידים שהדרך שלנו מדברת אליהם."
   },
   "en": {
     "seoTitle": "Community — Halutzei Nof",
     "seoDescription": "Community, family life, values education and Jewish identity at Halutzei Nof: real neighborliness, mutual responsibility, independence and love of the Land.",
     "title": "Community",
     "backgroundAlt": "A night group photo of young men and women with city buildings behind them",
-    "intro": "A community where every family feels at home, and education that grows out of the home. [[DRAFT]]",
+    "intro": "A community where every family feels at home, and education that grows out of the home.",
     "groups": [
       {
         "id": "community",
@@ -159,6 +159,6 @@
       }
     ],
     "ctaTitle": "Interested in Getting to Know Us?",
-    "ctaText": "We would be glad to have an introductory conversation with families and individuals whose path is similar to ours. [[DRAFT]]"
+    "ctaText": "We would be glad to have an introductory conversation with families and individuals whose path is similar to ours."
   }
 }

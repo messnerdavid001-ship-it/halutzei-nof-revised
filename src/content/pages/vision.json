@@ -9,7 +9,7 @@
       {
         "id": "vision",
         "title": "החזון שלנו",
-        "intro": "החזון שלנו הוא קהילה חדשה בארץ ישראל, שנבנית בידי משפחות סביב ערכים משותפים. אנחנו רואים בית שצומח מתוך אהבת הארץ, שבו זוגות צעירים ומשפחות מוצאים מקום לגור ושכנים לחלוק אותו. אנחנו רוצים לגדל דור שמושרש בערכים, במורשת ובאהבת הארץ, בתרבות של עזרה, נדיבות ואחריות משותפת. מה שאנחנו בונים הוא עתיד משותף: בית לילדינו ולדורות שאחריהם. [[DRAFT]]",
+        "intro": "החזון שלנו הוא קהילה חדשה בארץ ישראל, שנבנית בידי משפחות סביב ערכים משותפים. אנחנו רואים בית שצומח מתוך אהבת הארץ, שבו זוגות צעירים ומשפחות מוצאים מקום לגור ושכנים לחלוק אותו. אנחנו רוצים לגדל דור שמושרש בערכים, במורשת ובאהבת הארץ, בתרבות של עזרה, נדיבות ואחריות משותפת. מה שאנחנו בונים הוא עתיד משותף: בית לילדינו ולדורות שאחריהם.",
         "cards": []
       },
       {
@@ -66,7 +66,7 @@
       }
     ],
     "ctaTitle": "הערכים האלה מדברים אליכם?",
-    "ctaText": "נשמח להכיר ולשמוע מה חשוב לכם. [[DRAFT]]"
+    "ctaText": "נשמח להכיר ולשמוע מה חשוב לכם."
   },
   "en": {
     "seoTitle": "Vision — Halutzei Nof",
@@ -78,7 +78,7 @@
       {
         "id": "vision",
         "title": "Our Vision",
-        "intro": "Our vision is a new community in the Land of Israel, built by families around shared values. We see a home that grows out of love for the Land, where young couples and families find a place to live and neighbors to share it with. We want to raise a generation grounded in values, heritage and love of the Land, in a culture of help, generosity and shared responsibility. What we are building is a shared future: a home for our children and the generations after them. [[DRAFT]]",
+        "intro": "Our vision is a new community in the Land of Israel, built by families around shared values. We see a home that grows out of love for the Land, where young couples and families find a place to live and neighbors to share it with. We want to raise a generation grounded in values, heritage and love of the Land, in a culture of help, generosity and shared responsibility. What we are building is a shared future: a home for our children and the generations after them.",
         "cards": []
       },
       {
@@ -135,6 +135,6 @@
       }
     ],
     "ctaTitle": "Do These Values Speak to You?",
-    "ctaText": "We would love to meet you and hear what matters to you. [[DRAFT]]"
+    "ctaText": "We would love to meet you and hear what matters to you."
   }
 }
