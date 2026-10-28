@@ -29,6 +29,7 @@
       "email": "דוא״ל",
       "instagram": "אינסטגרם",
       "facebook": "פייסבוק",
+      "tiktok": "טיקטוק",
       "accessibility": "הצהרת נגישות",
       "privacy": "מדיניות פרטיות",
       "copyright": "© {year} חלוצי נוף. כל הזכויות שמורות.",
@@ -41,6 +42,7 @@
       "email": "[כתובת דוא״ל]",
       "instagram": "[קישור לאינסטגרם]",
       "facebook": "[קישור לפייסבוק]",
+      "tiktok": "[קישור לטיקטוק]",
       "legalName": "[שם הגוף המשפטי]"
     },
     "todo": {
@@ -51,6 +53,7 @@
       "email": "יש להזין כתובת דוא״ל",
       "instagram": "יש להזין קישור לאינסטגרם",
       "facebook": "יש להזין קישור לפייסבוק",
+      "tiktok": "יש להזין קישור לטיקטוק",
       "form": "יעד שליחת הטופס טרם הוגדר (יחובר בהמשך באמצעות תוסף)",
       "legal": "שם הגוף המשפטי / מעמד משפטי טרם נקבעו",
       "generic": "יש להשלים",
@@ -161,6 +164,7 @@
       "email": "Email",
       "instagram": "Instagram",
       "facebook": "Facebook",
+      "tiktok": "TikTok",
       "accessibility": "Accessibility Statement",
       "privacy": "Privacy Policy",
       "copyright": "© {year} Halutzei Nof. All rights reserved.",
@@ -173,6 +177,7 @@
       "email": "[Email address]",
       "instagram": "[Instagram link]",
       "facebook": "[Facebook link]",
+      "tiktok": "[TikTok link]",
       "legalName": "[Legal entity name]"
     },
     "todo": {
@@ -183,6 +188,7 @@
       "email": "email address to be added",
       "instagram": "Instagram link to be added",
       "facebook": "Facebook link to be added",
+      "tiktok": "TikTok link to be added",
       "form": "form destination not set (a plug-in will be added later)",
       "legal": "legal entity name / legal status not yet determined",
       "generic": "to be completed",

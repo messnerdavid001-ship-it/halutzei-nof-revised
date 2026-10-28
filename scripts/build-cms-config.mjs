@@ -106,7 +106,7 @@ const settingsFields = [
   { label: 'שם איש הקשר של הטלפון הראשון / Name for the first phone', name: 'phoneName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
   text('phone2', 'טלפון נוסף (לא חובה) / Second telephone (optional)'),
   { label: 'שם איש הקשר של הטלפון הנוסף / Name for the second phone', name: 'phone2Name', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
-  text('email', 'דוא״ל / Email'), text('instagram', 'אינסטגרם (קישור מלא) / Instagram URL'), text('facebook', 'פייסבוק (קישור מלא) / Facebook URL'),
+  text('email', 'דוא״ל / Email'), text('instagram', 'אינסטגרם (קישור מלא) / Instagram URL'), text('facebook', 'פייסבוק (קישור מלא) / Facebook URL'), text('tiktok', 'טיקטוק (קישור מלא) / TikTok URL'),
   text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
   bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון / Vision'),

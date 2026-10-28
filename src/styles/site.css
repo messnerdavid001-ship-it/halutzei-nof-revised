@@ -234,11 +234,13 @@ html[lang='en'] .faq-a p { max-width: 68ch; }
 
 /* ---- contact ---- */
 .panel--contact .btn-row { margin: 0 0 28px; }
-.contact-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; text-align: center; }
-/* two phones on the first line, email, Instagram and Facebook together on the second */
-.contact-cards li { grid-column: span 2; }
-.contact-cards li:nth-child(-n+2) { grid-column: span 3; }
+.contact-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; text-align: center; }
+/* two phones on the first line, email, Instagram, Facebook and TikTok together on the second */
+.contact-cards li { grid-column: span 3; }
+.contact-cards li:nth-child(-n+2) { grid-column: span 6; }
 .cc-name { font-weight: 700; }
+.contact-cards .contact-card { padding-inline: 8px; }
+.contact-cards .cc-value { font-size: 0.93rem; }
 .contact-cards li { display: flex; flex-direction: column; gap: 12px; }
 .cc-wa { width: 100%; justify-content: center; }
 @media (max-width: 599px) { .contact-cards { grid-template-columns: 1fr; } .contact-cards li, .contact-cards li:nth-child(-n+2) { grid-column: auto; } }

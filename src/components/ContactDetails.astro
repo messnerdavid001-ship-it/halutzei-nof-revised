@@ -6,7 +6,7 @@ interface Props { lang: Lang; variant?: 'footer' | 'cards' }
 const { lang, variant = 'footer' } = Astro.props;
 const t = getUi(lang);
 const isPhoneKind = (k: string) => k === 'phone' || k === 'phone2';
-const kinds = ['phone', 'phone2', 'email', 'instagram', 'facebook'] as const;
+const kinds = ['phone', 'phone2', 'email', 'instagram', 'facebook', 'tiktok'] as const;
 const items = kinds
   .map((k) => {
     const v = contactValue(k);
@@ -15,7 +15,7 @@ const items = kinds
     const shown = isPhone ? phoneDisplay(v) : v;
     const href = isPhone ? `tel:${digits}` : k === 'email' ? `mailto:${v}` : v;
     const person = isPhone ? ((settings as any)[k + 'Name']?.[lang] || '') : '';
-    return { k, v, shown, person, href, label: (t.footer as any)[k], placeholder: (t.placeholders as any)[k], mark: todoMark(k, lang), social: k === 'instagram' || k === 'facebook' };
+    return { k, v, shown, person, href, label: (t.footer as any)[k], placeholder: (t.placeholders as any)[k], mark: todoMark(k, lang), social: k === 'instagram' || k === 'facebook' || k === 'tiktok' };
   })
   .filter((i) => i.v || (settings.showTodo && i.k !== 'phone2'));
 const main = items.filter((i) => !i.social);

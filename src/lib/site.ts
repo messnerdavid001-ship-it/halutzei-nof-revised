@@ -64,6 +64,7 @@ export function todoMark(kind: string, lang: Lang): string {
     email: !!settings.email,
     instagram: !!settings.instagram,
     facebook: !!settings.facebook,
+    tiktok: !!settings.tiktok,
     form: !!settings.formAction,
     legal: !!settings.legalName[lang],
   };
@@ -100,7 +101,7 @@ export function imgInfo(src: string): ImgInfo | null {
   return m ? { ...m, name } : null;
 }
 
-export function contactValue(kind: 'phone' | 'phone2' | 'email' | 'instagram' | 'facebook') {
+export function contactValue(kind: 'phone' | 'phone2' | 'email' | 'instagram' | 'facebook' | 'tiktok') {
   const v = (settings as any)[kind] as string;
   return v;
 }
