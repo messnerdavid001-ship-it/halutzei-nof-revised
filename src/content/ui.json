@@ -55,15 +55,7 @@
       "legal": "שם הגוף המשפטי / מעמד משפטי טרם נקבעו",
       "generic": "יש להשלים",
       "draft": "טקסט זמני — ממתין לנוסח הסופי",
-      "formDemo": "הטופס אינו מחובר עדיין — פנייה זו לא נשלחה לאף גורם",
-      "bm1": "סימנייה — משפחות ירצו לדעת תוך כמה זמן חוזרים אליהן. הצעה: לציין זמן מציאותי (״תוך כמה ימים״). ההחלטה שלכם",
-      "bm2": "סימנייה — הצעה: להוסיף שאלה ״האם השארת פרטים מחייבת או עולה כסף?״ ולאשר את התשובה",
-      "bm3": "סימנייה — משפחות מחו״ל ישאלו על עלייה. הצעה: משפט ברור על מה שאתם כן ולא מציעים (בלי הבטחות)",
-      "bm4": "סימנייה — משפחות ישאלו איך נראים חיי היומיום: שבת, כשרות, בית כנסת. הצעה: פסקה קצרה וכנה בנוסח שלכם",
-      "bm5": "סימנייה — ישאלו ״איפה?״. הצעה: תשובה שאינה חושפת דבר, ושהיא נכונה",
-      "bm6": "סימנייה — בלי שמות באתר צריך עוד אות אמון. הצעה: שם הגוף המשפטי (בהגדרות) או משפט על ארגון הקהילה",
-      "bm7": "סימנייה — מי שלא מוכן להצטרף ירצה להתעדכן. הצעה: תיבת ״עדכונים בלבד״, או הפניה לאינסטגרם ופייסבוק",
-      "bm8": "סימנייה — רבים ירצו להיפגש לפני שמחליטים. הצעה: משפט על פגישות היכרות או שיחות וידאו"
+      "formDemo": "הטופס אינו מחובר עדיין — פנייה זו לא נשלחה לאף גורם"
     },
     "form": {
       "title": "השאירו פרטים",
@@ -195,15 +187,7 @@
       "legal": "legal entity name / legal status not yet determined",
       "generic": "to be completed",
       "draft": "placeholder copy — final wording needed",
-      "formDemo": "the form is not connected yet — this submission was not sent to anyone",
-      "bm1": "Bookmark — families will want to know how soon you reply. Suggest: state a realistic time ('within a few days'). Your call",
-      "bm2": "Bookmark — suggest adding a question 'Does leaving details commit me or cost anything?' and confirming the answer",
-      "bm3": "Bookmark — families abroad will ask about aliyah. Suggest: one clear sentence on what you do and do not offer (no promises)",
-      "bm4": "Bookmark — families will ask what daily life looks like: Shabbat, kashrut, synagogue. Suggest: one short, honest paragraph in your wording",
-      "bm5": "Bookmark — visitors will ask 'where?'. Suggest: an answer that reveals nothing, and that is true",
-      "bm6": "Bookmark — with no names on the site, add another trust signal. Suggest: the legal entity name (Settings) or a line on how the community is organised",
-      "bm7": "Bookmark — people not ready to join will want updates. Suggest: an 'updates only' checkbox, or a pointer to Instagram and Facebook",
-      "bm8": "Bookmark — many will want to meet before deciding. Suggest: one sentence about intro meetings or video calls"
+      "formDemo": "the form is not connected yet — this submission was not sent to anyone"
     },
     "form": {
       "title": "Leave your details",

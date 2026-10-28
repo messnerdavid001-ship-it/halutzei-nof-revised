@@ -48,9 +48,6 @@ The menu has five items plus the gold Join button.
 ### FAQ
 It is on the Join page. Admin → Pages → **Contact & Join** → "Questions and answers". Click **Add** for a new question. Each one needs a question and an answer. Please do not add a question about location. The footer link "Frequently asked questions" jumps straight to it.
 
-### The blue bookmarks
-Blue notes on the pages are ideas about what a visitor will want to know. They are listed with suggestions in `TODO.md`. Delete the `[[BM1]]` style code from the text when you have decided. They disappear with the red notes when you turn off "Show red TODO markers".
-
 ### The Join form
 - The four steps are in Admin → Pages → **Contact & Join**.
 - The form labels and error messages are in Admin → Settings → **Menus, form, footer text** → Form.

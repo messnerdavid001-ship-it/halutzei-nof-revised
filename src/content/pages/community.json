@@ -41,7 +41,7 @@
       {
         "id": "education",
         "title": "חינוך וזהות יהודית",
-        "intro": "אנחנו מבקשים לגדל דור שמכיר את שורשיו, אוהב את הארץ ולוקח אחריות. [[BM4]]",
+        "intro": "אנחנו מבקשים לגדל דור שמכיר את שורשיו, אוהב את הארץ ולוקח אחריות.",
         "cards": [
           {
             "icon": "education",
@@ -122,7 +122,7 @@
       {
         "id": "education",
         "title": "Education and Jewish Identity",
-        "intro": "We hope to raise a generation that knows its roots, loves the Land and takes responsibility. [[BM4]]",
+        "intro": "We hope to raise a generation that knows its roots, loves the Land and takes responsibility.",
         "cards": [
           {
             "icon": "education",

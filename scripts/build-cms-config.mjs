@@ -47,7 +47,6 @@ const icon = () => ({ label: 'אייקון / Icon', name: 'icon', widget: 'selec
 const PAGES = ['about', 'vision', 'community', 'contact'];
 const pageLink = () => ({ label: 'קישור לעמוד / Links to page', name: 'link', widget: 'select', options: PAGES, default: 'about' });
 // Vision and Community share one structure: groups of short cards.
-const MARKS = 'סימניות [[BM1]]-[[BM8]] הן הצעות (כחול) / [[BM1]]-[[BM8]] are blue bookmarks with ideas - delete them once handled.';
 const cardsPage = (key, label) => page(key, label, () => [
   ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'משפט פתיחה קצר / One-line summary', MARK),
   objList('groups', 'קבוצות כרטיסים (כל קבוצה בתיבה משלה) / Card groups (each in its own box)', [

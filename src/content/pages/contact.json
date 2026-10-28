@@ -29,7 +29,7 @@
         "text": "אם יש התאמה, ממשיכים להכיר זה את זה."
       }
     ],
-    "stepsNote": "זו אינה בקשת קבלה רשמית — זהו צעד ראשון להיכרות הדדית. [[BM8]]",
+    "stepsNote": "זו אינה בקשת קבלה רשמית — זהו צעד ראשון להיכרות הדדית.",
     "faqTitle": "שאלות נפוצות",
     "faq": [
       {
@@ -42,15 +42,15 @@
       },
       {
         "q": "למי הקהילה מיועדת?",
-        "a": "בראש ובראשונה למשפחות ולזוגות צעירים, והיא פתוחה לכל מי שחולק את הערכים שלנו, כולל יהודים מהתפוצות וחיילים בודדים. שירות בצה״ל הוא ערך חשוב אך אינו תנאי. [[DRAFT]] [[BM3]]"
+        "a": "בראש ובראשונה למשפחות ולזוגות צעירים, והיא פתוחה לכל מי שחולק את הערכים שלנו, כולל יהודים מהתפוצות וחיילים בודדים. שירות בצה״ל הוא ערך חשוב אך אינו תנאי. [[DRAFT]]"
       },
       {
         "q": "איך מצטרפים?",
-        "a": "משאירים פרטים בעמוד ההצטרפות, ואנחנו חוזרים אליכם אישית לשיחת היכרות. משם ממשיכים להכיר זה את זה, אם יש התאמה. [[DRAFT]] [[BM1]] [[BM2]] [[BM5]]"
+        "a": "משאירים פרטים בעמוד ההצטרפות, ואנחנו חוזרים אליכם אישית לשיחת היכרות. משם ממשיכים להכיר זה את זה, אם יש התאמה. [[DRAFT]]"
       }
     ],
     "formTitle": "השאירו פרטים",
-    "formNote": "נחזור אליכם אישית. הפרטים משמשים רק לצורך זה. [[BM7]]"
+    "formNote": "נחזור אליכם אישית. הפרטים משמשים רק לצורך זה."
   },
   "en": {
     "seoTitle": "Contact and Join — Halutzei Nof",
@@ -82,7 +82,7 @@
         "text": "If it is a fit, we keep getting to know one another."
       }
     ],
-    "stepsNote": "This is not a formal application, just a first step toward getting to know each other. [[BM8]]",
+    "stepsNote": "This is not a formal application, just a first step toward getting to know each other.",
     "faqTitle": "Frequently Asked Questions",
     "faq": [
       {
@@ -95,14 +95,14 @@
       },
       {
         "q": "Who is the community for?",
-        "a": "First of all for families and young couples, and it is open to everyone who shares our values, including Jews from the diaspora and lone soldiers. IDF service is an important value but not a condition. [[DRAFT]] [[BM3]]"
+        "a": "First of all for families and young couples, and it is open to everyone who shares our values, including Jews from the diaspora and lone soldiers. IDF service is an important value but not a condition. [[DRAFT]]"
       },
       {
         "q": "How do you join?",
-        "a": "Leave your details on the Join page and we will get back to you personally for an introductory conversation. From there we keep getting to know each other, if it is a fit. [[DRAFT]] [[BM1]] [[BM2]] [[BM5]]"
+        "a": "Leave your details on the Join page and we will get back to you personally for an introductory conversation. From there we keep getting to know each other, if it is a fit. [[DRAFT]]"
       }
     ],
     "formTitle": "Leave Your Details",
-    "formNote": "We will get back to you personally. Your details are used only for that. [[BM7]]"
+    "formNote": "We will get back to you personally. Your details are used only for that."
   }
 }
