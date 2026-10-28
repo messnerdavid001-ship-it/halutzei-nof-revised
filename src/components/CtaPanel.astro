@@ -13,7 +13,7 @@ const t = getUi(lang);
   <TextBlock text={text} lang={lang} />
   <div class="btn-row">
     <Button href={pagePath('contact', lang) + '#join-form'}>{t.btnJoin}</Button>
-    {slides && <button class="btn btn--ghost" type="button" data-slides-open>{t.slides.button}</button>}
+    {slides && <button class="btn btn--gold" type="button" data-slides-open>{t.slides.button}</button>}
   </div>
   {slides && <SlideViewer lang={lang} />}
 </Panel>
