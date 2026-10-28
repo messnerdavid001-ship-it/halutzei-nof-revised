@@ -62,8 +62,6 @@ const pages = [
     ...seo, text('headline', 'משפט ראשי / Main line'), text('tagline', 'סלוגן / Slogan'), bgAlt,
     text('teasersTitle', 'כותרת כרטיסי ההיכרות / Teaser cards title'),
     objList('teasers', 'כרטיסי היכרות (קישור לעמודים) / Teaser cards (link to pages)', [icon(), text('title', 'כותרת / Title'), area('text', 'טקסט קצר / Short text'), pageLink()]),
-    text('audienceTitle', 'כותרת "למי" / Who-it-is-for title'),
-    area('audienceText', 'למי הקהילה מיועדת (פסקה אחת) / Who it is for (one paragraph)', MARK),
     objList('photos', 'תמונות מתחת לאזור הראשי (עד 2) / Photos below the intro (up to 2)', [img('image', 'תמונה / Photo'), text('alt', 'תיאור התמונה / Alt text')]),
     text('ctaTitle', 'כותרת הזמנה בסוף / Closing call-to-action title'), area('ctaText', 'טקסט הזמנה / Closing call-to-action text', MARK),
   ]),

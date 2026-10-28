@@ -41,10 +41,6 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   <div class="btn-row"><Button href={pagePath('contact', lang)}>{t.btnReachOut}</Button></div>
 </Panel>
 
-<Panel tone="navy" title={p.audienceTitle} id="audience" class="panel--centered">
-  <TextBlock text={p.audienceText} lang={lang} />
-</Panel>
-
 {photos.length > 0 && (
   <Panel tone="navy" class="panel--photos">
     <div class="photo-slots">

@@ -69,6 +69,12 @@
             "text": "ללא כפייה דתית וללא אורח חיים אחד מחייב."
           }
         ]
+      },
+      {
+        "id": "audience",
+        "title": "למי הקהילה מיועדת",
+        "intro": "קהילת חלוצי נוף מיועדת למשפחות, זוגות וצעירים מכל רחבי החברה הישראלית, המחפשים להיות חלק מקהילה ציונית, מגובשת ופעילה, ולשותף בהקמת יישוב חדש בישראל. אנו פתוחים לאנשים מרקעים שונים, בעלי זיקה לארץ ישראל ורצון לקחת חלק בעשייה, בהתיישבות ובבניית בית משותף לדורות הבאים. הקהילה מתאימה למי שמאמינים בחשיבות המשפחה, החינוך, השירות, האחריות ההדדית, העבודה והיוזמה האישית. אנו שואפים ליצור מסגרת המשלבת מסורת יהודית, פתיחות וכבוד הדדי, שבה כל משפחה ואדם יכולים לתרום מכישוריהם, להתפתח ולבנות יחד עתיד משותף ומשמעותי.",
+        "cards": []
       }
     ],
     "ctaTitle": "מעוניינים להכיר?",
@@ -144,6 +150,12 @@
             "text": "No religious coercion and no single required lifestyle."
           }
         ]
+      },
+      {
+        "id": "audience",
+        "title": "Who the Community Is For",
+        "intro": "The Halutzei Nof community is for families, couples and young people from across Israeli society who want to be part of a close-knit, active Zionist community and to help establish a new community in Israel. We are open to people from different backgrounds who feel a connection to the Land of Israel and want to take part in the work of settling the Land and building a shared home for the generations to come. The community suits those who believe in the importance of family, education, service, mutual responsibility, work and personal initiative. We aim to create a framework that combines Jewish tradition, openness and mutual respect, where every family and individual can contribute their skills, grow and build a shared and meaningful future together.",
+        "cards": []
       }
     ],
     "ctaTitle": "Interested in Getting to Know Us?",
