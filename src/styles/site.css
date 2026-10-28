@@ -370,3 +370,8 @@ html.hc .panel--navy { border: 2px solid #fff; }
 
 /* a panel whose short paragraphs are centred */
 .panel--centered .prose { text-align: center; }
+
+/* English headline wraps to an extra line; cancel that height so the logo sits exactly where the Hebrew logo does */
+html[lang="en"] .hero-copy { margin-bottom: -64px; }
+@media (max-width: 900px) { html[lang="en"] .hero-copy { margin-bottom: -53px; } }
+@media (max-width: 600px) { html[lang="en"] .hero-copy { margin-bottom: -34px; } }
