@@ -74,7 +74,7 @@ const pages = [
     objList('memorials', 'הנופלים (6) / The fallen (6)', [text('name', 'שם / Name'), area('text', 'טקסט קצר / Short text'), img('photo', 'תמונה / Photo'), text('photoAlt', 'תיאור התמונה / Alt text')]),
   ]),
   cardsPage('vision', '🌄 החזון / Vision'),
-  cardsPage('community', '🤝 קהילה וחינוך / Community & Education'),
+  cardsPage('community', '🤝 הקהילה / Community'),
   page('join', '✋ הצטרפות ושאלות נפוצות / Join & FAQ', () => [
     ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
     text('stepsTitle', 'כותרת השלבים / Steps title'),
@@ -110,7 +110,7 @@ const settingsFields = [
   text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
   bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון והערכים / Vision & Values'),
-  bg('communityBackground', 'קהילה וחינוך / Community & Education'), bg('joinBackground', 'הצטרפות / Join'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
+  bg('communityBackground', 'הקהילה / Community'), bg('joinBackground', 'הצטרפות / Join'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
 ];
 
 const config = {
