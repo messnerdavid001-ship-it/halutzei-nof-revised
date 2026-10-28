@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import Button from './Button.astro';
 import { getUi, settings, contactValue, todoMark, phoneDisplay, waLink, type Lang } from '../lib/site';
 interface Props { lang: Lang; variant?: 'footer' | 'cards' }
 const { lang, variant = 'footer' } = Astro.props;
@@ -24,6 +25,9 @@ const social = items.filter((i) => i.social);
   <ul class="contact-cards">
     {items.map((i) => (
       <li>
+        {isPhoneKind(i.k) && i.v && (
+          <Button href={waLink(i.v)} variant="wa" external class="btn--big cc-wa"><Icon name="whatsapp" size={26} />{t.whatsapp.button}</Button>
+        )}
         {i.v ? (
           <a class="contact-card" href={i.href} {...(i.social ? { target: '_blank', rel: 'noopener' } : {})}>
             <Icon name={i.k === 'phone' || i.k === 'phone2' ? 'phone' : i.k === 'email' ? 'mail' : i.k} size={30} />

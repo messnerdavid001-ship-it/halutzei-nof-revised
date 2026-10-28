@@ -238,6 +238,8 @@ html[lang='en'] .faq-a p { max-width: 68ch; }
 .contact-cards li { grid-column: span 2; }
 .contact-cards li:nth-child(-n+2) { grid-column: span 3; }
 .cc-name { font-weight: 700; }
+.contact-cards li { display: flex; flex-direction: column; gap: 12px; }
+.cc-wa { width: 100%; justify-content: center; }
 @media (max-width: 599px) { .contact-cards { grid-template-columns: 1fr; } .contact-cards li, .contact-cards li:nth-child(-n+2) { grid-column: auto; } }
 .contact-card { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 20px 14px; background: #fff; color: var(--navy); border: 2px solid transparent; border-radius: 14px; text-decoration: none; height: 100%; transition: transform 0.2s, border-color 0.2s; }
 a.contact-card:hover { transform: translateY(-3px); border-color: var(--gold); }
