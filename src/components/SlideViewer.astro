@@ -1,0 +1,22 @@
+---
+import slides from '../content/slides.json';
+import { getUi, withBase, type Lang } from '../lib/site';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = getUi(lang).slides;
+const titles: string[] = (slides as any)[lang];
+const list = titles.map((title, i) => ({ src: withBase(`/slides/slide-${i + 1}.webp`), alt: `${t.counter.replace('{n}', String(i + 1)).replace('{total}', String(titles.length))}: ${title}` }));
+---
+<dialog class="slides" data-slides aria-label={t.dialog} data-counter={t.counter} data-list={JSON.stringify(list)}>
+  <button class="slides-close" type="button" data-slides-close aria-label={t.close}>
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" /></svg>
+  </button>
+  <button class="slides-nav slides-prev" type="button" data-slides-prev aria-label={t.prev}>
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+  </button>
+  <img class="slides-img" data-slides-img alt="" />
+  <button class="slides-nav slides-next" type="button" data-slides-next aria-label={t.next}>
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
+  </button>
+  <p class="slides-count" data-slides-count aria-live="polite"></p>
+</dialog>

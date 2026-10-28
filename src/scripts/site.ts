@@ -181,3 +181,39 @@ $$<HTMLFormElement>('[data-form]').forEach((form) => {
     finally { submit.disabled = false; submit.textContent = label; }
   });
 });
+
+/* ---------- slides viewer (full-page, close with X, Esc or a click on the dark area) ---------- */
+const slideBox = $<HTMLDialogElement>('[data-slides]');
+if (slideBox) {
+  const list: { src: string; alt: string }[] = JSON.parse(slideBox.dataset.list || '[]');
+  const img = $<HTMLImageElement>('[data-slides-img]', slideBox)!;
+  const count = $('[data-slides-count]', slideBox)!;
+  const rtl = document.documentElement.dir === 'rtl';
+  let i = 0;
+  const show = (n: number) => {
+    i = (n + list.length) % list.length;
+    img.src = list[i].src;
+    img.alt = list[i].alt;
+    count.textContent = (slideBox.dataset.counter || '').replace('{n}', String(i + 1)).replace('{total}', String(list.length));
+    const next = new Image(); next.src = list[(i + 1) % list.length].src; // warm the next one
+  };
+  const open = (opener: HTMLElement) => { show(0); slideBox.showModal(); document.documentElement.classList.add('slides-open'); (slideBox as any)._opener = opener; };
+  const close = () => slideBox.close();
+  $$('[data-slides-open]').forEach((b) => b.addEventListener('click', () => open(b)));
+  $('[data-slides-close]', slideBox)!.addEventListener('click', close);
+  $('[data-slides-prev]', slideBox)!.addEventListener('click', () => show(i - 1));
+  $('[data-slides-next]', slideBox)!.addEventListener('click', () => show(i + 1));
+  slideBox.addEventListener('click', (e) => { if (e.target === slideBox) close(); });
+  slideBox.addEventListener('close', () => { document.documentElement.classList.remove('slides-open'); ((slideBox as any)._opener as HTMLElement | undefined)?.focus(); });
+  slideBox.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') show(i + (rtl ? -1 : 1));
+    else if (e.key === 'ArrowLeft') show(i + (rtl ? 1 : -1));
+  });
+  // swipe
+  let x0 = 0;
+  slideBox.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+  slideBox.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) show(i + ((dx < 0) !== rtl ? 1 : -1));
+  });
+}

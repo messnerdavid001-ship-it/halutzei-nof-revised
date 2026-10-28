@@ -120,6 +120,14 @@
       "dismiss": "Not now"
     },
     "btnMore": "לקריאה נוספת",
+    "slides": {
+      "button": "הציצו במצגת שלנו",
+      "dialog": "מצגת חלוצי נוף",
+      "close": "סגירת המצגת",
+      "prev": "שקופית קודמת",
+      "next": "שקופית הבאה",
+      "counter": "שקופית {n} מתוך {total}"
+    },
     "whatsapp": {
       "button": "שלחו לנו הודעה בוואטסאפ",
       "fab": "שיחה בוואטסאפ",
@@ -252,6 +260,14 @@
       "dismiss": ""
     },
     "btnMore": "Read more",
+    "slides": {
+      "button": "Peek at our slides",
+      "dialog": "Halutzei Nof slides",
+      "close": "Close the slides",
+      "prev": "Previous slide",
+      "next": "Next slide",
+      "counter": "Slide {n} of {total}"
+    },
     "whatsapp": {
       "button": "Message us on WhatsApp",
       "fab": "Chat on WhatsApp",

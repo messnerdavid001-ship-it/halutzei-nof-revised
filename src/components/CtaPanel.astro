@@ -2,13 +2,18 @@
 import Panel from './Panel.astro';
 import Button from './Button.astro';
 import TextBlock from './TextBlock.astro';
+import SlideViewer from './SlideViewer.astro';
 import { getUi, pagePath, type Lang } from '../lib/site';
-interface Props { lang: Lang; title: string; text: string }
-const { lang, title, text } = Astro.props;
+interface Props { lang: Lang; title: string; text: string; slides?: boolean }
+const { lang, title, text, slides = false } = Astro.props;
 const t = getUi(lang);
 ---
 <Panel tone="navy" class="cta">
   <h2>{title}</h2>
   <TextBlock text={text} lang={lang} />
-  <div class="btn-row"><Button href={pagePath('contact', lang) + '#join-form'}>{t.btnJoin}</Button></div>
+  <div class="btn-row">
+    <Button href={pagePath('contact', lang) + '#join-form'}>{t.btnJoin}</Button>
+    {slides && <button class="btn btn--ghost" type="button" data-slides-open>{t.slides.button}</button>}
+  </div>
+  {slides && <SlideViewer lang={lang} />}
 </Panel>
