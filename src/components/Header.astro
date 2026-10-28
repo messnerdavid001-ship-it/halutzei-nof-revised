@@ -9,7 +9,7 @@ const other: Lang = lang === 'he' ? 'en' : 'he';
 <header class="site-header" data-header>
   <div class="header-inner">
     <a class="brand" href={pagePath('index', lang)} aria-label={t.siteName}>
-      <Pic src="/photos/logo.png" alt={t.logoAlt} sizes="120px" loading="eager" />
+      <Pic src={lang === 'en' ? "/photos/logo-en.png" : "/photos/logo.png"} alt={t.logoAlt} sizes="120px" loading="eager" />
     </a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-btn
       data-open={t.menuOpen} data-close={t.menuClose} aria-label={t.menuOpen}>

@@ -18,7 +18,7 @@ for (const file of fs.readdirSync(SRC)) {
   const name = path.basename(file, ext);
   const input = path.join(SRC, file);
   const meta = await sharp(input).metadata();
-  const isLogo = name === 'logo';
+  const isLogo = name.startsWith('logo');
   const widths = WIDTHS.filter((w) => w < meta.width);
   widths.push(meta.width);
   const stat = fs.statSync(input).mtimeMs;
