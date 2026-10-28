@@ -1,6 +1,7 @@
 ---
 import Panel from '../Panel.astro';
 import Button from '../Button.astro';
+import Icon from '../Icon.astro';
 import Pic from '../Pic.astro';
 import TextBlock from '../TextBlock.astro';
 import CtaPanel from '../CtaPanel.astro';
@@ -28,6 +29,19 @@ const photos = (p.photos || []).filter((x: any) => x.image);
 
 <Panel tone="navy" title={p.introTitle} id="content" class="panel--centered">
   <TextBlock text={p.intro} lang={lang} />
+</Panel>
+
+<Panel tone="navy" title={p.teasersTitle} id="teasers">
+  <ul class="teasers">
+    {p.teasers.map((x: any) => (
+      <li class="teaser">
+        <Icon name={x.icon} size={40} class="teaser-icon" />
+        <h3>{x.title}</h3>
+        <p>{x.text}</p>
+        <a class="more" href={pagePath(x.link, lang)}>{t.btnMore}<span class="sr-only">: {x.title}</span></a>
+      </li>
+    ))}
+  </ul>
 </Panel>
 
 <Panel tone="navy" title={p.audienceTitle} id="audience" class="panel--centered">

@@ -22,7 +22,28 @@
     "ctaTitle": "מוזמנים להכיר",
     "ctaText": "אם הדרך הזו מדברת אליכם, נשמח להכיר. השאירו פרטים ונחזור אליכם אישית. [[DRAFT]]",
     "audienceTitle": "למי הקהילה מיועדת",
-    "audienceText": "קהילת חלוצי נוף מיועדת למשפחות, זוגות וצעירים מכל רחבי החברה הישראלית, המחפשים להיות חלק מקהילה ציונית, מגובשת ופעילה, ולשותף בהקמת יישוב חדש בישראל. אנו פתוחים לאנשים מרקעים שונים, בעלי זיקה לארץ ישראל ורצון לקחת חלק בעשייה, בהתיישבות ובבניית בית משותף לדורות הבאים. הקהילה מתאימה למי שמאמינים בחשיבות המשפחה, החינוך, השירות, האחריות ההדדית, העבודה והיוזמה האישית. אנו שואפים ליצור מסגרת המשלבת מסורת יהודית, פתיחות וכבוד הדדי, שבה כל משפחה ואדם יכולים לתרום מכישוריהם, להתפתח ולבנות יחד עתיד משותף ומשמעותי."
+    "audienceText": "קהילת חלוצי נוף מיועדת למשפחות, זוגות וצעירים מכל רחבי החברה הישראלית, המחפשים להיות חלק מקהילה ציונית, מגובשת ופעילה, ולשותף בהקמת יישוב חדש בישראל. אנו פתוחים לאנשים מרקעים שונים, בעלי זיקה לארץ ישראל ורצון לקחת חלק בעשייה, בהתיישבות ובבניית בית משותף לדורות הבאים. הקהילה מתאימה למי שמאמינים בחשיבות המשפחה, החינוך, השירות, האחריות ההדדית, העבודה והיוזמה האישית. אנו שואפים ליצור מסגרת המשלבת מסורת יהודית, פתיחות וכבוד הדדי, שבה כל משפחה ואדם יכולים לתרום מכישוריהם, להתפתח ולבנות יחד עתיד משותף ומשמעותי.",
+    "teasersTitle": "להכיר אותנו",
+    "teasers": [
+      {
+        "icon": "people",
+        "title": "מי אנחנו",
+        "text": "קהילה ציונית בהתהוות, של משפחות וצעירים מרקעים שונים.",
+        "link": "about"
+      },
+      {
+        "icon": "lightbulb",
+        "title": "החזון והערכים",
+        "text": "משפחה, חינוך, אחריות הדדית ועשייה עצמאית.",
+        "link": "about"
+      },
+      {
+        "icon": "house",
+        "title": "הקהילה",
+        "text": "שכנות אמיתית, ילדים שגדלים יחד ובית לדורות הבאים.",
+        "link": "about"
+      }
+    ]
   },
   "en": {
     "seoTitle": "Halutzei Nof — A strong community. A home for generations.",
@@ -47,6 +68,27 @@
     "ctaTitle": "Come and Meet Us",
     "ctaText": "If this path speaks to you, we would love to get to know you. Leave your details and we will get back to you personally. [[DRAFT]]",
     "audienceTitle": "Who the Community Is For",
-    "audienceText": "The Halutzei Nof community is for families, couples and young people from across Israeli society who want to be part of a close-knit, active Zionist community and to help establish a new community in Israel. We are open to people from different backgrounds who feel a connection to the Land of Israel and want to take part in the work of settling the Land and building a shared home for the generations to come. The community suits those who believe in the importance of family, education, service, mutual responsibility, work and personal initiative. We aim to create a framework that combines Jewish tradition, openness and mutual respect, where every family and individual can contribute their skills, grow and build a shared and meaningful future together."
+    "audienceText": "The Halutzei Nof community is for families, couples and young people from across Israeli society who want to be part of a close-knit, active Zionist community and to help establish a new community in Israel. We are open to people from different backgrounds who feel a connection to the Land of Israel and want to take part in the work of settling the Land and building a shared home for the generations to come. The community suits those who believe in the importance of family, education, service, mutual responsibility, work and personal initiative. We aim to create a framework that combines Jewish tradition, openness and mutual respect, where every family and individual can contribute their skills, grow and build a shared and meaningful future together.",
+    "teasersTitle": "Get to Know Us",
+    "teasers": [
+      {
+        "icon": "people",
+        "title": "Who We Are",
+        "text": "A Zionist community in the making, of families and young people from different backgrounds.",
+        "link": "about"
+      },
+      {
+        "icon": "lightbulb",
+        "title": "Vision and Values",
+        "text": "Family, education, mutual responsibility and independent action.",
+        "link": "about"
+      },
+      {
+        "icon": "house",
+        "title": "Our Community",
+        "text": "Real neighborliness, children growing up together and a home for the generations to come.",
+        "link": "about"
+      }
+    ]
   }
 }
