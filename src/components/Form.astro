@@ -90,6 +90,7 @@ const subject = kind === 'join'
   <input type="hidden" name="form_type" value={kind} />
   <input type="hidden" name="_subject" value={subject} />
   <input type="hidden" name="_template" value="table" />
+  {settings.formCc && <input type="hidden" name="_cc" value={settings.formCc} />}
   <input type="hidden" name="_next" value={next} data-next />
   <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
