@@ -37,7 +37,7 @@
         "icon": "house",
         "title": "הקהילה",
         "text": "שכנות אמיתית, ילדים שגדלים יחד ובית לדורות הבאים.",
-        "link": "about"
+        "link": "community"
       }
     ]
   },
@@ -79,7 +79,7 @@
         "icon": "house",
         "title": "Our Community",
         "text": "Real neighborliness, children growing up together and a home for the generations to come.",
-        "link": "about"
+        "link": "community"
       }
     ]
   }
