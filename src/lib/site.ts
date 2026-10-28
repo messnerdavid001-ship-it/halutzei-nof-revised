@@ -100,15 +100,15 @@ export function imgInfo(src: string): ImgInfo | null {
   return m ? { ...m, name } : null;
 }
 
-export function contactValue(kind: 'phone' | 'email' | 'instagram' | 'facebook') {
+export function contactValue(kind: 'phone' | 'phone2' | 'email' | 'instagram' | 'facebook') {
   const v = (settings as any)[kind] as string;
   return v;
 }
 
 /** "0534749499" -> "053-474-9499" */
-export function phoneDisplay() {
-  const d = (settings.phone || '').replace(/\D/g, '');
-  return d.length === 10 ? `${d.slice(0, 3)}-${d.slice(3, 6)}-${d.slice(6)}` : settings.phone;
+export function phoneDisplay(raw: string = settings.phone) {
+  const d = (raw || '').replace(/\D/g, '');
+  return d.length === 10 ? `${d.slice(0, 3)}-${d.slice(3, 6)}-${d.slice(6)}` : raw;
 }
 /** "0534749499" -> "https://wa.me/972534749499" */
 export function waLink() {

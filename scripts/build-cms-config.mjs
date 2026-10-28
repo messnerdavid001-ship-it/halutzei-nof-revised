@@ -104,6 +104,7 @@ const settingsFields = [
   { label: 'תמונת הבית מורשית / Home photo is licensed', name: 'homePhotoLicensed', widget: 'boolean', default: false },
   text('siteUrl', 'כתובת האתר (https://...) / Site address'),
   text('phone', 'טלפון / וואטסאפ (מספר אחד) / Telephone / WhatsApp (one number)'),
+  text('phone2', 'טלפון נוסף (לא חובה) / Second telephone (optional)'),
   text('email', 'דוא״ל / Email'), text('instagram', 'אינסטגרם (קישור מלא) / Instagram URL'), text('facebook', 'פייסבוק (קישור מלא) / Facebook URL'),
   text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },

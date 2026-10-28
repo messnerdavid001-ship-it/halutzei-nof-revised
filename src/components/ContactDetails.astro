@@ -4,16 +4,17 @@ import { getUi, settings, contactValue, todoMark, phoneDisplay, waLink, type Lan
 interface Props { lang: Lang; variant?: 'footer' | 'cards' }
 const { lang, variant = 'footer' } = Astro.props;
 const t = getUi(lang);
-const kinds = ['phone', 'email', 'instagram', 'facebook'] as const;
+const kinds = ['phone', 'phone2', 'email', 'instagram', 'facebook'] as const;
 const items = kinds
   .map((k) => {
     const v = contactValue(k);
     const digits = (v || '').replace(/[^\d]/g, '');
-    const shown = k === 'phone' ? phoneDisplay() : v;
-    const href = k === 'phone' ? `tel:${digits}` : k === 'email' ? `mailto:${v}` : v;
+    const isPhone = k === 'phone' || k === 'phone2';
+    const shown = isPhone ? phoneDisplay(v) : v;
+    const href = isPhone ? `tel:${digits}` : k === 'email' ? `mailto:${v}` : v;
     return { k, v, shown, href, label: (t.footer as any)[k], placeholder: (t.placeholders as any)[k], mark: todoMark(k, lang), social: k === 'instagram' || k === 'facebook' };
   })
-  .filter((i) => i.v || settings.showTodo);
+  .filter((i) => i.v || (settings.showTodo && i.k !== 'phone2'));
 const main = items.filter((i) => !i.social);
 const social = items.filter((i) => i.social);
 const wa = waLink();
@@ -24,7 +25,7 @@ const wa = waLink();
       <li>
         {i.v ? (
           <a class="contact-card" href={i.href} {...(i.social ? { target: '_blank', rel: 'noopener' } : {})}>
-            <Icon name={i.k === 'phone' ? 'phone' : i.k === 'email' ? 'mail' : i.k} size={30} />
+            <Icon name={i.k === 'phone' || i.k === 'phone2' ? 'phone' : i.k === 'email' ? 'mail' : i.k} size={30} />
             <span class="cc-label">{i.label}</span>
             {!i.social && <bdi class="cc-value" dir="ltr">{i.shown}</bdi>}
           </a>
@@ -42,7 +43,7 @@ const wa = waLink();
         <li>
           {i.v ? (
             <a href={i.href}>
-              <Icon name={i.k === 'phone' ? 'phone' : 'mail'} size={20} />
+              <Icon name={i.k === 'phone' || i.k === 'phone2' ? 'phone' : 'mail'} size={20} />
               <span>{i.label}: <bdi dir="ltr">{i.shown}</bdi></span>
             </a>
           ) : (

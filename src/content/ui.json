@@ -25,6 +25,7 @@
     "footer": {
       "contactTitle": "יצירת קשר",
       "phone": "טלפון / וואטסאפ",
+      "phone2": "טלפון",
       "email": "דוא״ל",
       "instagram": "אינסטגרם",
       "facebook": "פייסבוק",
@@ -156,6 +157,7 @@
     "footer": {
       "contactTitle": "Contact",
       "phone": "Telephone / WhatsApp",
+      "phone2": "Telephone",
       "email": "Email",
       "instagram": "Instagram",
       "facebook": "Facebook",
