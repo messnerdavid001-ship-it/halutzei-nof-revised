@@ -1,7 +1,7 @@
 ---
 import ContactDetails from './ContactDetails.astro';
 import Pic from './Pic.astro';
-import { getUi, pagePath, settings, todoMark, type Lang } from '../lib/site';
+import { getUi, logoSrc, pagePath, settings, todoMark, type Lang } from '../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const t = getUi(lang);
@@ -11,7 +11,7 @@ const legal = settings.legalName[lang];
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <a class="footer-logo" href={pagePath('index', lang)} aria-label={t.siteName}><Pic src={lang === 'en' ? "/photos/logo-en.png" : "/photos/logo.png"} alt={t.logoAlt} sizes="160px" /></a>
+      <a class="footer-logo" href={pagePath('index', lang)} aria-label={t.siteName}><Pic src={logoSrc(lang)} alt={t.logoAlt} sizes="160px" /></a>
       <p class="footer-tagline">{t.footer.tagline}</p>
     </div>
     <nav class="footer-col" aria-label={t.footer.pagesTitle}>

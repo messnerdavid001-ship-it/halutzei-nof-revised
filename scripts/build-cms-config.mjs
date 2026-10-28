@@ -46,7 +46,7 @@ const ICONS = ['zion', 'family', 'education', 'national', 'service', 'mutual', '
 const icon = () => ({ label: 'אייקון / Icon', name: 'icon', widget: 'select', options: ICONS, default: 'people' });
 const PAGES = ['about', 'vision', 'community', 'join', 'contact'];
 const pageLink = () => ({ label: 'קישור לעמוד / Links to page', name: 'link', widget: 'select', options: PAGES, default: 'about' });
-// Vision & Values and Community & Education share one structure: groups of short cards.
+// Vision and Community share one structure: groups of short cards.
 const MARKS = 'סימניות [[BM1]]-[[BM8]] הן הצעות (כחול) / [[BM1]]-[[BM8]] are blue bookmarks with ideas - delete them once handled.';
 const cardsPage = (key, label) => page(key, label, () => [
   ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'משפט פתיחה קצר / One-line summary', MARK),
@@ -109,7 +109,7 @@ const settingsFields = [
   text('email', 'דוא״ל / Email'), text('instagram', 'אינסטגרם (קישור מלא) / Instagram URL'), text('facebook', 'פייסבוק (קישור מלא) / Facebook URL'),
   text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
-  bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון והערכים / Vision & Values'),
+  bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון / Vision'),
   bg('communityBackground', 'הקהילה / Community'), bg('joinBackground', 'הצטרפות / Join'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
 ];
 

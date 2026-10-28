@@ -4,7 +4,7 @@ import Button from '../Button.astro';
 import Pic from '../Pic.astro';
 import TextBlock from '../TextBlock.astro';
 import CtaPanel from '../CtaPanel.astro';
-import { getPage, getUi, pagePath, todoMark, type Lang } from '../../lib/site';
+import { getPage, getUi, logoSrc, pagePath, todoMark, type Lang } from '../../lib/site';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('index', lang);
@@ -13,7 +13,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
 ---
 <section class="hero">
   <div class="hero-inner">
-    <Pic class="hero-logo" src={lang === 'en' ? "/photos/logo-en.png" : "/photos/logo.png"} alt={t.logoAlt} sizes="(min-width: 768px) 400px, 62vw" loading="eager" fetchpriority="high" />
+    <Pic class="hero-logo" src={logoSrc(lang)} alt={t.logoAlt} sizes="(min-width: 768px) 400px, 62vw" loading="eager" fetchpriority="high" />
     <div class="hero-copy">
       <h1 class="headline">{p.headline}</h1>
       <p class="slogan">{p.tagline}</p>

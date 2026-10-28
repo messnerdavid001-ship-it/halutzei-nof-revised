@@ -15,6 +15,8 @@ const BG_KEYS: Record<string, string> = {
   index: 'homeBackground', about: 'aboutBackground', vision: 'visionBackground',
   community: 'communityBackground', join: 'joinBackground', contact: 'contactBackground',
 };
+export const logoSrc = (lang: Lang) => (lang === 'en' ? '/photos/logo-en.png' : '/photos/logo.png');
+
 export function bgFor(slug: string) {
   const key = BG_KEYS[slug];
   return { src: ((settings as any)[key || 'legalBackground'] as string) || '/photos/vision-sunset.jpg', variant: key ? slug : 'legal' };
