@@ -9,8 +9,9 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const p = getPage('about', lang);
 ---
-<PageHead title={p.title} intro={p.intro} lang={lang} />
-<Panel tone="navy" title={p.identityTitle} class="panel--centered"><TextBlock text={p.identity} lang={lang} /></Panel>
+<PageHead title={p.title} intro={p.intro} lang={lang}>
+  <TextBlock text={p.identity} lang={lang} class="lead" />
+</PageHead>
 <CtaPanel lang={lang} title={getPage('home', lang).ctaTitle} text={getPage('home', lang).ctaText} />
 
 <section class="panel panel--navy memorial-panel" id="memorial" aria-labelledby="memorial-title" data-reveal>

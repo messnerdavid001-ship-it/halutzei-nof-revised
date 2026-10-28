@@ -130,6 +130,7 @@ main { display: flex; flex-direction: column; align-items: center; gap: clamp(16
 .page-head { text-align: center; }
 .page-head h1 { margin-bottom: 0.4em; }
 .page-head .lead p { font-size: clamp(1.125rem, 1rem + 0.6vw, 1.35rem); }
+.page-head .lead + .lead { margin-top: 1.1em; }
 
 /* paragraph measure: 62ch Hebrew, 68ch English — inside the panel, panel width unchanged */
 .prose { max-width: 62ch; margin-inline: auto; }

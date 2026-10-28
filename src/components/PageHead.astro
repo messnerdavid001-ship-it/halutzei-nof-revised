@@ -7,4 +7,5 @@ const { title, intro, lang } = Astro.props;
 <header class="panel panel--navy page-head" data-reveal>
   <h1>{title}</h1>
   {intro && <TextBlock text={intro} lang={lang} class="lead" />}
+  <slot />
 </header>
