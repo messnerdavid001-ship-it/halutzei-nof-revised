@@ -15,7 +15,7 @@
       {
         "id": "values",
         "title": "הערכים שלנו",
-        "intro": "תשעה ערכים מובילים אותנו בדרך.",
+        "intro": "תשעה ערכים מובילים אותנו, והם הסיבה שאנחנו בונים את כל זה. חלקם עוסקים במה שאנחנו אוהבים ומשרתים: ציונות והתיישבות, משפחה וקהילה, חינוך וערכים, אחריות לאומית, ושירות ותרומה למדינה. האחרים עוסקים בדרך שבה אנחנו חיים יחד: ערבות הדדית, עבודה ויוזמה, עצמאות אישית, ואחדות וכבוד הדדי.",
         "cards": [
           {
             "icon": "zion",
@@ -84,7 +84,7 @@
       {
         "id": "values",
         "title": "Our Values",
-        "intro": "Nine values guide us on the way.",
+        "intro": "Nine values guide us, and they are the reason we are building this. Some are about what we love and serve: Zionism and building the land, family and community, education and values, national responsibility, and service and contribution. The others are about how we live together: mutual responsibility, work and initiative, personal independence, and unity and mutual respect.",
         "cards": [
           {
             "icon": "zion",

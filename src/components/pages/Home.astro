@@ -45,10 +45,6 @@ const photos = (p.photos || []).filter((x: any) => x.image);
   <TextBlock text={p.audienceText} lang={lang} />
 </Panel>
 
-<Panel tone="navy" title={p.valuesTitle} id="values-teaser" class="panel--centered">
-  <TextBlock text={p.valuesText} lang={lang} />
-</Panel>
-
 {photos.length > 0 && (
   <Panel tone="navy" class="panel--photos">
     <div class="photo-slots">
