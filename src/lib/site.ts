@@ -5,15 +5,15 @@ import images from '../generated/images.json';
 export type Lang = 'he' | 'en';
 export { settings };
 
-export const SLUGS = ['index', 'about', 'vision', 'community', 'join', 'contact', 'accessibility', 'privacy', 'donate'] as const;
+export const SLUGS = ['index', 'about', 'vision', 'community', 'contact', 'accessibility', 'privacy', 'donate'] as const;
 /** Menu order. Join is rendered separately as the gold button at the end. */
 export const NAV = ['index', 'about', 'vision', 'community', 'contact'] as const;
-export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', community: 'community', contact: 'contact', join: 'join' };
+export const NAV_KEYS: Record<string, string> = { index: 'home', about: 'about', vision: 'vision', community: 'community', contact: 'contact' };
 
 /** Which Settings field holds each page's background photo. Pages not listed use legalBackground. */
 const BG_KEYS: Record<string, string> = {
   index: 'homeBackground', about: 'aboutBackground', vision: 'visionBackground',
-  community: 'communityBackground', join: 'joinBackground', contact: 'contactBackground',
+  community: 'communityBackground', contact: 'contactBackground',
 };
 export const logoSrc = (lang: Lang) => (lang === 'en' ? '/photos/logo-en.png' : '/photos/logo.png');
 

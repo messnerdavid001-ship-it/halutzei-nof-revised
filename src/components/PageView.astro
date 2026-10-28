@@ -4,7 +4,6 @@ import BaseLayout from './BaseLayout.astro';
 import Home from './pages/Home.astro';
 import About from './pages/About.astro';
 import CardsPage from './pages/CardsPage.astro';
-import Join from './pages/Join.astro';
 import Contact from './pages/Contact.astro';
 import Legal from './pages/Legal.astro';
 import { getPage, bgFor, type Lang } from '../lib/site';
@@ -18,7 +17,6 @@ const cardPages = ['vision', 'community'];
   {slug === 'index' ? <Home lang={lang} /> :
    slug === 'about' ? <About lang={lang} /> :
    cardPages.includes(slug) ? <CardsPage lang={lang} slug={slug} /> :
-   slug === 'join' ? <Join lang={lang} /> :
    slug === 'contact' ? <Contact lang={lang} /> :
    <Legal lang={lang} slug={slug} />}
 </BaseLayout>

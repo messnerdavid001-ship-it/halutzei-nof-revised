@@ -1,16 +1,108 @@
 {
   "he": {
-    "seoTitle": "צור קשר — חלוצי נוף",
-    "seoDescription": "רוצים לשאול, להצטרף או להגיד שלום? צרו קשר עם חלוצי נוף בטלפון, בוואטסאפ, בדוא״ל או בטופס.",
+    "seoTitle": "צור קשר והצטרפות — חלוצי נוף",
+    "seoDescription": "צרו קשר עם חלוצי נוף בטלפון, בוואטסאפ או בדוא״ל, הכירו איך מצטרפים, קראו שאלות נפוצות והשאירו פרטים למענה אישי.",
     "title": "צור קשר",
     "backgroundAlt": "תצלום קבוצתי של צעירים וצעירות",
-    "intro": "רוצים לשאול, להצטרף או סתם להגיד שלום? נשמח לשמוע מכם."
+    "intro": "רוצים לשאול, להצטרף או סתם להגיד שלום? נשמח לשמוע מכם.",
+    "joinIntro": "אם הדרך שלנו מדברת אליכם — משפחות, זוגות צעירים, יהודים מהתפוצות וחיילים בודדים — נשמח להכיר. השאירו פרטים, ונחזור אליכם אישית. [[DRAFT]]",
+    "stepsTitle": "איך זה עובד",
+    "steps": [
+      {
+        "icon": "form",
+        "title": "משאירים פרטים",
+        "text": "ממלאים את הטופס הקצר שלמטה."
+      },
+      {
+        "icon": "chat",
+        "title": "חוזרים אליכם אישית",
+        "text": "אחד מאיתנו ייצור איתכם קשר."
+      },
+      {
+        "icon": "people",
+        "title": "שיחת היכרות",
+        "text": "שיחה פתוחה ולא מחייבת, בקצב שלכם."
+      },
+      {
+        "icon": "path",
+        "title": "ממשיכים להכיר",
+        "text": "אם יש התאמה, ממשיכים להכיר זה את זה."
+      }
+    ],
+    "stepsNote": "זו אינה בקשת קבלה רשמית — זהו צעד ראשון להיכרות הדדית. [[BM8]]",
+    "faqTitle": "שאלות נפוצות",
+    "faq": [
+      {
+        "q": "מי הם חלוצי נוף?",
+        "a": "חבורת חברים ששירתו יחד בצה״ל ומבקשים להקים קהילה חדשה בארץ ישראל. הקהילה נקראת על שם שישה לוחמים שנפלו. [[DRAFT]]"
+      },
+      {
+        "q": "מהו החזון?",
+        "a": "אנחנו שואפים לבנות קהילה של משפחות המבוססת על ערכים: ציונות, חינוך, ערבות הדדית ויוזמה — בית לדורות. [[DRAFT]]"
+      },
+      {
+        "q": "למי הקהילה מיועדת?",
+        "a": "בראש ובראשונה למשפחות ולזוגות צעירים, והיא פתוחה לכל מי שחולק את הערכים שלנו, כולל יהודים מהתפוצות וחיילים בודדים. שירות בצה״ל הוא ערך חשוב אך אינו תנאי. [[DRAFT]] [[BM3]]"
+      },
+      {
+        "q": "איך מצטרפים?",
+        "a": "משאירים פרטים בעמוד ההצטרפות, ואנחנו חוזרים אליכם אישית לשיחת היכרות. משם ממשיכים להכיר זה את זה, אם יש התאמה. [[DRAFT]] [[BM1]] [[BM2]] [[BM5]]"
+      }
+    ],
+    "formTitle": "השאירו פרטים",
+    "formNote": "נחזור אליכם אישית. הפרטים משמשים רק לצורך זה. [[BM7]]"
   },
   "en": {
-    "seoTitle": "Contact Us — Halutzei Nof",
-    "seoDescription": "Want to ask, join or just say hello? Contact Halutzei Nof by phone, WhatsApp, email or the form.",
+    "seoTitle": "Contact and Join — Halutzei Nof",
+    "seoDescription": "Contact Halutzei Nof by phone, WhatsApp or email, see how joining works, read the frequently asked questions and leave your details for a personal reply.",
     "title": "Contact Us",
     "backgroundAlt": "A group photo of young men and women",
-    "intro": "Want to ask, join or just say hello? We would be glad to hear from you."
+    "intro": "Want to ask, join or just say hello? We would be glad to hear from you.",
+    "joinIntro": "If our path speaks to you, whether you are a family, a young couple, a Jew from the diaspora or a lone soldier, we would love to meet you. Leave your details and we will get back to you personally. [[DRAFT]]",
+    "stepsTitle": "How It Works",
+    "steps": [
+      {
+        "icon": "form",
+        "title": "Leave your details",
+        "text": "Fill in the short form below."
+      },
+      {
+        "icon": "chat",
+        "title": "We get back to you personally",
+        "text": "One of us will get in touch."
+      },
+      {
+        "icon": "people",
+        "title": "An introductory conversation",
+        "text": "An open conversation with no commitment, at your pace."
+      },
+      {
+        "icon": "path",
+        "title": "Continuing to get to know each other",
+        "text": "If it is a fit, we keep getting to know one another."
+      }
+    ],
+    "stepsNote": "This is not a formal application, just a first step toward getting to know each other. [[BM8]]",
+    "faqTitle": "Frequently Asked Questions",
+    "faq": [
+      {
+        "q": "Who are Halutzei Nof?",
+        "a": "A group of friends who served together in the IDF and wish to build a new community in the Land of Israel. The community is named in honor of six fallen soldiers. [[DRAFT]]"
+      },
+      {
+        "q": "What is the vision?",
+        "a": "We aim to build a community of families grounded in values: Zionism, education, mutual responsibility and initiative. A home for generations. [[DRAFT]]"
+      },
+      {
+        "q": "Who is the community for?",
+        "a": "First of all for families and young couples, and it is open to everyone who shares our values, including Jews from the diaspora and lone soldiers. IDF service is an important value but not a condition. [[DRAFT]] [[BM3]]"
+      },
+      {
+        "q": "How do you join?",
+        "a": "Leave your details on the Join page and we will get back to you personally for an introductory conversation. From there we keep getting to know each other, if it is a fit. [[DRAFT]] [[BM1]] [[BM2]] [[BM5]]"
+      }
+    ],
+    "formTitle": "Leave Your Details",
+    "formNote": "We will get back to you personally. Your details are used only for that. [[BM7]]"
   }
 }

@@ -44,7 +44,7 @@ const page = (key, label, fnFields) => filesEntry(`pages/${key}.json`, label, bi
 const bgAlt = text('backgroundAlt', 'תיאור תמונת הרקע (נגישות) / Background photo description (alt)');
 const ICONS = ['zion', 'family', 'education', 'national', 'service', 'mutual', 'work', 'independence', 'unity', 'form', 'chat', 'people', 'path', 'sunrise', 'house', 'lightbulb'];
 const icon = () => ({ label: 'אייקון / Icon', name: 'icon', widget: 'select', options: ICONS, default: 'people' });
-const PAGES = ['about', 'vision', 'community', 'join', 'contact'];
+const PAGES = ['about', 'vision', 'community', 'contact'];
 const pageLink = () => ({ label: 'קישור לעמוד / Links to page', name: 'link', widget: 'select', options: PAGES, default: 'about' });
 // Vision and Community share one structure: groups of short cards.
 const MARKS = 'סימניות [[BM1]]-[[BM8]] הן הצעות (כחול) / [[BM1]]-[[BM8]] are blue bookmarks with ideas - delete them once handled.';
@@ -75,8 +75,9 @@ const pages = [
   ]),
   cardsPage('vision', '🌄 החזון / Vision'),
   cardsPage('community', '🤝 הקהילה / Community'),
-  page('join', '✋ הצטרפות ושאלות נפוצות / Join & FAQ', () => [
-    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro', MARK),
+  page('contact', '✉️ צור קשר והצטרפות / Contact & Join', () => [
+    ...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro'),
+    area('joinIntro', 'טקסט מעל טופס ההצטרפות / Text above the join form', MARK),
     text('stepsTitle', 'כותרת השלבים / Steps title'),
     objList('steps', 'ארבעת השלבים / The four steps', [icon(), text('title', 'כותרת / Title'), text('text', 'טקסט קצר / Short text')]),
     text('stepsNote', 'הערה מתחת לשלבים / Note under the steps'),
@@ -84,7 +85,6 @@ const pages = [
     objList('faq', 'שאלות ותשובות (אפשר להוסיף) / Questions and answers (you can add more)', [text('q', 'שאלה / Question'), area('a', 'תשובה / Answer', MARK)]),
     text('formTitle', 'כותרת הטופס / Form title'), area('formNote', 'שורה מעל הטופס / Line above the form', MARK),
   ]),
-  page('contact', '✉️ צור קשר / Contact', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('intro', 'מבוא / Intro')]),
   page('accessibility', '♿ הצהרת נגישות / Accessibility', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
   page('privacy', '🔒 מדיניות פרטיות / Privacy', () => [...seo, text('title', 'כותרת / Title'), bgAlt, area('text', 'טקסט / Text', PARA + ' [[GENERIC]] / [[LEGAL]] = red marker')]),
   page('donate', '💙 תרומות (כבוי) / Donate (off)', () => [...seo, text('title', 'כותרת / Title'), area('text', 'טקסט / Text')]),
@@ -110,7 +110,7 @@ const settingsFields = [
   text('formAction', 'כתובת שירות הטפסים (משותפת לטופס הצטרפות ולצור קשר) / Form service URL (shared by Join and Contact)', { hint: 'למשל / e.g. https://formsubmit.co/ajax/you@example.com' }),
   { label: 'שם הגוף המשפטי / Legal entity name', name: 'legalName', widget: 'object', fields: [text('he', 'עברית'), text('en', 'English')] },
   bg('homeBackground', 'בית / Home'), bg('aboutBackground', 'מי אנחנו / About'), bg('visionBackground', 'החזון / Vision'),
-  bg('communityBackground', 'הקהילה / Community'), bg('joinBackground', 'הצטרפות / Join'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
+  bg('communityBackground', 'הקהילה / Community'), bg('contactBackground', 'צור קשר / Contact'), bg('legalBackground', 'נגישות ופרטיות / Accessibility & Privacy'),
 ];
 
 const config = {

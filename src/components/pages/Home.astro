@@ -17,7 +17,7 @@ const photos = (p.photos || []).filter((x: any) => x.image);
     <div class="hero-copy">
       <h1 class="headline">{p.headline}</h1>
       <p class="slogan">{p.tagline}</p>
-      <div class="btn-row"><Button href={pagePath('join', lang)}>{t.btnJoin}</Button></div>
+      <div class="btn-row"><Button href={pagePath('contact', lang) + '#join-form'}>{t.btnJoin}</Button></div>
     </div>
   </div>
   <div class="hero-foot">
